@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it-IT" lang="it-IT">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Prova progetto TechWeb"/>
+    <meta name="keywords" content="TechWeb" />
+    <meta name="author" content="Greta Cavedon, Francesco Freda, Giovanni Incalza e Giuseppe Zatta" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0"/>
+    <title xml:lang="en" lang="en">Homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/header-smartphone.css" media="handheld, screen and (max-width:1023px)"/>
+    <link rel="stylesheet" type="text/css" href="css/home-smartphone.css" media="handheld, screen and (max-width:1023px)"/>
+    <link rel="stylesheet" type="text/css" href="css/header-desktop.css" media="screen and (min-width:1024px)"/>
+    <link rel="stylesheet" type="text/css" href="css/home-desktop.css" media="screen and (min-width:1024px)"/>
+    <link rel="stylesheet" type="text/css" href="css/header(print).css" media="print"/>
+    <link rel="stylesheet" type="text/css" href="css/home(print).css" media="print"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Serif+Pro:400,600&display=swap" rel="stylesheet"/>
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="css/header(noscript).css" media="handheld, screen"/>
+      <link rel="stylesheet" type="text/css" href="css/home(noscript).css" media="handheld, screen"/>
+    </noscript>
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/header.js" type="text/javascript" defer="defer"></script>
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript" defer="defer"></script>
+    <script src="js/index.js" type="text/javascript" defer="defer"></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <ul id="skip">
+      <li>
+        <a href="#content" tabindex="0" xml:lang="en" lang="en">Go to the content</a>
+      </li>
+      <li>
+        <a href="#mySidenav" tabindex="0" xml:lang="en" lang="en">Go to the navigation bar (smartphone)</a>
+      </li>
+      <li>
+        <a href="#barraMenu" tabindex="0" xml:lang="en" lang="en">Go to the navigation bar (desktop)</a>
+      </li>
+      <li>
+        <a href="#searchBar" tabindex="0" xml:lang="en" lang="en">Go to the search bar</a>
+      </li>
+    </ul>
+    <header>
+      <div id="barraAlta">
+        <form id="formBarraAlta" method="post" action="#">
+        <fieldset>
+            <legend>Ubicazione</legend>
+            <label for="regione1">Regione:</label>
+            <select name="regione" id="regione1" title="Selezione regione" onfocus="toggleR('regione1');" onblur="toggleR('regione1');" onkeydown="recharge(event,0,true);" onclick="rechargeClick(0,true);">
+              <?php
+              echo $reg[0];
+              ?>
+            </select>
+            <label for="province1">Provincia:</label>
+            <select name="provincia" id="province1" onfocus="" onblur="setP('province1');" onkeydown="recharge(event,0,false);" onclick="rechargeClick(0,false);">
+              <?php
+              echo $reg[1];
+              ?>
+            </select>
+            <label for="regSub">salva</label>
+            <input id="regSub" value="Salva" type="submit"/>
+          </fieldset>
+      </form>
+      </div>
+
+      <a title="Hamburger menu" href="#hamburger" aria-label="Hamburger menu" id="hamburger">
+        <div class="Line"></div>
+        <div class="Line"></div>
+        <div class="Line"></div>
+      </a>
+      <div id="mySidenav" class="Sidenav">
+        <ul id="upperMenu">
+          <li>
+            <a id="profilo1" href="altre-pagine/profilo.php">
+              <div id="defImg1">
+                <img id="profiloImg1" <?php echo 'class="'.$quadImg.'"'; ?> src=<?php echo '"'.userIm($defIm, "Sma", "").'"';?> alt="Immagine Profilo"/>
+              </div>
+              <p class="Caption">Profilo</p>
+            </a>
+          </li>
+          <li>
+            <a id="regione" href="#regione2">
+              <img id="regioneImg" class="Piccolo" src="img/512px/RegioneWhite2.png" alt="Immagine Regione"/>
+              <p class="Caption">Regione</p>
+            </a>
+          </li>
+        </ul>
+        <ul id="menu">
+          <li>
+            <p xml:lang="en" lang="en">Home</p>
+          </li>
+          <li>
+            <a href="altre-pagine/azienda.php" class="DropAzienda">AZIENDA</a>
+            <ul id="myDropAzienda">
+              <li>
+                <a href="altre-pagine/lastoria.php">La Storia</a>
+              </li>
+              <li>
+                <a href="altre-pagine/chisiamo.php">Chi Siamo</a>
+              </li>
+              <li>
+                <a href="altre-pagine/denominazione.php">Denominazione prodotti</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="altre-pagine/categorie.php?cat=Piatti0Caldi" class="DropPiatti">PIATTI CALDI</a>
+            <ul id="myDropPiatti">
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Primi0Piatti&page=1">Primi Piatti</a>
+              </li>
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Secondi0Piatti&page=1">Secondi Piatti</a>
+              </li>
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Pizze&page=1">Pizze</a>
+              </li>
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Contorni&page=1">Contorni</a>
+              </li>
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Dessert&page=1">Dessert</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="altre-pagine/categorie.php?cat=Bottega" class="DropBottega">BOTTEGA</a>
+            <ul id="myDropBottega">
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Latticini&page=1">Latticini</a>
+              </li>
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Salumeria&page=1">Salumeria</a>
+              </li>
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Fornaio&page=1">Fornaio</a>
+              </li>
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Dispensa&page=1">Dispensa</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="altre-pagine/categorie.php?cat=Bevande"class="DropBevande">BEVANDE</a>
+            <ul id="myDropBevande">
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Alcolici&page=1">Alcolici</a>
+              </li>
+              <li>
+                <a href="altre-pagine/categoria.php?cat=Analcolici&page=1">Analcolici</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="StackLine"></div>
+          <form id="formSmartphone" method="post" action="#">
+            <fieldset>
+              <legend>Ubicazione</legend>
+              <label for="regione2">Regione</label>
+              <select name="regione" id="regione2" onfocus="toggleR('regione2');" onblur="toggleR('regione2');" onkeydown="recharge(event,1,true);" onclick="rechargeClick(1,true);">
+                <?php
+                  echo $reg[0];
+                ?>
+              </select>
+              <label for="province2">Provincia</label>
+              <select name="provincia" id="province2" onblur="setP('province2');" onkeydown="recharge(event,1,false);" onclick="rechargeClick(1,false);">
+                <?php
+                  echo $reg[1];
+                ?>
+              </select>
+              <label for="navSub">invia</label>
+              <input id="navSub" value="Invia" type="submit"/>
+            </fieldset>
+          </form>
+        </div>
+      <div id="blackanddeker">
+      </div>
+      <?php echo $err[0]; echo $err[1];?>
+      <div id="LinkBarraAlta">
+        <?php echo $login;?>
+      </div>
+      <div id="sopra-icone">
+        <ul id="icone">
+          <li>
+            <a href="altre-pagine/profilo.php" title="Accedi al tuo profilo" id="profilo2">
+              <p id="defImg2">
+                <img id="profiloImg2" <?php echo 'class="'.$quadImg.'"'; ?> src=<?php echo '"'.userIm($defIm, "Des", "").'"';?> alt="Pagina profilo"/>
+              </p>
+              <p class="Caption">Profilo</p>
+            </a>
+          </li>
+          <li id="ricerca" onclick="dropRicerca();">
+            <img id="ricercaImg" class="Piccolo" src="img/512px/Search.png" alt="Mostra barra di ricerca"/>
+            <p class="Caption">Ricerca</p>
+          </li>
+          <li>
+            <a href="altre-pagine/cart.php" id="carrello">
+              <img id="carrelloImg" class="Piccolo" src="img/512px/Basket.png" alt="Pagina carrello"/>
+              <p class="Caption">Carrello</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="barraMenu">
+      <ul id="menuDesk">
+        <li>
+          <p xml:lang="en" lang="en">Home</p>
+        </li>
+        <li>
+          <a href="altre-pagine/azienda.php" class="DropStoria">Azienda</a>
+          <ul id="dropAzienda">
+            <li><a href="altre-pagine/lastoria.php">La Storia</a></li>
+            <li><a href="altre-pagine/chisiamo.php">Chi Siamo</a></li>
+            <li><a href="altre-pagine/denominazione.php">Denominazione prodotti</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="altre-pagine/categorie.php?cat=Piatti0Caldi" class="DropPrimi">Piatti Caldi</a>
+          <ul id="dropPiatti">
+            <li><a href="altre-pagine/categoria.php?cat=Primi0Piatti&page=1">Primi Piatti</a></li>
+            <li><a href="altre-pagine/categoria.php?cat=Secondi0Piatti&page=1">Secondi Piatti</a></li>
+            <li><a href="altre-pagine/categoria.php?cat=Contorni&page=1">Contorni</a></li>
+            <li><a href="altre-pagine/categoria.php?cat=Pizze&page=1">Pizze</a></li>
+            <li><a href="altre-pagine/categoria.php?cat=Dessert&page=1">Dessert</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="altre-pagine/categorie.php?cat=Bottega" class="DropLatticini">Bottega</a>
+          <ul id="dropBottega">
+            <li><a href="altre-pagine/categoria.php?cat=Latticini&page=1">Latticini</a></li>
+            <li><a href="altre-pagine/categoria.php?cat=Salumeria&page=1">Salumeria</a></li>
+            <li><a href="altre-pagine/categoria.php?cat=Fornaio&page=1">Fornaio</a></li>
+            <li><a href="altre-pagine/categoria.php?cat=Dispensa&page=1">Dispensa</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="altre-pagine/categorie.php?cat=Bevande" class="DropEnoteca" >Bevande</a>
+          <ul id="dropBevande">
+            <li><a href="altre-pagine/categoria.php?cat=Alcolici&page=1">Alcolici</a></li>
+            <li><a href="altre-pagine/categoria.php?cat=Analcolici&page=1">Analcolici</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+
+
+      <div id="myDropRicerca">
+        <form action="altre-pagine/ricerca.php">
+          <fieldset>
+            <legend>Ricerca</legend>
+            <input id="searchBar" title="Barra ricerca" type="text" placeholder="Scrivi qui..." name="search"/>
+            <button type="submit" title="Inizia ricerca">
+              <img id="lente" src="img/512px/Search.png" alt="Cerca" class="Piccolo"/>
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="myBtn">
+      <img src="img/512px/FrecciaSu.png" alt="torna su"/>
+    </div>
+    </header>
+    <!------------------------------------------------------CORPO-------------------------------------------------->
+    <div id="content" class="Clearer"></div>
+    <div id="jssor_1" class="Prova1">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin Prova2 Prova2-5">
+            <img class="Prova3" src="img/spin.svg" alt="" />
+        </div>
+        <div data-u="slides" class="Prova4">
+            <div class="Hidden">
+                <a href="altre-pagine/venditore.php?Nome=La0Bottega0di0Alberobello">
+                  <img src="img/slider1.jpg" alt="pasta pugliese" />
+          <p  class="Sottotitolo">Gusta il sapore della Puglia sotto casa</p>
+                </a>
+            </div>
+            <div class="Hidden">
+                <a href="altre-pagine/ricerca.php?search=Frullato">
+                  <img src="img/slider2.jpg" alt="macedonia"/>
+          <p  class="Sottotitolo">Trova tutti i colori della natura</p>
+                </a>
+            </div>
+            <div class="Hidden">
+                <a href="altre-pagine/ricerca.php?search=Gelato">
+                  <img src="img/slider3.jpg" alt="gelato al cioccolato"/>
+          <p class="Sottotitolo">Assaggia la dolcezza dei nostri gelati artigianali</p>
+                </a>
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032 Prova8" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i Prova9">
+                <svg viewbox="0 0 16000 16000" class="Prova2">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051 Prova11" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" class="Prova2">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051 Prova13" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" class="Prova2">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <div class="Clearer"></div>
+    <!-------------------------------------------------------SUB-CORPO-------------------------------------------------->
+    <div id="rettBlu">
+      <p>&ldquo;Ho dei gusti semplicissimi,</p>
+      <p>mi accontento sempre del meglio!&rdquo;</p>
+    </div>
+
+    <?php
+      echo $err[2];
+    ?>
+
+    <div id="imgDid1" class="ImgDid">
+      <ul class="Did">
+        <li><a href="altre-pagine/ricerca.php?search=Focacce">FOCACCE</a></li>
+        <li><a href="altre-pagine/ricerca.php?search=Spezie">SPEZIE</a></li>
+        <li><a href="altre-pagine/ricerca.php?search=Farine">FARINE</a></li>
+      </ul>
+    </div>
+
+    <div id="imgDid2" class="ImgDid">
+      <ul class="Did">
+        <li><a href="altre-pagine/ricerca.php?search=Hamburger" xml:lang="en" lang="en">HAMBURGER</a></li>
+        <li><a href="altre-pagine/ricerca.php?search=Verdure">VERDURE</a></li>
+        <li><a href="altre-pagine/categoria.php?cat=Contorni&page=1">CONTORNI</a></li>
+      </ul>
+    </div>
+
+    <div id="bodyLine" class="StackLine"></div>
+
+    <div id="strisciaOp">
+      <div>
+        <a href="altre-pagine/prodotto.php?ID=72">
+          <div id="Img1">
+            <p class="Prezzo">&euro;15.90</p>
+            <h1 class="Titoletto Spazio">Gnocchi alla Zucca</h1>
+          </div>
+        </a>
+        <a href="altre-pagine/prodotto.php?ID=72">
+          <h1 class="Titoletto">Gnocchi alla Zucca</h1>
+        </a>
+        <p class="Paragrafetto">Gnocchi alla zucca con burro fuso, salvia e parmigiano grattugiato, per 2 persone</p>
+      </div>
+      <div>
+        <a href="altre-pagine/prodotto.php?ID=80">
+          <div id="Img2">
+            <p class="Prezzo">&euro;23.90</p>
+            <h1 class="Titoletto Spazio">Tempura</h1>
+          </div>
+        </a>
+        <a href="altre-pagine/prodotto.php?ID=80">
+          <h1 class="Titoletto">Tempura</h1>
+        </a>
+        <p class="Paragrafetto">Tempura di gamberi con ribes, frutti rossi e salsa agrodolce</p>
+      </div>
+      <div>
+        <a href="altre-pagine/prodotto.php?ID=58">
+          <div id="Img3">
+            <p class="Prezzo">&euro;15.90</p>
+            <h1 class="Titoletto Spazio">Porcini e Provola Affumicata</h1>
+          </div>
+        </a>
+        <a href="altre-pagine/prodotto.php?ID=58">
+          <h1 class="Titoletto">Porcini e Provola Affumicata</h1>
+        </a>
+        <p class="Paragrafetto">Funghi Porcini tagliati a fette, cotti con olio evo, e Provola Affumicata</p>
+      </div>
+      <div>
+        <a href="altre-pagine/prodotto.php?ID=51">
+          <div id="Img4">
+            <p class="Prezzo">&euro;7.50</p>
+            <h1 class="Titoletto Spazio">Gelato al Cioccolato</h1>
+          </div>
+        </a>
+        <a href="altre-pagine/prodotto.php?ID=51">
+          <h1 class="Titoletto">Gelato al Cioccolato</h1>
+        </a>
+        <p class="Paragrafetto">Gelato Artigianale al cioccolato fondente al 60% con cacao del Madagascar 150gr</p>
+      </div>
+    </div>
+
+    <a href="altre-pagine/categoria.php?cat=Primi0Piatti&page=1">
+      <div id="sovraFooter1" class="SovraFooter">
+        <h1>Primi</h1>
+      </div>
+    </a>
+    <a href="altre-pagine/ricerca.php?search=Olio">
+      <div id="sovraFooter2" class="SovraFooter">
+        <h1>Olio</h1>
+      </div>
+    </a>
+    <div class="Clearer"></div>
+    <!------------------------------------------------------FOOTER-------------------------------------------------->
+    <footer>
+      <div class="StackLine"></div>
+      <div id="stack1" class="Center">
+        <ul id="shopOn">
+          <li><h1 class="Center" lang="en">SHOPPING ONLINE</h1></li>
+          <li><a href="altre-pagine/ship.php">Spedizioni & Resi</a></li>
+          <li><a href="altre-pagine/cookie.php" lang="en">Cookie Policy</a></li>
+          <li><a href="altre-pagine/pagamenti.php">Pagamenti</a></li>
+        </ul>
+        <ul id="servCli">
+          <li><h1 class="Center">SERVIZIO CLIENTI</h1></li>
+          <li><a href="altre-pagine/contatti.php">Contattaci</a></li>
+          <li><a href="altre-pagine/faqs.php"><abbr title="Frenquently Asked Questions">FAQs</abbr></a></li>
+        </ul>
+        <ul id="aziend">
+          <li><h1 class="Center">AZIENDA</h1></li>
+          <li><a href="altre-pagine/chisiamo.php">Chi siamo</a></li>
+          <li><a href="altre-pagine/lastoria.php">La Storia</a></li>
+          <li><a href="altre-pagine/denominazione.php">Denominazione prodotti</a></li>
+        </ul>
+      </div>
+      <div id="stack2" class="Center">
+        <div class="StackLine"></div>
+        <h1>Orari di Consegna</h1>
+        <p>0:00-24:00</p>
+      </div>
+      <div id="loginVend" class="Center">
+        <div class="StackLine"></div>
+        <div>
+          <a href="gestionale/login.php">Login Venditore</a>
+        </div>
+        <p id="firma" lang="en">Made with <span>&hearts;</span> by Giuseppe Zatta, Giovanni Incalza, Francesco Freda, Greta Cavedon.</p>
+      </div>
+      <div id="pagamenti" class="Center">
+        <div class="StackLine"></div>
+        <h1>Metodi di Pagamento:</h1>
+        <img src="img/512px/AmEx.png" alt="AmericanExpress" lang="en" />
+        <img src="img/512px/JCB.png" alt="JCB" lang="en" />
+        <img id="mastercard" src="img/512px/Mastercard.png" alt="Mastercard" lang="en" />
+        <img id="paypal" src="img/512px/PayPal.png" alt="Paypal" lang="en" />
+        <img id="visa" src="img/512px/Visa.png" alt="Visa" />
+      </div>
+    </footer>
+  </body>
+</html>
