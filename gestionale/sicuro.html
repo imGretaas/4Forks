@@ -1,0 +1,42 @@
+<ul id="skip">
+  <li>
+    <a href="#statement" tabindex="0" lang="en">Go to the content</a>
+  </li>
+  <li>
+    <a href="#mySidenav" tabindex="0" lang="en">Go to the navigation bar (mobile)</a>
+  </li>
+</ul>
+<a title="Hamburger menu" aria-label="Hamburger menu" href="#hamburger" id="hamburger" onclick="Nav()">&#8801;</a>
+<div id="mySidenav" class="Sidenav">
+  <ul id="menu">
+	<li><a href="vaiaindex.php" id="linkSitoG" title="Torna alla nostra pagina web">
+		<img id="logoSitoG" src="../img/logo.png" alt="logo quattro forchettieri"/>
+		<p id="linkTextG">Vai al sito</p>
+	</a></li>
+    <li><a href="registrazione.php">Registrazione Utenti</a></li>
+    <li><a href="prodotto.php">Inserimento Prodotto</a></li>
+    <li id="attiva">Modifica&sol;Elimina prodotto</li>
+    <li><a href="profilonegozio.php">Modifica Profilo Negozio</a></li>
+    <li><a href="logout.php" lang="en">Log out</a></li>
+  </ul>
+<p>&#42;Campo Obbligatorio</p>
+</div>
+<div id="blackanddeker" onclick="Nav()"></div>
+<div id="statement" class="Center">
+  <h1>Ne Sei Sicuro&#63;</h1>
+  <p>Sei sicuro di voler eliminare il prodotto&#63;</p>
+  <form method="post" action="delete.php">
+    <fieldset>
+    <legend>Eliminazione Prodotto</legend>
+    <p>
+      <input type="hidden" name="dati" <?php echo 'value="'.$dati.'"'; ?> />
+    </p>
+    <p>
+      <label>Elimina</label>
+      <input type="submit" name="elimina" value="Sì">
+      <label>Return</label>
+      <input type="submit" name="return" value="No">
+    </p>
+    </fieldset>
+  </form>
+</div>

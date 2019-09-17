@@ -1,0 +1,1484 @@
+*{
+	overflow-x: hidden;
+  	margin: 0;
+	padding: 0;
+	font-size:1em;
+}
+
+/* Inizio Numero Pagine - Giusp */
+
+div#succconteiner {
+	min-height: 2em;
+	margin: 0 auto;
+	display: inline-block;
+	margin-top: 3em;
+}
+
+div#succconteiner > p#actualpage, div#succconteiner > a.Successive{
+	width: 2em;
+	height:2em;
+	border-top: 1px solid #343331;
+	border-bottom: 1px solid #343331;
+	float: left;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 2em;
+	color: #5a1323;
+}
+
+div#succconteiner > p#actualpage{
+	color: #343331;
+}
+
+div#succconteiner > a.Successive:visited{
+	color: #2e5d5a;
+}
+
+/* Fine Numero Pagine - Giusp */
+
+#logoSitoG{
+	width: 12em;
+    height: auto;
+	margin:auto;
+}
+
+#linkTextG{
+	margin-bottom:2em;
+}
+
+#linkSitoG{
+	width:13em;
+}
+
+.Verde {
+	color: green !important;
+}
+
+/**colori:
+A background-color: rgb(140,168,164);
+B background-color: rgb(125,193,189);
+C background-color: rgb(46,93,90);
+D background-color: rgb(227,226,204);
+E background-color: rgb(220,221,183);
+F background-color: rgb(90,19,35);
+G background-color: rgb(52,51,49);
+H background-color: rgb(97,91,75);
+I background-color: rgb(200,197,188);
+J background-color: rgb(238,233,217);
+K background-color: rgb(255,255,255);
+
+*/
+.Clearer {
+  clear: both;
+}
+
+.Dispnone {
+	display: none !important;
+}
+
+.Center {
+	text-align: center;
+}
+
+.bottom2 {
+	margin-bottom: 2em;
+}
+
+.err {
+	/*display: block; */
+}
+
+#skip>li {
+  position: absolute;
+  width: 100%;
+  height: 1.4em;
+  margin-top: 0.3em;
+}
+
+#skip>li>a {
+  position: absolute;
+  left: -200em;
+  z-index: 2;
+}
+
+#skip>li>a:focus {
+  left:19.7em;
+  position: absolute;
+}
+
+/**************************/
+
+legend{
+	visibility: hidden;
+	font-size: 0;
+}
+
+/**************************/
+
+form#small .err, .err {
+	font-size: 1em;
+	color: red;
+	text-align: center;
+	margin-top: 0.2em;
+}
+
+form#small #errg, #errg {
+	margin-top: 0.2em;
+	font-size: 1em;
+	color: green;
+	text-align: center;
+}
+
+body {
+  background-color: rgb(255,255,255)  ; /* F */
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+img#logo {
+	width:70%;
+	height: auto;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+form[action="regge.php"] img#logo {
+	width:40%;
+}
+
+form#small {
+  width: 35%;
+  min-height: 23em;
+  margin: 1.5em auto 0;
+  border: 1px solid rgb(200,197,188); /* I */
+  border-radius: 0 0 5px 5px;
+  padding-top: 1em;
+}
+
+form#small{
+  text-align: center;
+}
+
+.OnlyDistance4{
+	float:right;
+	margin-bottom:3.7em;
+}
+
+form#small input {
+  border: 1px solid rgb(200,197,188);
+  width: 80%;
+  height: 1.7em;
+  margin: 0 auto 0em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+form#small > fieldset#loginField > p:last-of-type > label[for="accedi"]{
+	font-size: 0;
+}
+
+form#small h1, #statement h1 {
+  font-family: 'Roboto', Arial ,sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+form#small label {
+  font-size:1.2em;
+  line-height: 1.6em;
+  padding-bottom: 0.2em;
+}
+
+form#small h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 1.1em;
+}
+
+form#small p {
+  font-size: 0.9em;
+  margin: 0.3em 0 1em;
+	color: #343331;
+}
+
+div#statement > form#small > fieldset > p#ottododici{
+	color: red;
+	font-size: 0.8em;
+	margin: 0 2%;
+	font-family: 'Roboto', Arial ,sans-serif;
+	font-weight: 300;
+}
+
+.Line {
+  width: 80%;
+  height: 1px;
+  margin: 0.7em auto;
+  background-color: rgb(200,197,188);
+}
+
+form#small input[type="submit"]{
+  background-color: rgb(200,197,188);
+  text-transform: uppercase;
+  margin-top: 0.8em;
+  font-size: 1em;
+  cursor:pointer;
+}
+
+form#small input#registrazione{
+	background-color: rgb(200,197,188);
+  text-transform: uppercase;
+  margin-top: 0.8em;
+  font-size: 1em;
+}
+
+form#small input[type="button"]{
+	cursor:not-allowed;
+}
+
+form#small{
+	margin-bottom:1em;
+}
+
+div#check *{
+  float: left;
+}
+
+div#check input {
+  width: 5% !important;
+}
+
+form#small input[type="submit"]:hover {
+  border-color: rgb(51, 52, 49);
+}
+
+form#small a {
+  text-decoration: underline;
+  margin-bottom:1em;
+  color: #5a1323;
+}
+
+form#small a:visited {
+  text-decoration: underline;
+  color: #2e5d5a;
+}
+
+/*@media only screen and (max-width:648px){
+	#statement div:nth-of-type(2n-1) p.Riga:first-of-type{
+		width: 100%;
+		margin-right:10%;
+		text-align:left;
+	}
+	
+	#statement div:nth-of-type(2n-1) p.Riga:nth-of-type(2){
+		width:20%;
+		text-align:left;
+	}
+	
+	div#productcontainer > #titModPro > li:last-of-type{
+		position: relative;
+		font-size:1px;
+		left: 150%;
+	}
+}*/
+
+div#wizardconteiner input[type="email"], div#wizardconteiner input[type="password"], div#wizardconteiner input[type="pass2"]{
+  	border: 1px solid #ccc;
+  	border-radius: 0.3em;
+  	height: 1.8em;
+  	resize: vertical;
+	text-transform: capitalize;
+	text-align: center;
+	float:right;
+}
+
+@media only screen and (min-width: 601px) and (max-width:991px) {/* ------ Responsive tablet ------*/
+  form#small {
+    width: 52%;
+    min-height: 23em;
+    margin: 3em auto 0;
+  }
+
+  form#small input {
+    font-size: 0.7em;
+  }
+
+}
+
+@media only screen and (max-width:600px) {/* ------ Responsive tablet ------*/
+  form#small {
+    width: 85%;
+    min-height: 23em;
+    margin: 3em auto 0;
+  }
+
+  form#small input {
+    font-size: 0.7em;
+  }
+
+  .SottoCat > p:first-of-type{
+  	font-size: 0.8em;
+  	height: 2.5em;
+  	overflow-y: hidden;
+  }
+
+  .sottolabel{
+  	font-size: 0.8em;
+  	word-wrap: break-word;
+  }
+
+}
+#container {
+  width: 80%;
+  min-height:32em;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  border-radius: 1.5%;
+  box-shadow: -1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 2px #000;
+}
+
+#container label{
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+.Double {
+  margin: 1.5em 3% 1em;
+  width: 40%;
+  min-height: 2em;
+  float: left;
+  text-align: center;
+}
+
+.Double label {
+  display: block;
+}
+
+#categorie {
+  float: left;
+  width: 25%;
+  min-height: 30.5em;
+  padding-top: 1.5em;
+}
+
+#other {
+  border-right: 2px dashed black;
+  float: left;
+  width: 74%;
+  min-height: 30.5em;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+#other textarea {
+  margin: 0 auto;
+}
+
+#other label {
+  display: block;
+}
+
+.Sidenav{
+	width:21%;
+	height: 100%;
+	position: fixed;
+	background-color: #eee9d9;
+	color: #343331;
+	padding-top: 1em;
+	top: 0;
+	float:left;
+}
+
+#mySidenav > ul {
+	padding: 0 3%;
+}
+
+div#mySidenav > p{
+	color: red;
+	text-align: center;
+	margin-top: 5em;
+}
+
+span.Asterix{
+	color: red;
+}
+
+#mySidenav > ul > li {
+display: block;
+width: 100%;
+text-align: center;
+line-height: 2em;
+}
+
+#mySidenav > ul > li > a{
+	display: block;
+	width: 100%;
+	line-height: 2em;
+	color: #5a1323;
+	text-decoration: none;
+}
+
+#mySidenav > ul#menu > li:first-of-type{
+	padding: 0;
+}
+
+#mySidenav > ul#menu > li:first-of-type > a > p{
+	text-align: center;
+}
+
+a#modpro{
+	color: #343331 !important;
+}
+
+
+#mySidenav > ul > li > a:visited{
+	color: #2e5d5a;
+}
+
+#mySidenav > ul > li > a:hover{
+	text-decoration: underline;
+}
+
+li#attiva {
+	font-weight: bold;
+	background-color: #8ca8a4;
+	color: #343331;
+}
+
+div#statement {
+	display: block;
+	width:79%;
+	min-height: 34em;
+	float: right;
+}
+
+div#statement > form > fieldset > legend, fieldset#loginField > legend{
+	visibility: hidden;
+	font-size: 0px;
+}
+
+div#statement h1 {
+	text-align: center;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #343331;
+}
+
+div#wizardconteiner {
+	width: 80%;
+	margin: 0 auto;
+}
+
+div#wizardconteiner > form > section > fieldset > legend{
+	visibility: hidden;
+	font-size: 0px;
+}
+
+div#wizardconteiner p.Asterisco{
+	margin: 0.1em 2% 0 2%;
+}
+
+div#wizardconteiner figcaption{
+	text-align: center;
+	font-family: Roboto, -apple-system, arial;
+	color: #343331;
+}
+
+div#wizardconteiner input, div#wizardconteiner label {
+	float: left;
+	margin: 0 2% 0 8%;
+	border: none;
+}
+
+div#wizardconteiner label {
+	min-width: 25%;
+}
+
+div#wizardconteiner input {
+	padding: 0 1%;
+}
+
+p#regioni {
+	float: left;
+}
+
+div#wizardconteiner label#italia_label  {
+	margin-top: 0.7em;
+	margin-left: 2%;
+}
+
+div#wizardconteiner input#italia {
+	width:5%;
+	margin-top: 1.2em;
+	margin-left: 12.5%;
+}
+
+div#wizardconteiner input[type="text"] {
+	width: 42%;
+  	border: 1px solid #ccc;
+  	border-radius: 0.3em;
+  	box-sizing: border-box;
+  	height: 1.8em;
+  	resize: vertical;
+	text-transform: capitalize;
+}
+
+/*div#wizardconteiner label[for="prezzo"] {
+	line-height: 2.5em;
+}*/
+
+div#wizardconteiner input[type="number"]{
+	/*width:20%;
+	border: solid 1px rgb(97, 91, 75);
+
+	height: 1.7em;*/
+	width: 20%;
+  	border: 1px solid #ccc;
+  	border-radius: 0.3em;
+  	/*box-sizing: border-box;*/
+  	height: 1.8em;
+  	resize: vertical;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+div.Gruppo {
+	width:24%;
+	min-height: 11em;
+	float: left;
+}
+
+div.SottoCat{
+	width: 33%;
+	float:left;
+}
+
+/*div.SottoCat:first-of-type{
+	margin-left: 5%;
+}*/
+
+div#wizardconteiner p.sc_p{
+	margin-left: 10%;
+	margin-bottom: 0.5em;
+}
+
+
+div#wizardconteiner p.Gruppi_p {
+	margin-bottom: 0.6em;
+}
+
+p.Asterisco {
+	font-size: 0.8em;
+}
+
+div#wizardconteiner label.sottolabel {
+	width:69%;
+	font-size: 0.8em;
+	line-height: 2em;
+	margin: 0 0 0.5em 0;
+	float: right;
+	text-align: left;
+}
+
+div#wizardconteiner input[type="radio"], div#wizardconteiner input[type="checkbox"] {
+	width: 29%;
+	height: 1.4em;
+	margin: 0.4em 0 0 0;
+}
+
+div#wizardconteiner label[for="descrizioneprodotto"] {
+	margin-top: 0;
+}
+
+div#wizardconteiner textarea {
+	width:50%;
+	height:5em;
+	float: left;
+	max-height: 6em;
+	padding: 1%;
+}
+
+div#wizardconteiner #keyword1, div#wizardconteiner #keyword2 {
+	float: right;
+	margin-right: 15%;
+}
+
+div#wizardconteiner label[for="send"] { /*fif: cambiato da invia a send*/
+	display: none;
+}
+
+div#wizardconteiner #modprofig img{
+	max-height:7em;
+	width: auto;
+}
+
+div#wizardconteiner input#send{
+	padding: 0.2em;
+	width: 14em;
+	line-height: 2.5em;
+	float: none;
+	margin: 1em auto 0;
+	border-radius: 5px;
+}
+
+form > fieldset > p:last-of-type > input#accedi{
+	display:block;
+	background-color: rgb(200,197,188);
+	text-transform: uppercase;
+	margin-top: 0.8em;
+	font-size: 1em;
+
+}
+
+div#wizardconteiner input[type=submit]{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/*input.modprolabel {
+	margin: 0.8em auto 0;
+}*/
+
+div#wizardconteiner input[type="submit"]:hover {
+	background-color: rgb(125,193,189);
+}
+
+img#fotoprofiloattuale {
+	width:20%;
+	height:auto;
+	/*margin: 0.8em 38% 0 40%;*/
+	border-radius: 1.5%;
+	margin-left: 40%;
+}
+
+a[href="#finish"] {
+	display: none !important;
+}
+
+#statement #productcontainer {
+		min-height: 18em;
+}
+
+/*#statement .Riga {
+	float: left;
+}*/
+
+/*#statement p.Riga {
+	line-height:1.8em;
+	font-size: 1.2em;
+}*/
+
+/* Versione Generale di Modifica Prodotti, modificato da Greta - chiedere prima di toccare, thanks - */
+
+#recover{
+	width: 40%;
+	margin: 0 auto;
+}
+
+#nomeAzienda{
+	width: 45%;
+	float:left;
+	margin-right: 2%;
+	word-wrap: break-word;
+}
+
+div#wizardconteiner input[type="text"]{
+	padding: 0 1%;
+	color: #343331;
+}
+
+#wizardconteiner select[name="certificazione"]{
+	color: #343331;
+}
+
+div#wizardconteiner input[type="number"]{
+	color: #343331;
+}
+
+#statement > form > fieldset > p:last-of-type > label{
+	font-size: 0;
+}
+
+div#productcontainer > #titModPro > li{
+	list-style-type: none;
+}
+
+#titModPro{
+	padding: 0;
+	width: 100%;
+}
+
+div#productcontainer > #titModPro > li:first-of-type{
+	width: 46%;
+	margin-left: 0;
+	padding: 0 2%;
+	float:left;
+}
+
+div#productcontainer > #titModPro > li:nth-of-type(2){
+	width: 50%;
+	float:left;
+}
+
+div#productcontainer > #titModPro > li > h2{
+	font-family:  'Source Serif Pro', Arial, serif;
+	font-weight: 400;
+	color:#343331;
+	font-size: 1.3em;
+	margin-bottom: 0.5em;
+}
+
+div#productcontainer > #titModPro > li:first-of-type > h2{
+	text-align: left;
+}
+
+div#productcontainer > #titModPro > li:nth-of-type(2) > h2{
+	text-align: left;
+}
+
+.Prodottosingolo{
+	margin:0;
+	width:100%;
+}
+
+.Prodottosingolo > p{
+	float: left;
+	margin:0;
+	font-family: Roboto, -apple-system, arial;
+	color:#343331;
+	font-weight: 300;
+}
+
+.Prodottosingolo > p:first-of-type{
+	text-align: left;
+	width: 40%;
+	margin-left: 2%;
+}
+
+.Prodottosingolo > p:last-of-type{
+	text-align: right;
+	width: 18%;
+}
+
+#statement input.Riga {
+	height:1.8em;
+	font-size: 0.7em;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
+	border: none;
+	padding: 0.2em;
+	/*margin-left: 5%;*/
+	border-radius: 1em;
+	background-color: #7dc1bd;
+	margin-bottom: 0.3em;
+	color: #343331;
+	text-decoration: underline;
+}
+
+/*#statement input.Riga:first-of-type{
+	margin-left: 10%;
+}
+
+#statement input.Riga:hover {
+	text-decoration: underline;
+}*/
+
+/*
+.Prodottosingolo > p:first-of-type{
+		width: 50%;
+		text-align: left;
+		float:left;
+	}
+
+	.Prodottosingolo > p:nth-of-type(2){
+		width: 50%;
+		text-align: right;
+		float:right;
+	}
+
+*/
+
+	.Prodottosingolo form{
+		width:40%;
+		float:left;
+	}
+
+	.Prodottosingolo form > input[name="modifica"]{
+		width: 45%;
+	}
+
+	.Prodottosingolo form > input[name="elimina"]{
+		width: 45%;
+	}
+
+/* Fine Versione Generale di Modifica Prodotti, modificato da Greta - chiedere prima di toccare, thanks - */
+
+@media only screen and (min-width:1650px){
+
+	#wizardconteiner select[name="certificazione"]{
+		margin-left: 2.5%;
+	}
+}
+	
+}
+
+@media only screen and (min-width:1205px){
+
+	#wizardconteiner select[name="certificazione"]{
+		margin-left: 3%;
+	}
+}
+
+#statement > form#small > fieldset, form#small > fieldset{
+	border: none;
+}
+
+#statement > form#small > fieldset > legend, form#small > fieldset > legend{
+	font-size: 0px;
+	visibility: hidden;
+}
+
+.Errors{
+	display: block;
+	font-size: 0.8em;
+	text-align: center;
+	font-family:Roboto, -apple-system, arial;
+  	font-weight: 300;
+	color: red;
+	width: 92%;
+	margin: 0 4%;
+}
+
+/*inserito da fif*/
+
+@media only screen and (min-width:1150px){
+	.wizard > .content
+	{
+		min-height: 27em;
+	}
+	#wizardconteiner .OnlyDistance{
+		margin-bottom:3em;
+		float:right;
+	}
+
+	.OnlyDistance1{
+		margin-bottom:6.5em;
+		float:right;
+	}
+
+	#wizardconteiner .OnlyDistance2{
+		margin-bottom:1.1em;
+		float:right;
+	}
+}
+
+#wizard section p:first-of-type{
+	/*margin-top:1em;*/
+}
+
+#wizardconteiner input[type="button"] {
+	background-color:rgb(140,168,164);
+	cursor:not-allowed;
+	display:block;
+}
+
+#wizardconteiner input[type="submit"] {
+	background-color:rgb(125, 193, 189);
+	cursor:pointer;
+}
+
+#wizardconteiner input[type="submit"]:hover {
+	background-color: rgb(125,193,189);
+}
+
+#wizardconteiner select[name="certificazione"]{
+  width: 42%;
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  height: 1.8em;
+  resize: vertical;
+  margin: 0;
+}
+
+div#wizardconteiner select{
+	width: 45%;
+	height: 1.8em;
+	padding: 0 1.5%;
+	float: left;
+	margin: 0 2% 0 4%;
+	border: none;
+	display: block;
+}
+
+div#wizardconteiner .BelowDisplay{
+	display:inline-block;
+	width:100%;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+div#wizardconteiner p#regioni{
+	line-height:1.8em;
+	margin:0.7em 2% 0 4%;
+}
+
+div#wizardconteiner label[for=italia]{
+	margin:1em 2% 1em 8%;
+	line-height:1.8em;
+}
+
+#hamburger{
+	display: none;
+}
+
+/* PAGINA REGISTRAZIONE */
+
+div#statement > form#small > fieldset > p:last-of-type > label[for=registrazione]{
+	position: relative;
+	font-size: 0;
+	left: 150%;
+}
+
+div#statement > form#small > fieldset > legend{
+	font-size: 0;
+}
+
+/* FINE PAGINA REGISTRAZIONE */
+
+/* PAGINA Login */
+
+form#small > fieldset#loginField > legend{
+	font-size: 0;
+}
+
+/* FINE PAGINA Login */
+
+/* PAGINA PROFILO NEGOZIO */
+
+div#statement > div#wizardconteiner > form#wizard > fieldset > legend{
+	font-size: 0;
+}
+
+
+/*Versione Smartphone*/
+@media only screen and (max-width: 1023px){
+
+/***** INIZIO Hamburger *****/
+
+#logoSitoG{
+	width: 50%;
+	margin: 0 25%;
+}
+
+div#wizardconteiner > form.wizard > .steps > ul{
+	line-height: 1.5em;
+	min-height: 4.5em;
+	overflow: hidden;
+}
+
+#skip>li {
+  position: absolute;
+  width: 100%;
+  height: 1.4em;
+  margin-top: 0.3em;
+}
+
+#skip>li>a {
+  position: absolute;
+  left: -200em;
+  z-index: 2;
+}
+
+#skip>li>a:focus {
+  left:19.7em;
+  position: absolute;
+}
+
+#hamburger{
+	display: block;
+	font-size: 3em;
+	color:#343331;
+	text-decoration: none;
+	cursor: pointer;
+	float: left;
+	/*padding: 0.8em 0;*/
+	/*margin-top: 2.8%;*/
+	margin-left: 5%;
+}
+
+#mySidenav:hover + #blackanddeker{
+  left:0% !important;
+  transition: background-color 0.5s !important;
+  background-color: rgba(0,0,0,0.5) !important;
+  visibility: visible !important;
+  -webkit-transition: background-color 0.5s !important;
+  -moz-transition: background-color 0.5s !important;
+  -o-transition: background-color 0.5s !important;
+  -ms-transition: background-color 0.5s !important;
+}
+
+#blackanddeker {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: -105%;
+  background-color: rgba(0,0,0,0.0);
+  z-index: 1;
+  visibility: hidden;
+  transition: background-color 0.1s;
+  -webkit-transition: background-color 0.1s;
+  -moz-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  transition: transform 0.4s;
+  -webkit-transition: transform 0.4s;
+  -moz-transition: transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition-delay:0.21s;
+  -webkit-transition-delay: 0.21s;
+  -moz-transition-delay: 0.21s;
+  -o-transition-delay: 0.21s;
+}
+
+/* The side navigation menu */
+.Sidenav {
+    min-width: 220px;
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: -125%;
+    background-color: #eee9d9;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    visibility: hidden;
+	padding-top: 0.5em;
+	width: 25%;
+	height: 100%;
+}
+
+.Sidenav a:visited {
+  color: rgb(125,193,189);
+}
+
+#hamburger:hover + #mySidenav{
+  visibility: visible;
+  left:0;
+}
+
+#mySidenav:hover {
+  visibility: visible;
+  left: 0;
+}
+
+.Sidenav>ul>li>a + ul{
+  display:block !important;
+  padding-left: 6.5%;
+}
+
+/* The navigation menu links */
+.Sidenav a {
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(255,255,255);
+    display: block;
+    transition: 0.3s;
+    -webkit-transition: 0.5s;
+  	-moz-transition: 0.5s;
+  	-o-transition: 0.5s;
+  	-ms-transition: 0.5s;
+}
+
+/* Fa apparire la barra sinistra del menu */
+.ToggleSide{
+  visibility: visible;
+  left:0;
+}
+
+.Show {
+  display:block !important;
+  padding-left: 6.5%;
+}
+
+/* Dropdown Button */
+#mySidenav ul li {
+  border: none;
+  cursor: pointer;
+}
+
+#mySidenav > ul > li{
+	text-align: left;
+	padding: 0 0.5em;
+}
+
+#mySidenav > ul{
+	/*padding: 0 0.6em;*/
+	padding: 0;
+}
+/***** FINE Hamburger *****/
+
+div#statement{
+	width: 100%;
+	margin-bottom: 3em;
+}
+
+div#statement h1{
+	margin:0 0 0.60em 0;
+}
+
+#statement #productcontainer{
+	width: 90%;
+	margin: 0 auto;
+}
+
+div#productcontainer > #titModPro > li:nth-of-type(1){
+	margin-left: 0;
+}
+
+div#wizardconteiner > form#wizard > div > ul > li{
+		font-size: 1em;
+	}
+
+div#wizardconteiner > form#wizard > div > ul > li > a{
+	line-height: 2em;
+}
+
+/*div#wizardconteiner input, div#wizardconteiner label{
+	width: 11em;
+	margin-left: 4%;
+}*/
+
+
+/*div#wizardconteiner input[type="email"], div#wizardconteiner input[type="password"], div#wizardconteiner input[type="pass2"]{
+	margin-left: 0;
+	width: 40%;
+}*/
+
+div#wizardconteiner label[for=descrizione]{
+	width: 100%;
+	margin-bottom: 0.7em;
+}
+
+div#wizardconteiner textarea[id=descrizione]{
+	margin: 0 auto;
+	display: block;
+	margin-left:30%;
+	padding: 1%;
+}
+
+div#wizardconteiner label[for=foto]{
+	margin-bottom: 0.5em;
+}
+
+/*div#wizardconteiner input, div#wizardconteiner label[for=prodotto], div#wizardconteiner input, div#wizardconteiner label[for=certificazione], div#wizardconteiner input, div#wizardconteiner label[for=prezzo]{
+	width: 12em;
+}*/
+
+
+div#wizardconteiner select[id="certificazione"], div#wizardconteiner input[type="text"]{
+	margin-left:0;
+}
+
+div#wizardconteiner input[type="number"]{
+	margin-left: 0;
+}
+
+}
+
+@media only screen and (min-width: 538px){
+	#mySidenav > ul > li > a{
+		font-size: 0.9em;
+	}
+
+	li#attiva{
+		font-size: 0.9em;
+	}
+
+	div#wizardconteiner > form#wizard > div > ul > li{
+		font-size: 0.9em;
+	}
+
+	.wizard > .actions > ul{
+		line-height: 2em;
+	}
+
+	/*.wizard > .content > .body label{
+		width: 12em;
+	}*/
+
+	/*div#wizardconteiner input, div#wizardconteiner label{
+		margin-left: 1.7em;
+		width: 11em;
+	}*/
+
+	div#wizardconteiner input[id="foto"]{
+		min-width: 17em;
+	}
+
+	/*div#wizardconteiner input[type="email"], div#wizardconteiner input[type="password"], div#wizardconteiner input[type="pass2"]{
+		width: 10em;
+		margin-left: 0.5em;
+		float:right;
+	}*/
+
+	div#wizardconteiner label[for=descrizione]{
+		width: 100%;
+		margin-bottom: 0.5em;
+	}
+
+	div#wizardconteiner textarea[id=descrizione]{
+		float: none;
+		width: 52%;
+		display: block;
+		margin: 0 auto;
+		padding: 1%;
+	}
+
+	div#productcontainer > #titModPro > li:nth-of-type(2) > h2{
+		margin-left: 7%;
+	}
+}
+
+
+@media only screen and (min-width: 501px){
+	/*div#wizardconteiner > form#wizard > div > ul > li{
+		font-size: 0em;
+	}*/
+
+	div#wizardconteiner > form#wizard > div > ul > li > a > span.number{
+		font-size: 2em !important;
+	}
+
+	div#wizardconteiner > form#wizard > div > ul > li > a{
+		line-height: 2em;
+		font-size: 0.8em;
+	}
+
+	/*.wizard > .content > .body label{
+		width: 11em;
+		margin: 0;
+	}*/
+
+	div#wizardconteiner input, div#wizardconteiner label{
+		padding: 0;
+		margin: 0 0.4em;
+		/*width: 12em;*/
+	}
+
+	div#wizardconteiner textarea{
+		margin: 0.5em 0.5em 0 6.5em;
+	}
+
+	div#wizardconteiner input[type="text"]{
+		font-size: 0.9em;
+	}
+
+	div#wizardconteiner input[id=foto]{
+		margin-left: 3em;
+	}
+
+	div#wizardconteiner label[for=prodotto], div#wizardconteiner label[for=certificazione], div#wizardconteiner label[for=prezzo]{
+		width: 9em;
+	}
+
+	div#wizardconteiner input[type="text"]{
+		min-width: 12em;
+	}
+
+	#wizardconteiner select[name="certificazione"]{
+		min-width: 11em;
+	}
+
+	div#wizardconteiner input[type="number"]{
+		min-width: 10.5em;
+	}
+
+	#statement input.Riga{
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width:1147px){
+	li[role="tab"] > a:not(.number){
+		height:2em;
+		overflow-y:hidden;
+	}
+	
+	div#wizardconteiner > form.wizard > .steps > ul{
+		min-height:2.5em;
+	}
+	
+	.wizard > .steps .number{
+		font-size:2em !important;
+	}
+
+	li[role="tab"].current > a{
+		color:rgb(125,193,189) !important;
+	}
+	
+	li[role="tab"].disabled > a{
+		color:rgb(238,233,217) !important;
+	}
+
+	li[role="tab"].done > a{
+		color:rgb(140,168,164) !important;
+	}
+
+	li[role="tab"] > a > span{
+		color:#343331;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.OnlyDistance1{
+		margin-bottom:6.5em;
+		float:right;
+	}
+	
+	.wizard > .content
+	{
+		min-height: 40em;
+	}
+	#wizardconteiner .OnlyDistance{
+		margin-bottom:6em;
+		float:right;
+	}
+
+	div#wizardconteiner > form#wizard > div > ul > li > a{
+		font-size: 0.6em;
+	}
+
+	div#wizardconteiner input, div#wizardconteiner label{
+		width: 92%;
+		text-align: center;
+		margin: 0 4%;
+	}
+
+	/* Campo email-password fino a 700px */
+	div#wizardconteiner input[type="email"], div#wizardconteiner input[type="password"], div#wizardconteiner input[type="pass2"]{
+		width: 92%;
+		margin-top: 0.3em;
+		padding: 0;
+	}
+
+	div#wizardconteiner label[for="prodotto"]{
+		margin-top: 0.5em;
+	}
+
+	div#wizardconteiner label[for="prodotto"] div#wizardconteiner label[for="certificazione"], div#wizardconteiner label[for="prezzo"]{
+		width: 92%;
+		text-align: center;
+	}
+
+	div#wizardconteiner select[id="certificazione"], div#wizardconteiner input[type="text"]{
+		text-align: center;
+		width: 92%;
+		margin: 0.3em 4% 0;
+	}
+
+	div#wizardconteiner input[type="number"]{
+		width: 50%;
+		margin: 0 22.5%;
+	}
+
+	div#wizardconteiner label[for="nomenegozio"]{
+		float:left;
+		text-align: unset;
+		width: 30%;
+	}
+
+	#wizard section p:first-of-type{
+		/*margin-top: 0.5em;*/
+	}
+
+	div#wizardconteiner input#italia{
+		float:left;
+		margin-top: 0;
+	}
+
+	div#wizardconteiner label#italia_label{
+		float:right;
+		margin: 0 36% 0 0;
+		width: 30%;
+	}
+
+	/*div#wizardconteiner p.Asterisco{
+		margin: 0;
+	}*/
+
+	div#wizardconteiner .BelowDisplay{
+		margin-bottom: 0;
+	}
+
+	div#wizardconteiner textarea{
+		margin-left: 24%;
+		margin-top: 0.4em;
+	}
+
+	div#wizardconteiner p#regioni{
+		margin-top: 0;
+	}
+
+	div#wizardconteiner textarea[id="descrizione"]{
+		margin-left: 28%;
+		display: unset;
+		padding: 1%;
+	}
+
+}
+
+@media only screen and (min-width:701px){
+	.wizard > .content
+	{
+		min-height: 30em;
+	}
+	#wizardconteiner .OnlyDistance{
+		margin-bottom:4.5em;
+		float:right;
+	}
+	.OnlyDistance1{
+		margin-bottom:6.5em;
+		float:right;
+	}
+
+	#wizardconteiner .OnlyDistance2{
+		margin-bottom:1.1em;
+		float:right;
+	}
+
+	div#productcontainer > #titModPro > li:nth-of-type(2) > h2{
+		margin-left: 10%;
+	}
+
+	/* Edited by Gre, chiedi prima di modificare */
+
+	section.Emailz > fieldset > p > label[for="email"], section.Emailz > fieldset > p > label[for="password"], section.Emailz > fieldset > p > label[for="pass2"]{
+		width: 30%;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+
+	section.Emailz > fieldset > p > input[type="email"], section.Emailz > fieldset > p > input[type="password"]{
+		width:60%;
+		float:right;
+		margin: 0;
+		padding: 0;
+	}
+
+	section.Emailz > fieldset> p > span.Errors{
+		width: 64%;
+		margin-left: 36%;
+	}
+
+	section.Insertix > fieldset > p > span.Errors{
+		width: 68.5%;
+		margin-left: 31.5%;
+		text-align: left;
+		margin-right: 0;
+	}
+
+	/* End Edited by Gre, chiedi prima di modificare */
+
+}

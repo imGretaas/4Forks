@@ -1,0 +1,132 @@
+<ul id="skip">
+  <li>
+    <a href="#statement" tabindex="0" lang="en">Go to the content</a>
+  </li>
+  <li>
+    <a href="#mySidenav" tabindex="0" lang="en">Go to the navigation bar (mobile)</a>
+  </li>
+</ul>
+<a title="Hamburger menu" aria-label="Hamburger menu" href="#hamburger" id="hamburger" onclick="Nav()">&#8801;</a>
+<div id="mySidenav" class="Sidenav">
+  <ul id="menu">
+	<li><a href="vaiaindex.php" id="linkSitoG" title="Torna alla nostra pagina web">
+		<img id="logoSitoG" src="../img/logo.png" alt="logo quattro forchettieri"/>
+		<p id="linkTextG">Vai al sito</p>
+	</a></li>
+    <li><a href="registrazione.php">Registrazione Utenti</a></li>
+    <li id="attiva">Inserimento Prodotto</li>
+    <li><a href="modprodotto.php">Modifica&sol;Elimina prodotto</a></li>
+    <li><a href="profilonegozio.php">Modifica Profilo Negozio</a></li>
+    <li><a href="logout.php" lang="en">Log out</a></li>
+  </ul>
+<p>&#42;Campo Obbligatorio</p>
+</div>
+<div id="blackanddeker" onclick="Nav()"></div>
+<div id="statement">
+  <h1>Inserimento Prodotto</h1>
+  <?php
+    echo $message;
+  ?>
+  <div id="wizardconteiner">
+    <form id="wizard" action="pro_out.php" method="post" enctype="multipart/form-data">
+      <h2>Nome e Prezzo</h2>
+      <section>
+        <fieldset>
+          <legend>Prodotto</legend>
+		      <p>
+      			<label for="prodotto">Nome Prodotto<span class="Asterix">&#42;</span></label>
+				<span class="OnlyDistance"></span>
+      			<input type="text" id="prodotto" name="prodotto" onblur="checkProductName();" placeholder="Nome del Prodotto" <?php str_replace("0", " ", stampavalue('nome', $dati)); ?> required="required" />
+
+      		</p>
+		      <div class="Clearer"></div>
+          <p>
+      			<label for="certificazione">Certificazioni<span class="Asterix">&#42;</span><sup>(0)</sup></label>
+      			<span class="OnlyDistance"></span>
+				<select onblur="checkCertification();" name="certificazione" id="certificazione">
+              <option value="empty" disabled = "disabled" selected = "selected">Seleziona l'oggetto</option>
+      				<option value="bio">BIO</option>
+      				<option value="stg">STG</option>
+      				<option value="igp">IGP</option>
+      				<option value="dop">DOP</option>
+      				<option value="doc">DOC</option>
+      				<option value="docg">DOCG</option>
+      				<option value="slowfood">SLOW FOOD</option>
+      			</select>
+      		</p>
+		      <div class="Clearer"></div>
+          <p>
+			      <label for="prezzo">Prezzo<span class="Asterix">&#42;</span><sup>(1)</sup></label>
+				  <span class="OnlyDistance1"></span>
+			      <input type="number" id="prezzo" onblur="checkPrice();" min="0" max="300" step="0.01" name="prezzo" <?php stampavalue('prezzo', $dati); ?> required />
+          </p>
+		      <div class="Clearer"></div>
+          <p class="Asterisco"><sup>(0)</sup>Certificazioni ammesse: BIO, STG, IGP, DOP, DOC, DOCG, SLOW FOOD<br><sup>(1)</sup>I prezzi sono in Euro (&euro;)<br><sup>(1)</sup>Utilizzare la &#34;,&#34; come separatore decimale</p>
+          <?php
+          stampaerrore('nome');
+          stampaerrore('certificazione');
+          stampaerrore('prezzo');
+          ?>
+        </fieldset>
+      </section>
+
+      <h2>Categoria</h2>
+      <section>
+        <fieldset>
+          <legend>Categoria</legend>
+          <?php echo $sottocategorie; ?>
+          <div class="Clearer"></div>
+          <p class="Asterisco"><sup>(2)</sup>Un prodotto deve essere inserito in una sola categoria</p>
+        </fieldset>
+      </section>
+      <h2>Area di Vendita</h2>
+      <section>
+        <fieldset>
+          <legend>Regioni</legend>
+          <p id="regioni" class="Gruppi_p">Regioni:<sup>(3)</sup></p>
+		      <p>
+			      <input id="italia" type="checkbox" name="regioni[]" value="italia"  <?php if($dati['italia'] == 'italia'){echo 'checked="checked"'; } ?> />
+			      <label id="italia_label" for="italia">Tutta Italia</label>
+		      </p>
+            <div class="Clearer"></div>
+            <?php echo $pro ?>
+  		      <p class="BelowDisplay">
+  			    <label for="province">Altre Province di Vendita<sup>(4)</sup></label>
+  			    <input type="text" id="province" name="province" onkeyup="toUpper();" onblur="checkProvinces();" placeholder="Es: BL,PD,VI" <?php stampavalue('prov', $dati); ?> />
+  			    <span class="OnlyDistance"></span>
+		      </p>
+          <div class="Clearer"></div>
+          <?php stampaerrore('prov'); ?>
+          <p class="Asterisco"><sup>(3)</sup> Cliccando su una determinata regione ci si impegna a vendere il prodotto in tutte le province della relativa regione<br><sup>(4)</sup> Scrivere SOLO le province non comprese nelle regioni di vendita e nel formato BL, PD, BZ<br />
+          Almeno una Regione o una Provincia deve essere inserita
+          </p>
+        </fieldset>
+      </section>
+
+      <h2>Dettagli</h2>
+      <section>
+        <fieldset>
+          <legend>Descrizione</legend>
+		      <p>
+  			    <label for="descrizioneprodotto">Descrizione del prodotto</label>
+  			    <textarea id="descrizioneprodotto" name="descrizionepro" onblur="checkDescription1();"><?php if(array_key_exists('desc', $dati)){ echo $dati['desc'];} ?></textarea>
+  			    <span class="OnlyDistance1"></span>
+		      </p>
+          <div class="Clearer"></div>
+		    <p>
+    			<label for="foto">Foto del Prodotto<span class="Asterix">&#42;</span></label>
+    			<input id="foto" type="file" name="foto" onchange="checkFile();" accept=".jpeg,.jpg,.png,.bmp,.BMP,.PNG,.JPG,.JPEG" required="required">
+    			<span class="OnlyDistance"></span>
+		    </p>
+		    <div class="Clearer"></div>
+		    <p>
+  			  <label for="send">Invia</label>
+  			  <input onclick="MiaFunzione()" id="send" type="submit" name="inserisci" onmouseout="checkForm1();" onmouseover="checkForm6();" onfocusout="checkForm1();" onfocus="checkForm6();" value="Aggiungi Prodotto">
+  			  <span class="OnlyDistance"></span>
+		    </p>
+        <?php stampaerrore('desc'); ?>
+        </fieldset>
+      </section>
+    </form>
+  </div>
+</div>

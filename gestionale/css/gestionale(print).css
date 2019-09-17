@@ -1,0 +1,346 @@
+section{
+	display:block !important;
+}
+
+ul#menu > li:first-of-type{
+	display:none;
+}
+
+.Errors{
+	display:none;
+}
+
+.actions{
+	display:none;
+}
+
+.steps{
+	display:none;
+}
+
+.SectionTitle{
+	display:none;
+}
+
+.Errors{
+	display:none;
+}
+
+#skip{
+	display: none;
+}
+
+#hamburger{
+	display: none;
+}
+
+#mySidenav > ul > li:first-of-type{
+	margin-left: 2%;
+}
+
+#mySidenav > ul > li{
+	float: left;
+	width: 18%;
+	list-style-type: none;
+	margin-right: 2%;
+}
+
+#mySidenav > ul > li:last-of-type{
+	margin-right: 0;
+}
+
+#mySidenav > ul > li > a{
+	font-size: 0.7em;
+	text-decoration: none;
+}
+
+#mySidenav > ul > li#attiva{
+	font-size: 0.9em;
+	text-decoration: underline;
+} 
+
+#mySidenav > p{
+	font-size: 0.7em;
+	color: red;
+}
+
+#statement > h1{
+	clear: both;
+	font-size: 1.2em;
+	font-family: 'Source Serif Pro', Arial, serif;
+}
+
+#wizardconteiner > #wizard > section > fieldset > legend{
+	font-size: 0 !important;
+}
+
+div#wizardconteiner label{
+	float:left;
+	max-width: 30%;
+	display: inline-block;
+}
+
+div#wizardconteiner input[type="text"]{
+	float:left;
+	width: 40%;
+	margin-left: 20%;
+	text-transform: capitalize;
+}
+
+div#wizardconteiner input{
+	padding: 0 2%;
+}
+
+
+fieldset{
+	margin-bottom:1.5em;
+	border:none;
+}
+
+body > div > form > div > p{
+	text-align:right;
+	font-size:0.8em;
+	margin:1%;
+	font-weight:500;
+}
+
+body > div > form > div > section > fieldset > p{
+	display:block;
+}
+
+label{
+	float:left;
+	width:30%;
+}
+
+body > div > form > div > section > fieldset > p > input{
+	width:55%;
+	border-radius: 0.1em !important;
+	height:1.4em !important;
+}
+
+body > div > form > div > section:last-of-type > fieldset > p:last-of-type > input{
+	margin:5em 30% 0 30%;
+	text-align:center;
+	padding: 1%;
+	border-radius: 0.2em;
+	text-decoration: none;
+	font-size:1em;
+	font-family: Roboto, -apple-system, arial;
+	height:3em !important;
+}
+
+legend{
+	font-size:2em;
+	font-family:'Roboto', arial, sans-serif;
+}
+
+body > div > form > div > section:last-of-type > fieldset > p:last-of-type > label{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}
+
+/* -------------- Modifica Profilo Negozio ---------------- */
+
+div#wizardconteiner textarea{
+	width:50%;
+	margin-left: 10%;
+	height: 3em;
+}
+
+div#wizardconteiner label[for="send"]{
+	font-size: 0;
+}
+
+div#wizardconteiner input#send{
+	margin-left: 40%;
+}
+
+.wizard > .content > .title, .tabcontrol > .content > .title{
+	font-size: 0;
+}
+
+/* -------------- Registrazione Utenti ---------------- */
+
+form[action="regge.php"] img#logo{
+	width: 20%;
+	margin-left: 40%;
+}
+
+div#statement > form#small > fieldset > p#ottododici, span.Asterix{
+	color: red;
+}
+
+form#small > fieldset > p{
+	text-align: center;
+}
+
+form#small label{
+	padding-left: 18%;
+}
+
+form#small input{
+	margin-right: 13%;
+}
+
+div#statement > form#small > fieldset > p:last-of-type > label[for="registrazione"]{
+	font-size: 0;
+}
+
+form#small input[type="submit"]{
+	margin-left: 10%;
+}
+/* -------------- Modifica/Elimina Prodotto ---------------- */
+
+#titModPro{
+	width: 100%;
+}
+
+#titModPro > li{
+	list-style-type: none;
+}
+
+#titModPro > li > h2{
+	float:left;
+}
+
+#titModPro > li > h2:first-of-type{
+	width:35%;
+	margin-left: 15%
+}
+
+#titModPro > li > h2:last-of-type{
+	margin-left: 10%;
+}
+
+#statement div.Prodottosingolo{
+	float:left;
+	width: 100%;
+}
+
+#statement div:nth-of-type(2n-1) p.Riga:first-of-type, #statement div:nth-of-type(2n-1) p.Riga:nth-of-type(2), #statement div.Prodottosingolo > form{
+	float:left;
+}
+
+#statement div:nth-of-type(2n-1) p.Riga:first-of-type{
+	width: 50%;
+}
+
+#statement div:nth-of-type(2n-1) p.Riga:nth-of-type(2){
+	width: 20%;
+	text-align: right;
+	margin-right: 5%;
+}
+
+#statement #succconteiner{
+	width: 100%;
+	text-align: center;
+}
+
+#statement #actualpage, #statement a.Successive{
+	float: left;
+	width: 3%;
+}
+
+div#wizardconteiner input[type="email"], div#wizardconteiner input[type="password"], div#wizardconteiner input[type="pass2"]{
+	margin-left: 20%;
+}
+
+/* -------------- sicuro.php ---------------- */
+
+#wizardconteiner select[name="certificazione"]{
+	margin-left: 30%;
+}
+
+div#wizardconteiner input[type="number"]{
+	margin-left: 28%;
+}
+
+/* ----- checkbox categorie ----- */
+
+div.SottoCat{
+	width: 33%;
+	float:left;
+}
+
+div#wizardconteiner input[type="radio"]{
+	float:left;
+	width:30%;
+}
+
+div#wizardconteiner label.sottolabel{
+	float:right;
+	width:70%;
+	clear:both;
+	margin-right: 25%;
+}
+
+#wizard section p:first-of-type{
+	clear:both;
+	width: 100%;
+}
+
+/* ----- checkbox regioni ----- */
+
+div.Gruppo{
+	width: 23%;
+	float: left;
+	margin-bottom: 1em;
+}
+
+div#wizardconteiner input[type="checkbox"]{
+	float: left;
+	width:30%;
+}
+
+div#wizardconteiner .BelowDisplay{
+	clear:both;
+	width: 100%;
+}
+
+.Clearer{
+	clear:both;
+}
+
+div#wizardconteiner label[for="province"]{
+	width: 40%;
+}
+
+div#wizardconteiner p.Asterisco{
+	clear:both;
+}
+
+div#wizardconteiner p#regioni{
+	float:left;
+	width:30%;
+}
+
+div#wizardconteiner input#italia{
+	float:left;
+	width:20%;
+}
+
+div#wizardconteiner label#italia_label{
+	float:left;
+	width: 50%;
+}
+
+/* -------------- logout ---------------- */
+
+img#logo{
+	width: 30%;
+	margin-left: 35%;
+}
+
+form#small > fieldset#loginField > p:last-of-type > label[for="accedi"]{
+	font-size: 0;
+}
+
+form#small h1{
+	font-size: 0;
+}
+
+form#small a:last-of-type{
+	margin-left: 37%;
+}

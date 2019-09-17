@@ -1,0 +1,59 @@
+<ul id="skip">
+  <li>
+    <a href="#statement" tabindex="0" lang="en">Go to the content</a>
+  </li>
+  <li>
+    <a href="#mySidenav" tabindex="0" lang="en">Go to the navigation bar (mobile)</a>
+  </li>
+</ul>
+<a title="Hamburger menu" aria-label="Hamburger menu" href="#hamburger" id="hamburger" onclick="Nav()">&#8801;</a>
+<div id="mySidenav" class="Sidenav">
+  <ul id="menu">
+	<li><a href="vaiaindex.php" id="linkSitoG" title="Torna alla nostra pagina web">
+		<img id="logoSitoG" src="../img/logo.png" alt="logo quattro forchettieri"/>
+		<p id="linkTextG">Vai al sito</p>
+	</a></li>
+    <li id="attiva">Registrazione Utenti</li>
+    <li><a href="prodotto.php">Inserimento Prodotto</a></li>
+    <li><a href="modprodotto.php">Modifica&sol;Elimina prodotto</a></li>
+    <li><a href="profilonegozio.php">Modifica Profilo Negozio</a></li>
+    <li><a href="logout.php" lang="en">Log out</a></li>
+  </ul>
+<p>&#42;Campo Obbligatorio</p>
+</div>
+<div id="blackanddeker" onclick="Nav()"></div>
+<div id="statement">
+  <form method="post" id="small" action="regge.php">
+    <fieldset>
+      <legend>Registrazione</legend>
+    <img id="logo" src="img/logo.png" title="" alt="">
+    <?php
+      echo $message;
+    ?>
+    <div class="Line"></div>
+    <h1>Registra un nuovo Venditore</h1>
+    <p id="ottododici">La <span lang="en">password</span> deve essere compresa tra 8 e 12 caratteri</p>
+    <p>
+      <label for="email"><span lang="en">Email</span> del Venditore<span class="Asterix">&#42;</span></label>
+      <input id="email" type="email" onblur="checkEmail();" name="email" placeholder="Email" autofocus />
+	  <span class="OnlyDistance4"></span>
+    </p>
+    <p>
+      <label for="password"><span lang="en">Password</span> di accesso<span class="Asterix">&#42;</span></label>
+      <input id ="password" onblur="checkPw();" type="password" name="password" placeholder="Password" />
+	  <span class="OnlyDistance4"></span>
+    </p>
+    <p>
+      <label for="azienda">Nome dell&#39;Azienda<span class="Asterix">&#42;</span></label>
+      <input id ="azienda" onblur="checkAgency();" type="text" name="azienda" placeholder="Azienda" />
+	  <span class="OnlyDistance4"></span>
+    </p>
+    <div class="Line"></div>
+    <p>
+      <label for="registrazione">Registra</label>
+      <input type="submit" id="registrazione" onmouseover="checkFormLIn();" onmouseout="checkFormLOut();" onfocusin="checkFormLIn();" onfocusout="checkFormLOut();" name="invio" value="Registra" />
+	  <span class="OnlyDistance1"></span>
+    </p>
+    </fieldset>
+  </form>
+</div>

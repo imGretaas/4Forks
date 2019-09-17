@@ -1,0 +1,134 @@
+<ul id="skip">
+  <li>
+    <a href="#statement" tabindex="0" lang="en">Go to the content</a>
+  </li>
+  <li>
+    <a href="#mySidenav" tabindex="0" lang="en">Go to the navigation bar (mobile)</a>
+  </li>
+</ul>
+<a title="Hamburger menu" aria-label="Hamburger menu" href="#hamburger" id="hamburger" onclick="Nav()">&#8801;</a>
+<div id="mySidenav" class="Sidenav">
+  <ul id="menu">
+	<li><a href="vaiaindex.php" id="linkSitoG" title="Torna alla nostra pagina web">
+		<img id="logoSitoG" src="../img/logo.png" alt="logo quattro forchettieri"/>
+		<p id="linkTextG">Vai al sito</p>
+	</a></li>
+    <li><a href="registrazione.php">Registrazione Utenti</a></li>
+    <li><a href="prodotto.php">Inserimento Prodotto</a></li>
+    <li><a href="modprodotto.php">Modifica&sol;Elimina prodotto</a></li>
+    <li id="attiva">Modifica Profilo Negozio</li>
+    <li><a href="logout.php" lang="en">Log out</a></li>
+  </ul>
+<p>&#42;Campo Obbligatorio</p>
+</div>
+<div id="blackanddeker" onclick="Nav()"></div>
+<div id="statement">
+  <h1>La Tua Azienda</h1>
+  <div id="wizardconteiner">
+    <form id="wizard" action="negozio_out.php" method="post" enctype="multipart/form-data">
+      <h2>Dati di Accesso</h2>
+      <section>
+        <fieldset>
+          <legend>Profilo Negozio</legend>
+		      <p>
+  			    <label for="email">Cambia <span lang="en">Email<span class="Asterix">&#42;</span><sup>(0)</sup></span></label>
+				<span class="OnlyDistance"></span>
+  			    <input type="email" id="email" onblur="checkEmail();" name="email" placeholder="Nuova Email?" maxlength="30" autocomplete="off" />
+		      </p>
+		      <div class="Clearer"></div>
+          <p>
+      			<label for="password">Cambia <span lang="en">Password</span><span class="Asterix">&#42;</span><sup>(1)</sup></label>
+				<span class="OnlyDistance"></span>
+      			<input type="password" id="password" onblur="checkPw();" name="password" placeholder="Nuova Password?" maxlength="12" autocomplete="off" />
+		      </p>
+          <div class="Clearer"></div>
+		      <p>
+      			<label for="confirm-password">Conferma <span lang="en">Password</span><span class="Asterix">&#42;</span><sup>(1)</sup></label>
+				<span class="OnlyDistance"></span>
+      			<input type="password" id="confirm-password" onblur="checkCPw();" placeholder="Conferma password" onkeyup="checkCPw();" name="pass2" maxlength="12" autocomplete="off" />
+    		  </p>
+          <div class="Clearer"></div>
+          <p class="Asterisco">Se non si vuole modificare mail o <span lang="en">password</span> passare direttamente alla prossima scheda<br /><sup>(0)</sup>Per modificare solo la propria <span lang="en">email</span> reinserire in entrambi i campi la <span lang="en">password</span> attuale<br /><sup>(1)</sup>Per modificare solo la <span lang="en">password</span> reinserire l'indirizzo <span lang="en">email</span> attuale nel relativo campo<br /><sup>(1)</sup>Massimo 12 Caratteri</p>
+        <?php erroremodifica('email'); ?>
+        </fieldset>
+      </section>
+      <h2>Azienda</h2>
+      <section>
+        <fieldset>
+          <legend>Descrizione Azienda</legend>
+          <p id="nomenegozio">Nome Azienda</p>
+          <p><?php echo $_SESSION['negozio'] ?></p>
+          <div class="Clearer bottom2"></div>
+		    <p>
+    			<label for="descrizione">Descrizione della Azienda<sup>(2)</sup></label>
+    			<textarea id="descrizione" placeholder="Descrizione prodotto max 300 caratteri..." onblur="checkDescription();" name="descrizioneazienda"><?php if(!empty($dati) && !empty($dati['desc'])){ echo $dati['desc']; }?></textarea>
+    			<span class="OnlyDistance1"></span>
+    		</p>
+          <div class="Clearer"></div>
+          <p class="Asterisco"><sup>(2)</sup>Massimo 300 caratteri</p>
+          <?php erroremodifica('desc'); ?>
+        </fieldset>
+      </section>
+      <h2>Sede Principale</h2>
+      <section>
+      <fieldset>
+      <legend>Recapito</legend>
+		  <p>
+				<label for="citta">Citt&agrave;<span class="Asterix">&#42;</span></label>
+				<input type="text" id="citta" onblur="checkCity();" name="citta" placeholder="Sede" maxlength="30" <?php stampavalue('citta',$dati) ?> required="required" />
+				<span class="OnlyDistance"></span>
+      </p>
+		  <div class="Clearer"></div>
+    	<p>
+				<label for="cap">CAP<span class="Asterix">&#42;</span></label>
+				<input type="text" id="cap" onblur="checkCAP1();" name="cap" placeholder="CAP" maxlength="10" <?php stampavalue('cap',$dati) ?> required="required" />
+				<span class="OnlyDistance"></span>
+	    </p>
+		  <div class="Clrequiredearer"></div>
+      <p>
+				<label for="address">Indirizzo<span class="Asterix">&#42;</span></label>
+				<input type="text" id="address" onblur="checkAddress1();" name="via" placeholder="Indirizzo" maxlength="30" <?php stampavalue('via',$dati) ?> required="required" />
+				<span class="OnlyDistance"></span>
+      </p>
+		  <div class="Clearer"></div>
+      <p>
+				<label for="telephone">Numero di Telefono</label>
+				<input type="text" id="telephone" onblur="checkTel();" name="tel" maxlength="30" placeholder="+39 349 XXXXXXXX" <?php stampavalue('tel',$dati) ?> />
+				<span class="OnlyDistance"></span>
+      </p>
+		  <div class="Clearer"></div>
+      <?php
+      erroremodifica('citta');
+      erroremodifica('cap');
+      erroremodifica('via');
+      erroremodifica('tel');
+      ?>
+      </fieldset>
+      </section>
+
+      <h2>Logo</h2>
+      <section>
+        <fieldset>
+        <legend>Logo</legend>
+		    <p>
+    			<label for="foto">Logo dell&#39;Azienda<span class="Asterix">&#42;</span></label>
+    			<input id="foto" onchange="checkFile();" type="file" name="logo" value="inserisci" accept=".jpeg,.jpg,.png,.bmp,.BMP,.PNG,.JPG,.JPEG" required="required" />
+    			<span class="OnlyDistance"></span>
+		    </p>
+        <div class="Clearer"></div>
+        <?php
+        if($file != "") {
+            echo $monconesx.$file.$monconedx;
+        }
+        ?>
+        <div class="Clearer"></div>
+        <p>
+    			<label for="send">Invia</label>
+    			<input id="send" onclick="ControlloModPro()" onmouseout="checkForm1();" onmouseover="checkForm5();" type="submit" name="modifica" value="Modifica" />
+    			<span class="OnlyDistance"></span>
+		    </p>
+        </fieldset>
+	    </section>
+    </form>
+  </div>
+</div>

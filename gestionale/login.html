@@ -1,0 +1,29 @@
+<form method="post" id="small" action="auth.php"> <!--auth.php-->
+  <fieldset id="loginField">
+    <legend>Login</legend>
+    <a href="../index.php" title="Torna al sito"><img id="logo" src="img/logo.png" alt="logo del sito"></a>
+    <h1 class="Dispnone">Logo</h1>
+    <?php if($err == TRUE) {
+     echo '<p class="err"><span lang="en">Email</span> o <span lang="en">Password</span> errati&excl;</p>';
+    }
+    ?>
+    <div class="Line"></div>
+    <p>
+	    <label for="email">Inserisci la tua <span lang="en">Email</span></label>
+	    <input id="email" onblur="checkEmail();" type="email" name="nome" placeholder="La tua email" autofocus>
+		<span class="OnlyDistance4"></span>
+	</p>
+	<p>
+	    <label for="password">Inserisci la tua <span lang="en">Password</span></label>
+	    <input id ="password" onblur="checkPw();" type="password" name="password" placeholder="Password">
+		<span class="OnlyDistance4"></span>
+	</p>
+    <div class="Line"></div>
+    <p>
+	    <label for="accedi">Accedi</label>
+	    <input id="accedi" onmouseover="checkFormINLGC();" onmouseout="checkFormOUTLGC();" onfocusin="checkFormINLGC();" onfocusout="checkFormOUTLGC();" type="submit" name="invio" value="Accedi"/>
+		<span class="OnlyDistance4"></span>
+	</p>
+    <a href="recoverpass.php"><span lang="en">Password</span> Dimenticata&quest;</a>
+  </fieldset>
+</form>

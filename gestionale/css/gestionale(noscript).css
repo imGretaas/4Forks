@@ -1,0 +1,18 @@
+div#wizardconteiner input#send{
+	margin-left: 38%;
+	margin-bottom: 1em;
+}
+
+fieldset{
+	background-color: #eee9d9;
+	padding: 2%;
+	border-radius: 6px;
+}
+
+form#small{
+	border: none;
+}
+
+section:last-of-type > fieldset{
+	margin-bottom: 2em;
+}

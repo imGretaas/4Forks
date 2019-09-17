@@ -1,0 +1,173 @@
+
+<!-- FORM INSERISCI NEGOZIO -->
+<form method="post" action="#" enctype='multipart/form-data'>
+  <label>Nome Negozio</label><input type="text" name="negozio" placeholder="Nome del Negozio">
+  <label><span lang="en">Email</span></label><input type="email" name="email" placeholder="La tua email per gli ordini">
+  <p>  
+    <textarea name="descrizioneN" rows="4" cols="40"></textarea>
+  </p>  
+  <p>
+    <label>Logo del negozio</label><input type="file" name="logo" value="Inserisci">
+    <input type="submit" name="inserisci" value="Crea">
+  </p>
+</form>
+
+<!-- FORM INSERISCI Prodotto -->
+<form method="post" action="#" enctype='multipart/form-data'>
+  <p>
+    <label>Nome Prodotto</label>
+    <input type="text" name="prodotto" placeholder="Nome del Prodotto">
+  </p>
+  <p>
+    <label>Certificazioni</label>
+    <input type="text" name="certi" placeholder="La certificazione del Prodotto">
+  </p>
+  <p>
+    <label>Prezzo</label>
+    <input type="number" min="0" max="100" value="0" step="0.01" name="prezzo" />
+  </p>
+  <!--
+  FARE DA PHP
+  <label>Categoria</label>
+  <input type="radio" name="cat" value="Pane" />
+  -->
+  <p>
+    <textarea name="descrizionepro" rows="4" cols="40"></textarea>
+  </p>
+  <p>
+    <label>Foto del Prodotto</label>
+    <input type="file" name="foto" value="inserisci">
+  </p>
+  <p>  
+    <input type="submit" name="inserisci" value="Aggiungi questo Prodotto">
+  </p>
+</form>
+
+<!-- FORM INSERISCI Utente -->
+<form method="post" action="#">
+  <p>
+    <label><span lang="en">Email</span></label>
+    <input type="email" name="nome" placeholder="La tua email">
+  </p>
+  <p>  
+    <label><span lang="en">Password</span></label>
+    <input type="password" name="password" placeholder="Password">
+  </p>
+  <p>
+    <input type="submit" name="invio" value="Registra">
+  </p> 
+</form>
+
+<!-- FORM Registra Utente -->
+<form method="post" action="#">
+  <p>
+    <label>Nome</label>
+    <input type="text" name="nome" placeholder="Il tuo nome">
+  </p>
+  <p>
+    <label>Cognome</label>
+    <input type="text" name="nome" placeholder="Il tuo cognome">
+  </p>
+  <p>Inserisci la tua data di nascita: </p>
+  <p>
+    <label>Giorno</label>
+    <input type="number" name="giorno" value="1" min="1" max="31">
+  </p>
+    <p>
+    <label>Mese</label>
+    <input type="number" name="mese" value="1" min="1" max="12">
+  </p>
+  <p>
+    <label>Anno</label>
+    <input type="number" name="anno" value="2000" min="1900" max="2018">
+  </p>
+  <p>  
+    <label><span lang="en">Email</span></label>
+    <input type="email" name="nome" placeholder="La tua email">
+  </p>
+  <p>
+    <label><span lang="en">Password</span></label>
+    <input type="password" name="password" placeholder="Password">
+  </p>
+  <p>Il tuo indirizzo di spedizione: </p>
+  <p>
+    <label>Citt&agrave;</label><input type="text" name="citta" placeholder="La tua Cittá">
+    <label>Via</label><input type="text" name="via" placeholder="Indirizzo e numero civico">
+  </p>
+  <p>  
+    <label>CAP</label>
+    <input type="text" name="cap" placeholder="Il CAP della tua cità">
+  </p>
+  <p>
+    <label>Provincia (Sigla)</label>
+    <input type="text" name="provincia" placeholder="la sigla della tua Provincia">
+  </p>
+  <p>
+    <label><span lang="en">Newsletter</span></label>
+    <input type="checkbox" name="news" value="Sí, voglio, esigo e pretendo la Newsletter">
+  </p>
+  <p>
+    <label>Informativa <span lang="en">Privacy</span></label>
+    <input type="checkbox" name="privacy" value="Accetto termini e condizioni">
+  </p>
+  <p>  
+    <input type="submit" name="invio" value="Registrati">
+  </p>
+</form>
+
+<!-- FORM Vendita non loggato -->
+<form method="post" action="#">
+  <p>
+    <label>Nome</label>
+    <input type="text" name="nome" placeholder="Il tuo nome">
+  </p>
+  <p>  
+    <label>Cognome</label>
+    <input type="text" name="nome" placeholder="Il tuo cognome">
+  </p>
+  <p>Inserisci la tua data di nascita: </p>
+  <p>
+    <label>Giorno</label>
+    <input type="number" name="giorno" value="1" min="1" max="31">
+  </p>
+  <p>
+    <label>Mese</label>
+    <input type="number" name="mese" value="1" min="1" max="12">
+  </p>
+  <p>
+    <label>Anno</label>
+    <input type="number" name="anno" value="2000" min="1900" max="2018">
+  </p>
+  <p>
+    <label><span lang="en">Email</span></label>
+    <input type="email" name="nome" placeholder="La tua email">
+  </p>
+  <p>Il tuo indirizzo di spedizione: </p>
+  <p>
+    <label>Citt&agrave;</label>
+    <input type="text" name="citta" placeholder="La tua Cittá">
+  </p>
+  <p>
+    <label>Via</label>
+    <input type="text" name="via" placeholder="Indirizzo e numero civico">
+  </p>
+  <p>  
+    <label>CAP</label>
+    <input type="text" name="cap" placeholder="Il CAP della tua cittá">
+  </p>
+  <p>
+    <label>Provincia (Sigla)</label>
+    <input type="text" name="provincia" placeholder="la sigla della tua Provincia">
+  </p>  
+  <p>
+    <label><span lang="en">Newsletter</span></label>
+    <input type="checkbox" name="news" value="Sì, voglio, esigo e pretendo la Newsletter">
+  </p>
+  <p>
+    <label>Informativa <span lang="en">Privacy</span></label>
+    <input type="checkbox" name="privacy" value="Accetto termini e condizioni">
+  </p>
+  <p>
+    <input type="submit" name="invio" value="Registrati">
+  </p>
+</form>

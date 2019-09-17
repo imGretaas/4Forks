@@ -1,0 +1,141 @@
+<ul id="skip">
+  <li>
+    <a href="#wizardconteiner" tabindex="0" lang="en">Go to the content</a>
+  </li>
+  <li>
+    <a href="#mySidenav" tabindex="0" lang="en">Go to the navigation bar (mobile)</a>
+  </li>
+</ul>
+<a title="Hamburger menu" aria-label="Hamburger menu" href="#hamburger" id="hamburger" onclick="Nav()">&#8801;</a>
+<div id="mySidenav" class="Sidenav">
+  <ul id="menu">
+	<li><a href="vaiaindex.php" id="linkSitoG" title="Torna alla nostra pagina web">
+		<img id="logoSitoG" src="../img/logo.png" alt="logo quattro forchettieri"/>
+		<p id="linkTextG">Vai al sito</p>
+	</a></li>
+    <li><a href="registrazione.php">Registrazione Utenti</a></li>
+    <li><a href="prodotto.php">Inserimento Prodotto</a></li>
+    <li id="attiva"><a id="modpro" href="modprodotto.php">Modifica&sol;Elimina prodotto</a></li>
+    <li><a href="profilonegozio.php">Modifica Profilo Negozio</a></li>
+    <li><a href="logout.php" lang="en">Log out</a></li>
+  </ul>
+<p>&#42;Campo Obbligatorio</p>
+</div>
+<div id="blackanddeker" onclick="Nav()"></div>
+<div id="statement">
+  <h1>Modifica Prodotto</h1>
+  <?php
+  if($message != "") {
+    echo '<p class="err">'.$message.'</p>';
+  }
+  ?>
+  <div id="wizardconteiner">
+    <form id="wizard" action="modifica.php" method="post" enctype="multipart/form-data">
+      <h2>Nome e Prezzo</h2>
+      <section>
+        <fieldset>
+          <legend>Nome Prodotto</legend>
+  		    <p>
+      			<label for="prodotto">Nome Prodotto<span class="Asterix">&#42;</span></label>
+      			<input type="text" id="prodotto" onblur="checkProductName();" name="prodotto" placeholder="Nome del Prodotto" <?php stampavalue('nome', $dati); ?> required="required" />
+      			<span class="OnlyDistance"></span>
+          	</p>
+      		<div class="Clearer"></div>
+          	<p>
+      			<label for="certificazione">Certificazioni<span class="Asterix">&#42;</span><sup>(0)</sup></label>
+      			<select onblur="checkCertification();" name="certificazione" id="certificazione">
+              <option value="empty" disabled = "disabled" selected = "selected">Seleziona l'oggetto</option>
+      				<option value="bio">BIO</option>
+      				<option value="stg">STG</option>
+      				<option value="igp">IGP</option>
+      				<option value="dop">DOP</option>
+      				<option value="doc">DOC</option>
+      				<option value="docg">DOCG</option>
+      				<option value="slowfood">SLOW FOOD</option>
+      			</select>
+      			<span class="OnlyDistance"></span>
+      		</p>
+  		    <div class="Clearer"></div>
+  		    <p>
+      			<label for="prezzo">Prezzo<span class="Asterix">&#42;</span><sup>(1)</sup></label>
+				<!--<input type="number" id="prezzo" onblur="checkPrice();" min="0" max="300" step="0.01" name="prezzo" <?php stampavalue('prezzo', $dati); ?> required />-->
+      			<input type="number" id="prezzo" onblur="checkPrice();" min="0" max="300" step="0.01" name="prezzo" <?php stampavalue('prezzo', $dati); ?> required="required" />
+      			<span class="OnlyDistance1"></span>
+      		</p>
+      		<div class="Clearer"></div>
+          <p class="Asterisco"><sup>(0)</sup>Certificazioni ammesse: BIO, STG, IGP, DOP, DOC, DOCG, SLOW FOOD<br><sup>(1)</sup> I prezzi sono in Euro (&euro;)<br><sup>(1)</sup>Utilizzare la &#34;,&#34; come separatore decimale</p>
+          <?php
+          erroremodificaprodotto('nome');
+          erroremodificaprodotto('certificazione');
+          erroremodificaprodotto('prezzo');
+          ?>
+        </fieldset>
+      </section>
+
+      <h2>Categoria</h2>
+      <section>
+        <fieldset>
+          <legend>Categoria</legend>
+          <?php echo $sottocategorie; ?>
+          <div class="Clearer"></div>
+          <p class="Asterisco"><sup>(3)</sup>Un prodotto deve essere inserito in una sola categoria</p>
+        </fieldset>
+      </section>
+      <h2>Area di Vendita</h2>
+      <section id="specialSection">
+        <fieldset>
+          <legend>Regioni e Province</legend>
+          <p id="regioni" class="Gruppi_p">Regioni: <sup>(4)</sup></p>
+		      <p>
+      			<input id="italia" type="checkbox" name="regioni[]" value="italia"  <?php if($dati['italia'] == 'italia'){echo 'checked="checked"'; } ?> />
+      			<label id="italia_label" for="italia">Tutta Italia</label>
+      		</p>
+          <div class="Clearer"></div>
+          <?php echo $pro ?>
+          <p class="BelowDisplay">
+      			<label for="province">Altre Province di Vendita<sup>(5)</sup></label>
+      			<input type="text" id="province" onkeyup="toUpper();" onblur="checkProvinces();" name="province" placeholder="Es: BL,PD,VI" <?php stampavalue('prov', $dati); ?> />
+      			<span class="OnlyDistance"></span>
+      		</p>
+        		<div class="Clearer"></div>
+            <?php erroremodificaprodotto('prov'); ?>
+            <p class="Asterisco"><sup>(4)</sup> Cliccando su una determinata regione ci si impegna a vendere il prodotto in tutte le province della relativa regione<br><sup>(5)</sup> Scrivere SOLO le province non comprese nelle regioni di vendita e nel formato BL, PD, BZ<br />
+          Almeno una Regione o una Provincia deve essere inserita
+          </p>
+        </fieldset>
+      </section>
+
+      <h2>Descrizione e Foto</h2>
+      <section>
+        <fieldset>
+          <legend>Prodotto</legend>
+            <p>
+    			<label for="descrizioneprodotto">Descrizione del prodotto</label>
+    			<textarea id="descrizioneprodotto" placeholder="Descrizione prodotto max 300 caratteri..." name="descrizionepro" onblur="checkDescription1();"><?php echo $dati['desc']; ?></textarea>
+    			<span class="OnlyDistance1"></span>
+        	</p>
+        	<div class="Clearer"></div>
+            <p>
+    			<label for="foto">Foto del Prodotto<span class="Asterix">&#42;</span></label>
+    			<input id="foto" onchange="checkFile();" type="file" name="foto" accept=".jpeg,.jpg,.png,.bmp,.BMP,.PNG,.JPG,.JPEG" required="required" />
+    			<span class="OnlyDistance"></span>
+        	</p>
+            <div class="Clearer"></div>
+            <label for="hidden">Hidden</label>
+        	<input id="hidden" type="hidden"  name="id" <?php echo 'value="'.$passare.'"' ?> />
+        	<div class="Clearer"></div>
+        	<p>
+    			<label for="send">Invia</label>
+    			<input onclick="MiaFunzione()" id="send" class="modprolabel" type="submit" name="modifica" value="Salva Modifiche" onmouseout="checkForm1();" onmouseover="checkForm6();" onfocusout="checkForm1();" onfocusin="checkForm6();"/>
+    			<span class="OnlyDistance2"></span>
+    		</p>
+    		    <?php erroremodificaprodotto('desc');
+            if($file != "") {
+                echo $monconesx.$file.$monconedx;
+            }
+            ?>
+        </fieldset>
+      </section>
+    </form>
+  </div>
+</div>
