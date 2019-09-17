@@ -1,0 +1,11 @@
+#barraAlta>form>input {
+	display: inline;
+}
+
+#jssor_1 {
+  display: none;
+}
+
+#err1 label {
+  top:3.5em;
+}

@@ -1,0 +1,75 @@
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+.Clear{
+  clear:both;
+}
+
+/*****  INIZIO PRIMI PIATTI  *****/
+
+body > div:first-of-type > h1{ /* --- testo fascia bianca con padding bianco --- */
+  width:100%;
+  background-color: white;
+  text-align: center;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #343331;
+}
+
+body > div > div > div > a{
+  text-decoration: none;
+}
+
+body > div > div > div > a > h1{
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color:#5a1323;
+  margin-top:0.5em;
+  text-align: left;
+  text-decoration: none;
+}
+
+div#content > div > a::after{
+  content:" <" attr(href) ">";
+}
+
+div#content > div > a:visited > h1{
+  color:#2e5d5a;
+}
+
+div#container > div > div > a:last-of-type{
+  display: none;
+}
+

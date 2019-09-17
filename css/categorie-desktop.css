@@ -1,0 +1,533 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+/*---------------------------------------------*/
+
+.DispNone{
+  display: none;
+}
+
+.DispBlock{
+  display: block;
+}
+
+body > div > h1.CatTitle{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  text-align: center;
+  color: #343331;
+  font-size: 1.5em;
+}
+
+body > div > div.SemiLine{
+  width: 12%;
+  height: 1px;
+  background-color: #343331;
+  margin: 0.5em 44%;
+}
+
+body > div > div.SemiLine:nth-of-type(1){
+  margin-top: 0;
+}
+
+body > div > div.SemiLine:nth-of-type(2){
+  margin-bottom: 2em;
+}
+
+#piatti0caldi, #bottega, #bevande{
+  margin-top: 1em;
+}
+
+footer{
+  margin-top:1.5em;
+}
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+.Clear{
+  clear:both;
+}
+
+/* ------------ INIZIO RETTANGOLO IMMAGINE ------------ */
+
+body > div:first-of-type{
+  position: relative;
+  width:80%;
+  margin-left:10%;
+  margin-right:10%;
+  height:10.9em;
+  display:block;
+  margin-bottom:2em;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+#chef{
+  background-image: url("../img/chef.jpg");
+}
+
+body > div:first-of-type > h1{ /* --- testo fascia bianca con padding bianco --- */
+  position: absolute;
+  bottom: 0.5em;
+  width:70%;
+  right:0;
+  bottom:0.5em;
+  background-color: white;
+  text-align: center;
+  padding: 0% 2%;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #343331;
+  border-bottom-left-radius: 0.3em;
+}
+
+/* ------------ FINE RETTANGOLO IMMAGINE ------------ */
+
+/* ------------ INIZIO PIATTI CALDI ------------ */
+
+/*row*/
+/*#piatti0caldi > div{
+  height:auto;
+}
+*/
+#piatti0caldi > div.Titliness:last-child{
+  margin-top:2em;
+}
+
+/*H3*/
+#piatti0caldi > div.Titliness > div{
+  float:left;
+  cursor: pointer;
+  width:32%;
+  height: 12em;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+#piatti0caldi > div.Titliness > div:not(:last-child){
+  margin-right:2%;
+}
+
+#piatti0caldi > div.Titliness:last-child > div:first-child{
+  margin-left:17%;
+}
+
+#piatti0caldi > div.Titliness:last-child > div:last-child{
+  margin-right:17%;
+}
+
+#primi{
+  background-image: url("../img/Primi.jpg");
+}
+
+#secondi{
+  background-image: url("../img/Secondi.jpg");
+}
+
+#contorni{
+  background-image: url("../img/Contorni3.png");
+}
+
+#pizza{
+  background-image: url("../img/Pizza.jpg");
+
+}
+
+#dessert{
+  background-image: url("../img/dessert.jpg");
+}
+
+/*ProdPic2*/
+#piatti0caldi > div.Titliness > div > div > a:first-of-type > div{
+  display:block;
+  width:100%;
+  height:9.7em;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center 70%;
+}
+
+#piatti0caldi > div.Titliness > div > div > a:first-of-type > div:hover{
+  width: 100%;
+  background-color: #c8c5bc;
+  margin:auto;
+  background-image: none !important;
+}
+
+#piatti0caldi > div.Titliness > div > div > a:first-of-type > div:hover > p{
+  display:block;
+  color:#5a1323;
+  text-decoration: underline;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+#piatti0caldi > div.Titliness > div > div > a:first-of-type:visited > div:hover > p{
+  color:#2e5d5a;
+}
+
+/*Tit*/
+#piatti0caldi > div.Titliness > div > a:first-of-type > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color:#5a1323;
+  margin-top:0.5em;
+}
+
+#piatti0caldi > div.Titliness > div > a:first-of-type:visited > h2{
+  color:#2e5d5a;
+}
+
+#piatti0caldi > div.Titliness > div > a{
+  text-decoration: none;
+}
+
+#piatti0caldi > div.Titliness > div > a:visited > h2{
+  color:#5a1323;
+}
+
+
+/*TitSmart*/
+#piatti0caldi > div.Titliness > div > div > a:first-of-type > div > h2{
+ display: none;
+}
+
+/*Sdp*/
+#piatti0caldi > div.Titliness > div > div > a:first-of-type > div > p{
+  display: none;
+  text-align: center;
+  margin-top: 4.5em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+/*Sdp*/
+#piatti0caldi > div.Titliness > div > div > a:first-of-type > div > p:hover{
+  text-decoration: underline;
+}
+
+#piatti0caldi > div.Titliness > div > a > h2:hover{
+  text-decoration:underline;
+}
+
+/* ------------ FINE PIATTI CALDI ------------ */
+
+
+/* ------------ INIZIO bottega ------------ */
+
+.DispBlock{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height:auto;
+  margin-bottom: 1em;
+}
+
+/*body > #bottega > div:last-child{
+  margin-top:1em;
+}*/
+
+/*H3*/
+/*#bottega > div.Titliness:nth-of-type(3){
+  margin-right: 0;
+}*/
+
+#bottega > div.Titliness{
+  float:left;
+  cursor: pointer;
+  width:32%;
+  height: 12em;
+  overflow-y: hidden;
+  text-align: center;
+  margin-right: 2%;
+}
+
+#xyzw{
+  margin-right: 0 !important;
+}
+
+#bottega > #dispensa{
+  width: 32%;
+}
+
+/*body > #bottega > div > div:not(:last-child){
+  margin-right:6%;
+}*/
+
+/*body > #bottega > div:last-child > div:first-child{
+  margin-left:17%;
+}*/
+
+/*body > #bottega > div:last-child > div:last-child{
+  margin-right:17%;
+}*/
+
+#latticini{
+  background-image: url("../img/lattesoia.jpg");
+}
+
+#salumeria{
+  background-image: url("../img/crudo.jpg");
+}
+
+#fornaio{
+  background-image: url("../img/tpugliesi.jpg");
+}
+
+#dispensa{
+  background-image: url("../img/farina2.jpg");
+
+}
+
+/*ProdPic2*/
+#bottega > div.Titliness > div > a:first-of-type > div{
+  display:block;
+  width:100%;
+  height:9.7em;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center 70%;
+}
+
+#bottega > div.Titliness > div > a:first-of-type > div:hover{
+  width: 100%;
+  background-color: #c8c5bc;
+  margin:auto;
+  background-image: none !important;
+}
+
+#bottega > div.Titliness > div > a:first-of-type > div:hover > p{
+  display:block;
+  color:#5a1323;
+  text-decoration: underline;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+#bottega > div.Titliness > a:first-of-type:visited > div:hover > p{
+  color:#2e5d5a;
+}
+
+/*Tit*/
+#bottega > div.Titliness > a:first-of-type > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color:#5a1323;
+  margin-top:0.5em;
+  text-align: center;
+}
+
+#bottega > div.Titliness > a:first-of-type:visited > h2{
+  color:#2e5d5a;
+}
+
+#bottega > div.Titliness > div > a, body > div:nth-of-type(4) > div > a{
+  text-decoration: none;
+}
+
+#bottega > div.Titliness > a > h1:visited{
+  color: #5a1323;
+}
+
+
+/*TitSmart*/
+#bottega > div.Titliness > div > a:first-of-type > div > h2{
+ display: none;
+}
+
+/*Sdp*/
+#bottega > div.Titliness > div > a:first-of-type > div > p{
+  display: none;
+  text-align: center;
+  margin-top: 4.5em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+/*Sdp*/
+#bottega > div.Titliness > div > a:first-of-type > div > p:hover{
+  text-decoration: underline;
+}
+
+#bottega > div.Titliness > a > h2:hover{
+  text-decoration:underline;
+}
+
+#bottega > div.Titliness > a{
+  text-decoration: none;
+}
+
+#bottega > div.Titliness:last-of-type{
+  margin-left: 34%;
+  margin-top: 2em;
+}
+
+/* ------------ FINE bottega ------------ */
+
+/* ------------ INIZIO bevande ------------ */
+
+/*body > #bevande > div:last-child{
+  margin-top:1em;
+}*/
+
+/*H3*/
+#bevande > div.Titliness{
+  float:left;
+  cursor: pointer;
+  width:49%;
+  height: 19em;
+  overflow-y: hidden;
+  text-align: center;
+  margin-right: 2%;
+}
+
+#bevande > div.Titliness:last-of-type{
+  margin-right: 0;
+}
+
+/*body > #bevande > div > div:not(:last-child){
+  margin-right:6%;
+}*/
+
+/*body > #bevande > div:last-child > div:first-child{
+  margin-left:17%;
+}*/
+
+/*body > #bevande > div:last-child > div:last-child{
+  margin-right:17%;
+}*/
+
+#alcolici{
+  background-image: url("../img/Chianti.jpg");
+}
+
+#analcolici{
+  background-image: url("../img/smoothierett.jpg");
+}
+
+/*ProdPic2*/
+#bevande > div.Titliness > div > a:first-of-type > div{
+  display:block;
+  width:100%;
+  height:15em;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center 70%;
+}
+
+#bevande > div.Titliness > div > a:first-of-type > div:hover{
+  width: 100%;
+  background-color: #c8c5bc;
+  margin:auto;
+  background-image: none !important;
+}
+
+#bevande > div.Titliness > div > a:first-of-type > div:hover > p{
+  display:block;
+  color:#5a1323;
+  text-decoration: underline;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+#bevande > div.Titliness > a:first-of-type:visited > div:hover > p{
+  color:#2e5d5a;
+}
+
+/*Tit*/
+#bevande > div.Titliness > a:first-of-type > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  color:#5a1323;
+  margin-top:0.5em;
+  text-align: center;
+}
+
+#bevande > div.Titliness > a:first-of-type:visited > h2{
+  color:#2e5d5a;
+}
+
+#bevande > div.Titliness > div > a, body > div:nth-of-type(4) > div > a{
+  text-decoration: none;
+}
+
+#bevande > div.Titliness > a > h2:visited{
+  color: #5a1323;
+}
+
+
+/*TitSmart*/
+#bevande > div.Titliness > div > a:first-of-type > div > h2{
+ display: none;
+}
+
+/*Sdp*/
+#bevande > div.Titliness > div > a:first-of-type > div > p{
+  display: none;
+  text-align: center;
+  margin-top: 7em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+/*Sdp*/
+#bevande > div.Titliness > div > a:first-of-type > div > p:hover{
+  text-decoration: underline;
+}
+
+#bevande > div.Titliness > a > h2:hover{
+  text-decoration:underline;
+}
+
+#bevande > div.Titliness > a{
+  text-decoration: none;
+}
+
+/* ------------ FINE bevande ------------ */

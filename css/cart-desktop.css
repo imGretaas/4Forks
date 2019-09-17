@@ -1,0 +1,387 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+/*---------------------------------------------*/
+.Err {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.Dispnone {
+  display: none;
+}
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+
+/* ------------ FINE BREADCRUMB ------------ */
+
+form > fieldset{
+  border: none;
+}
+
+form > fieldset > legend{
+  font-size: 0;
+}
+
+.Det{
+  width:92%;
+  margin-left:4%;
+  margin-right:4%;
+  margin-top:1.15em;
+}
+
+.StackLine{
+  height:1px;
+  width:88%;
+  background-color: #343331;
+  margin-right:6%;
+  margin-left:6%;
+}
+
+.TitleCart{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+ul.Det > li{
+  float:left;
+  width:33%;
+  text-align: center;
+}
+
+ul.Det{
+  margin-top:0.2em;
+}
+
+/* ------------ INIZIO  ------------ */
+
+.Column{
+  float:left;
+  width:33%;
+  text-align: center;
+}
+
+.Det > div:nth-child(2){
+  text-align: unset;
+}
+
+.Det > div:nth-child(2) > div{
+  width:100%;
+  min-width: 8em;
+  float:left;
+}
+
+.Quantity{
+  width:30%;
+  margin-left: 20%;
+  height: 1.7em;
+  border:1px solid #343331;
+  margin-top:2%;
+  text-align: center;
+  color:#343331;
+}
+
+/*.Column > div{
+  float:left;
+  width:70%;
+  text-align: right;
+}*/
+
+.Price{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  margin-top:0.6em;
+}
+
+.Det > div:nth-child(2) > p{
+  margin-right:6%;
+}
+
+.Bin > img{ 
+  /*width:10%;*/
+  height: 1.5em;
+  /*background-image: url("../img/512px/trash.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;*/
+  cursor: pointer;
+  margin:1.7em 15% 0 47%;
+  display: block;
+}
+
+.Pz{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+@media only screen and (max-width:1023px){
+	.Image{
+		width:50%;
+		margin-top:1em;
+	}
+	form > fieldset:first-of-type > div > div:first-of-type > a{
+		display:block;
+		margin:auto;
+	}
+}
+
+@media only screen and (min-width:1024px){
+
+	.Image{
+	  float:left;
+	  width:30%;
+	  display:block;
+	  margin-left:15%;
+	  margin-top:0.3em;
+	}
+	.Desc{
+		float:right;
+	}
+}
+
+.StackLine{
+	margin: 1% 5%;
+}
+
+
+
+.Desc{
+  width:50%;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  margin-left:2%;
+  padding-right:2%;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top:0.4em;
+}
+
+.Desc:hover{
+  text-decoration: underline;
+}
+
+div.Det .Clearer~p:first-of-type {
+  padding: 0.5em 2em 0.5em 2em;
+}
+
+div.Det .Clearer~p {
+  padding-left: 2em;
+}
+
+div.Det .Clearer~p>span{
+  font-weight: 400;
+}
+
+/*div.Column:nth-of-type(2) */
+
+/* ------------ FINE ROW ------------ */
+
+/* ------------ INIZIO NOTE ------------ */
+.Note{
+  width:82%;
+  margin-left:9%;
+  margin-right:9%;
+  margin-top:2%;
+}
+
+.Note > p{
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+#rettNote{
+  width: 99%;
+  min-width: 99%;
+  max-width: 99%;
+  min-height: 4em;
+  max-height: 7em;
+  /*margin-top: auto;*/
+  margin-left: auto;
+  border: 1px solid #343331;
+  /*text-align: left;*/
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+form:last-of-type > fieldset > div.Note > p:nth-of-type(2) > input{
+  text-decoration: none;
+  font-size:0.9em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  color:#343331;
+  background-color:#7dc1bd;
+  border-radius: 0.6em;
+  border:none;
+  padding: 1%;
+  float:right;
+  margin-right: 1.5em;
+  line-height: 1.2em;
+}
+
+form:last-of-type > fieldset > div.Note > p:nth-of-type(2) > input:hover{
+  text-decoration: underline;
+}
+
+label[for="pay"] {
+  position: absolute;
+  font-size: 1px;
+  left: 150%;
+  top: 0;
+}
+
+#pay{
+	margin: 1.5em auto 0 auto;
+	width:30%;
+}
+
+.Update, #pay{
+  display: block;
+  padding:0.5em 1em 0.5em 1em;
+  text-align:center;
+  color:#343331;
+  border:none;
+  border-radius: 2px;
+}
+
+input[type=submit]:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+input[disabled="disabled"]:hover{
+	cursor:not-allowed;
+	text-decoration:underline;
+}
+
+.Update {
+  margin:3em auto 0 auto;
+  display: none;
+  background-color: #7dc1bd;
+  width:60%;
+}
+
+#pay[disabled="disabled"] {
+  cursor: not-allowed;
+}
+
+form > fieldset > div.Det > div.Column:nth-of-type(2) > div > p:last-of-type > input:hover{
+  text-decoration: underline;
+}
+
+/*.Update{
+  width:30% !important;
+  min-width: 10em;
+}*/
+
+/*inserito da fif*/
+
+body > form > fieldset > div > div:nth-of-type(2) > div > p:last-of-type > label{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}
+
+@media only screen and (max-width:1024px){
+	.Image{
+		width: 50%;
+	}
+}
+
+.Errors{
+	font-size:13px;
+	color:red;
+	display:block;
+	font-family:"Roboto";
+	font-weight:400;
+}
+
+body > form >  fieldset:last-of-type > p > input[type="button"] {
+	background-color:rgb(140,168,164);
+	cursor:not-allowed;
+}
+
+body > form >  fieldset:last-of-type > p > input[type="submit"] {
+	background-color:#7dc1bd;
+	cursor:pointer;
+}
+
+body > form > fieldset > div > div > div > p > span.Errors{
+	margin-left:20%;
+}
+
+body > form >  fieldset:last-of-type > p > span.Errors{
+	margin-left:40%;
+}
+
+body > form >  fieldset:last-of-type > p > span:first-of-type{
+	float:right;
+	margin-bottom:3em;
+}
+
+body > form >  fieldset:last-of-type > p > input[type="submit"]:hover {
+	background-color: rgb(125,193,189);
+}
+
+div.Det .Clearer+.Desc {
+  display: none;
+}
+
+p#totale {
+  text-align: center;
+}
+
+p#totale span:first-of-type {
+  font-weight: 500;
+}
+
+body > form > fieldset > div > fieldset:last-of-type > legend{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}

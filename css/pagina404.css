@@ -1,0 +1,93 @@
+#first{
+	margin-left: 10%;
+}
+
+#first{
+	width: 50%;
+	float:left;
+	margin-top: 4em;
+}
+
+#first > h1{
+	margin: 0.5em;
+	font-family: "Source Serif Pro", arial, serif;
+	font-weight: 400;
+	font-size: 4em;
+	color: gray;
+}
+
+#first > p{
+	font-family: roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #343331;
+	line-height: 1.3em;
+}
+
+#first > ul{
+	margin: 0.6em 0;
+}
+
+#first > ul > li{
+	list-style-type: none;
+	margin-left: 0.5em;
+	line-height: 1.3em;
+}
+
+#first > ul > li > a{
+	font-family: roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #2e5d5a;
+	cursor: pointer;
+}
+
+#first > ul > li > a:hover{
+	text-decoration: underline;
+}
+
+#first > ul > li > a:visited{
+	color: #5a1323;
+}
+
+#second{
+	width: 30%;
+	float:right;
+	margin-right: 5%;
+}
+
+body > #content > #second > img{
+	width: 100%;
+}
+
+footer{
+	margin-top: 1em;
+}
+	
+
+@media only screen and (min-width: 701px) and (max-width: 1024px){
+	#first{
+		margin-top: 3em;
+	}
+}	
+
+@media only screen and (min-width: 320px) and (max-width: 501px){
+	#first{
+		width: 90%;
+		float: none;
+		margin: 0 5%;
+		text-align: center;
+	}
+
+	#second{
+		float:none;
+		width: 100%;
+	}
+
+	body > #content > #second > img{
+		width: 50%;
+		margin: 1em 25%;
+	}
+
+	body > #content > #first > h1{
+		margin: 0 0 0.2em;
+	}
+}

@@ -1,0 +1,468 @@
+
+/*-------------------------------------------------------CORPO--------------------------------------------------*/
+
+body>form legend h1 {
+  font-size: 2em;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+  margin-top:0.5em;
+  margin-left:2%;
+}
+
+body > form > fieldset > legend{
+	text-align:left;
+  width: 100%;
+}
+
+
+body > form > fieldset > div > fieldset > legend{
+	text-align:left;
+  width: 100%;
+}
+
+body > form > fieldset > div > fieldset > fieldset > legend{
+	text-align:center;
+}
+
+body>form legend h2 {
+  font-size: 1.25em;
+  margin-top: 0.5em;
+  margin-bottom:0.7em;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+  margin-left: 5%;
+}
+
+body>form legend h3{
+	font-size: 0.9em;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+fieldset.Breve > legend{
+	line-height:2em;
+}
+
+/*body>form span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}*/
+
+#err3{
+  display:block;
+  text-align: center;
+}
+
+#err3 fieldset {
+  border:none;
+}
+
+#err3 legend, #err3 input{
+  position: absolute;
+  left:-200em;
+}
+
+#err3 label {
+  font-size: 1.4em;
+  position: relative;
+  left:21%;
+  top:1.8em;
+  cursor: pointer;
+}
+
+#xcheck3:checked~*{
+  display: none;
+}
+
+#err3 div {
+  text-align: center;
+  margin: 3px auto;
+  float: unset;
+}
+
+.Rosso {
+  box-shadow: -1px -1px 3px red, -1px 1px 3px red, 1px -1px 3px red, 1px 1px 3px red;
+}
+
+.Verde {
+  box-shadow: -1px -1px 3px green, -1px 1px 3px green, 1px -1px 3px green, 1px 1px 3px green;
+}
+
+#err3 h1 {
+  margin-top: 1.2em;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+#err3 p {
+  margin-bottom: 1.1em;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+#err3 button {
+  display: none;
+}
+
+#datiPers>fieldset>fieldset {
+  font-size:0.9em;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  color: #343331;
+}
+
+body>form label {
+  line-height: 2em;
+}
+
+#datiPers>fieldset>fieldset>legend {
+  font-size: 1.2em;
+  margin-left: 1.9em;
+  margin-top: 0.5em;
+}
+
+#datiPers>fieldset>fieldset>p {
+  width:23%;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+#datiPers>fieldset>fieldset>p:first-of-type {
+  margin-left: 7.7em;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+#datiPers>fieldset>fieldset>p>select {
+  width:6em;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+#quadImg{
+  width:6em;
+  height: 6em;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+#profImg {
+  float:right;
+  text-align: center;
+  margin:4em auto;
+}
+
+#profImg label{
+  position: absolute;
+  left:-200%;
+}
+
+#profImg p {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+body>form>fieldset>div {
+  width: 49%;
+  float: left;
+}
+
+body>form p {
+  width: 100%;
+  float: left;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+body>form>div>p:last-of-type {
+  margin-bottom: 0.5em;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+body>form p>label {
+  margin-left: 2.4em;
+  font-size: 0.9em;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+.Spazio {
+  float: left;
+  width: 5.3em;
+}
+
+.NoCap {
+  text-transform: none !important;
+}
+
+body>form> fieldset p input[type="text"], body>form> fieldset p input[type="password"] {
+  width: 60%;
+  border: solid 1px rgb(97,91,75);
+  text-transform: capitalize;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+#togglePwd {
+  width: 2em;
+  margin-left: 20%;
+  height: unset;
+}
+
+label[for="password"]{
+  line-height: 0.9em;
+  overflow-y: hidden;
+}
+
+#labTogPwd {
+  margin-left: 0;
+}
+
+#vertical {
+  height: 13.6em;
+  width: 1px;
+  margin: 0;
+  float: left;
+}
+
+#sceltaPag>legend {
+  width: 55%;
+  margin-right: 45%;
+}
+
+#sceltaPag {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#sceltaPag>p {
+  width: 50%;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+#sceltaPag>p>input {
+  width: 1em;
+  margin-left: 0.5em;
+  height: unset;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+#sceltaPag>p>label {
+  margin-left: 0;
+  display: inline;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+.Mostra {
+  display: block !important;
+}
+
+#formCredito {
+  width: 100%;
+  display: none;
+}
+
+#formCredito > p > input[id="numCred"]{
+  text-align: center;
+}
+
+#cvv{
+  text-align: center;
+}
+
+#formCredito>p:first-of-type>label {
+  margin-left: 10%;
+  width: 80%;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+.Pagamenti>p>label {
+  display: block;
+  width: 100%;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+.Pagamenti>p>input {
+  text-transform: none;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+}
+
+#numCred {
+  width: 79%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.Breve {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 0.5em;
+  float: left;
+}
+
+.Breve>legend {
+  margin-top: 0.6em;
+  display: block;
+  width: 100%;
+}
+
+.Breve label {
+  margin-left: 0;
+}
+
+.Breve>p {
+  float: left;
+  width:50%;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+
+}
+
+#province {
+  text-transform: uppercase;
+}
+
+div > p > span.Errors{
+	font-size:13px;
+	color:red;
+	display:block;
+	font-family: Roboto, -apple-system, arial;
+	text-align:center;
+}
+
+body > form > p > span.Errors{
+	font-size:13px;
+	color:red;
+	display:block;
+	font-family: Roboto, -apple-system, arial;
+	text-align:center;
+}
+
+div > fieldset > p > span.Errors{
+	font-size:13px;
+	color:red;
+	display:block;
+	font-family: Roboto, -apple-system, arial;
+	text-align:center;
+}
+
+div > fieldset > fieldset > p > span.Errors{
+	font-size:11px;
+	color:red;
+	display:block;
+	font-family: Roboto, -apple-system, arial;
+}
+
+body > form > fieldset > div > fieldset > p > input{
+	padding-left:4px;
+}
+
+body > form > fieldset > div > fieldset > p > span:first-of-type{
+	margin-bottom:3em;
+	float:right;
+}
+
+body > form > fieldset > div:nth-of-type(2) > fieldset > p:last-of-type > span:first-of-type{
+	margin-bottom:0.1em;
+}
+
+div#formCredito > p > span:first-of-type{
+	margin-left:0;
+}
+
+.LongDateNot{
+	display:none;
+}
+
+div#datiPers > fieldset > fieldset > p > span:first-of-type{
+	margin-bottom:3em;
+	float:right;
+}
+
+body > form > p > span:first-of-type{
+	margin-bottom:1.5em;
+	float:right;
+}
+
+div#formCredito > p > span:first-of-type{
+	margin-bottom:2.9em;
+	float:right;
+}
+
+body > form > p > label{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}
+
+body > form > p > input{
+	margin:auto;
+  border:none;
+  height:1.5em;
+  border-radius:2px;
+  display:block;
+  margin:auto;
+}
+
+#annulla {
+  width: 60%;
+  background-color: rgb(200,197,188);
+
+}
+
+#salva {
+  width: 60%;
+  background-color: rgb(125,193,189);
+}
+
+#paga{
+  width: 30%;
+  background-color: rgb(125,193,189);
+}
+
+#paga:hover, #salva:hover, #annulla:hover{
+  text-decoration: underline;
+}
+
+body > form > p{
+	width:50%;
+}
+
+body > form > p#pagap{
+	width:100%;
+}
+
+body > form > p > input{
+	cursor:pointer;
+}
+
+body > form input[type=button] {
+	cursor:not-allowed;
+}
+
+#annulla {
+  cursor: pointer;
+}
+
+form>fieldset:last-of-type~input {
+  border: none;
+}
+
+#datiPers input#email{
+text-align:center;
+border: none;
+}
+
+/*-------------------------------------------------------SPAZIO PROVE--------------------------------------------------*/

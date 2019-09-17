@@ -1,0 +1,18 @@
+#regSub {
+  display: inline;
+}
+
+#navSub {
+  display: block; 
+}
+
+@media only screen and (max-width: 1023px){
+	#myDropRicerca {
+	  visibility: visible !important;
+	  width: 84% !important;
+	  height: auto !important;
+	  margin: 0 8% 1em !important;
+	  opacity: 1 !important;
+	  transition: opacity 0.4s !important;
+	}
+}

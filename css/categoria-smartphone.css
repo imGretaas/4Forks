@@ -1,0 +1,318 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(75,71,52) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #dcd3b7;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+
+*/
+/*---------------------------------------------*/
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb~a{
+	margin-bottom:2em;
+}
+
+ul.Breadcrumb li a:visited,  ul.Breadcrumb~a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover, ul.Breadcrumb~a:hover{
+  text-decoration:underline;
+}
+
+ul.Breadcrumb+a {
+  font-size: 0.7em;
+  color: #5a1323;
+  text-decoration:  none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  width:100%;
+}
+
+ul.Breadcrumb li a:visited, ul.Breadcrumb~a:visited{
+  color: #2e5d5a;
+}
+
+#pizze {
+  margin-top: 2em;
+}
+
+/* ------------ INIZIO RETTANGOLO IMMAGINE ------------ */
+
+#textintro{
+  display:none; /*non visibile nella versione mobile*/
+}
+
+/* ------------ FINE RETTANGOLO IMMAGINE ------------ */
+
+/*.H*/
+.Row > div{
+  width:40%;
+  float: left;
+  /*margin-left:5%;*/
+  margin-left:6%;
+}
+
+.Row > div:nth-of-type(2){
+  margin-right: 4%;
+}
+
+/*.Prduct*/
+.Row > div > a:first-of-type > div{
+  position: relative;
+  /*margin:2% 2% 4% 2%;*/
+  width:100%;
+  overflow:hidden;
+}
+
+
+/* ------------------- F I N E  P R O D O T T I ------------------- */
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  position: absolute;
+  background-color:white;
+  color: #343331;
+  font-size: 1.5em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  top: 0;
+  right: 0;
+  margin-top
+}
+
+.Row:first-of-type{
+	margin-top:2em;
+}
+
+/*.Tit*/
+.Row > div > a:nth-of-type(2) > h1{
+  /*display:inline-block;*/
+  float:left;
+  line-height: 1.6em;
+  text-align: center;
+  width:100%;
+  margin-top:2%;
+  font-size:1.1em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#343331;
+  text-decoration: none;
+}
+
+/*.Sdp*/
+.Row > div > a:first-of-type > div > p:last-of-type{
+  display:none;
+}
+
+/*.Prduct > img*/
+.Row > div > a:first-of-type > div > img{
+  width:100%;
+  height:11.7em;
+}
+
+/* Inserito da Giusp */
+
+#succconteiner {
+	min-height: 2em;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+div#linkcont{
+  margin: 2em 0 1em 0;
+  text-align: center;
+}
+
+#actualpage, a.Successive  {
+	width: 2em;
+	height:2em;
+	border: 1px solid #000;
+	float: left;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 2em;
+}
+
+.Row:last-of-type~p, #linkcont~p ,.Row span{
+  color:red;
+  font-size:1.2em;
+}
+
+.Row:last-of-type~p,  #linkcont~p{
+  margin:0 0 1em 2%;
+  font-size:1em;
+  font-weight: 500;
+}
+
+.Row:last-of-type~p span,  #linkcont~p span{
+  font-size:1.6em;
+}
+
+/* -------------------------320px----------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 500px){
+
+/*.H*/
+.Row > div{
+  height:13em;
+  overflow-y: hidden;
+}
+
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  padding-right:2%;
+  padding-left:2%;
+}
+
+/*.Prduct*/
+.Row > div > a > div{
+  height: auto;
+}
+
+/*.Prduct > img*/
+.Row > div > a:first-of-type > div > img{
+  height:6.7em;
+}
+
+}
+
+
+/* -------------------------501px----------------------------------*/
+
+@media only screen and (min-width: 501px) and (max-width: 537px){
+	
+/*.H*/
+.Row > div{
+  height:14em;
+  overflow-y: hidden;
+}
+
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  padding-right:10%;
+  padding-left:2%;
+}
+
+/*.Prduct > img*/
+.Row > div > a:first-of-type > div > img{
+  height:9.7em;
+}
+
+
+ul.Breadcrumb+a {
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+.Row:last-of-type~p,  #linkcont~p{
+  margin:0 0 1em 8%;
+  font-size:1em;
+}
+
+}
+
+/* -------------------------538px----------------------------------*/
+
+@media only screen and (min-width: 538px) and (max-width: 700px){
+
+/*.H*/
+.Row > div{
+  height:16em;
+  overflow-y: hidden;
+}
+
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  padding-right:4%;
+  padding-left:2%;
+}
+
+ul.Breadcrumb+a {
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+.Row:last-of-type~p,  #linkcont~p{
+  margin:0 0 1em 8%;
+  font-size:1em;
+}
+
+}
+
+
+/* -------------------------701px----------------------------------*/
+
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+	
+/*.H*/
+.Row > div{
+  height:17em;
+  overflow-y: hidden;
+}
+
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  padding: 0 2%;
+}
+
+ul.Breadcrumb {
+  float:left;
+}
+
+
+ul.Breadcrumb+a {
+  float: right;
+  margin: 0.7em 1em 2em 0 ;
+  color: #5a1323;
+  display: inline;
+  width: auto;
+  font-size: 0.95em;
+  line-height: 1.8em;
+
+}
+
+ul.Breadcrumb li a:visited, ul.Breadcrumb~a:visited{
+  color: #2e5d5a;
+}
+
+.Row:last-of-type~p,  #linkcont~p{
+  margin:0 0 1em 8%;
+  font-size:1.2em;
+
+}
+
+}

@@ -1,0 +1,7 @@
+#jssor_1 {
+	display: none;
+}
+
+div#slider_cont+.Row {
+	display: block;
+}

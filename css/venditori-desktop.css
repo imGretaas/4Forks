@@ -1,0 +1,189 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(75,71,52) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #dcd3b7;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+
+*/
+/*---------------------------------------------*/
+
+/* ------------ INIZIO Breadcrumb ------------ */
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+/* ------------ FINE Breadcrumb ------------ */
+
+footer{
+  margin-top: 3em;
+}
+
+#venditori{
+  margin-left: 7%;
+  margin-top:1.5%;
+  margin-bottom:1%;
+}
+
+h1#venditori{
+  font-size:2em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#343331;
+}
+
+.Row{
+  width:80%;
+  margin-left:10%;
+  margin-right:10%;
+  height:21em;
+}
+
+.Row > div{
+  display: block;
+  float:left;
+  width:21%;
+  height:19.5em;
+  margin-left:1.2%;
+  margin-right:1.2%;
+  margin-top:2%;
+  vertical-align:top;
+  background-color: #eee9d9;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.Row > div:first-of-type{
+  margin-left:4.4%;
+}
+.Row > div:last-of-type{
+  margin-right: 4.4%;
+}
+
+
+.Row  div > a > img{
+  width:6em;
+  height:6em;
+  cursor: pointer;
+  margin-top:9.5%;
+  padding: 2%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#alFungo{
+  background-image: url("../img/venditori/fungo.png");
+}
+
+#dalPane{
+  background-image: url("../img/venditori/dalPane.jpg");
+}
+
+#honeyBee{
+  background-image: url("../img/venditori/honeyBee.jpg");
+}
+
+#ilGelataio{
+  background-image: url("../img/venditori/ilGelataio.png");
+}
+
+#bottAlberobello{
+  background-image: url("../img/venditori/bottAlberobello.png");
+}
+
+#pizzel{
+  background-image: url("../img/venditori/pizzel.png");
+}
+
+
+.Row > div > a:nth-of-type(2) > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 8% 3%;
+  cursor: pointer;
+  /*color:#5a1323;*/
+}
+
+.Row > div > a:nth-of-type(2) > h2:hover{
+  text-decoration: underline;
+}
+
+
+.Row > div > p{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1em;
+  margin: 2% auto 0% auto;
+  color: #343331;
+}
+
+.Row > div > a > h2{
+  color:#5a1323;
+}
+.Row > div > a:visited > h2{
+  color:#2e5d5a !important;
+}
+
+/* Inserito da Giusp */
+
+.succconteiner {
+	min-height: 2em;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+div#linkcont{
+  margin: 2em 0;
+  text-align: center;
+}
+
+#actualpage, a.Successive  {
+	width: 2em;
+	height:2em;
+	border: 1px solid #000;
+	float: left;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 2em;
+}

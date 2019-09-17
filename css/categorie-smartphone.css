@@ -1,0 +1,320 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+/*---------------------------------------------*/
+
+
+.DispNone{
+  display: none;
+}
+
+.DispBlock{
+  display: block;
+}
+
+/*---------------------------------------------*/
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+.Clear{
+  clear:both;
+}
+
+/*****  INIZIO  *****/
+
+body > div > h1.CatTitle{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  text-align: center;
+  color: #343331;
+  font-size: 1.5em;
+}
+
+body > div > div.SemiLine{
+  width: 12%;
+  height: 1px;
+  background-color: #343331;
+  margin: 0.5em 44%;
+}
+
+body > div > div.SemiLine:nth-of-type(1){
+  margin-top: 0;
+}
+
+body > div > div.SemiLine:nth-of-type(2){
+  margin-bottom: 2em;
+}
+
+#piatti0caldi, #bottega, #bevande{
+  margin-top: 1em;
+}
+
+body > div:first-of-type{
+  display:none;
+}
+ 
+#piatti0caldi{
+  width: 100%;
+  height:auto;
+}
+
+#piatti0caldi > div.Titliness{
+  width:100%; /*larghezza della colonna row*/
+}
+
+#piatti0caldi > div.Titliness > div > div{
+  width:100%;
+  margin-top:3%;
+}
+
+#piatti0caldi > div.Titliness > div > div > a > div > p{
+  display:none;
+}
+
+#primi{
+  background-image: url("../img/Primi.jpg");
+}
+
+#secondi{
+  background-image: url("../img/Secondi.jpg");
+}
+
+#contorni{
+  background-image: url("../img/Contorni3.png");
+}
+
+#pizza{
+  background-image: url("../img/Pizza.jpg");
+}
+
+#dessert{
+  background-image: url("../img/dessert.jpg");
+}
+
+#piatti0caldi > div.Titliness > div > div > a > div{
+  display:block;
+  width:70%;
+  height:9.5em;
+  margin-left:15%;
+  margin-right:15%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+#piatti0caldi > div.Titliness > div > a > h2{
+  display: none;
+}
+
+#piatti0caldi > div.Titliness > div > div > a > div > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 2em;
+  color:#5a1323;
+  float:right;
+  background-color: white;
+  text-align:center;
+  margin-top:3em;
+  padding:0.1em 0.3em;
+}
+
+div.Titliness > div:first-of-type > div > a > div > h2, div.Titliness > div:nth-of-type(4) > div > a > div > h2, div.Titliness > div:nth-of-type(3) > div > a > div > h2{
+  border-bottom-left-radius: 0.3em;
+}
+
+div.Titliness > div:nth-of-type(2) > div > a > div > h2, div.Titliness > div:last-of-type > div > a > div > h2, div.Titliness > div:nth-of-type(3) > div > a > div > h2{
+  border-top-left-radius: 0.3em;
+}
+
+
+#piatti0caldi > div.Titliness > div > div > a:visited > div > h2{
+  color:#2e5d5a;
+}
+
+#piatti0caldi > div.Titliness:last-child{
+  margin-bottom: 2em;
+}
+
+body > div:first-of-type{
+  display:none;
+}
+
+/*****  FINE PRIMI PIATTI  *****/
+
+/*****  INIZIO BOTTEGA  *****/
+
+#bottega{
+  width: 100%;
+  height:auto;
+}
+
+#bottega > div.Titliness{
+  width:100%; /*larghezza della colonna row*/
+}
+
+#bottega > div.Titliness >  div{
+  width:100%;
+  margin-top:3%;
+}
+
+#bottega > div.Titliness > div > a > div > p{
+  display:none;
+}
+
+#latticini{
+  background-image: url("../img/lattesoia.jpg");
+}
+
+#salumeria{
+  background-image: url("../img/crudo.jpg");
+}
+
+#fornaio{
+  background-image: url("../img/tpugliesi.jpg");
+}
+
+#dispensa{
+  background-image: url("../img/farina2.jpg");
+
+}
+
+#bottega > div.Titliness > div > a > div{
+  display:block;
+  width:70%;
+  height:9.5em;
+  margin-left:15%;
+  margin-right:15%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+#bottega > div.Titliness > a > h2{
+  display: none;
+}
+
+#bottega > div.Titliness > div > a > div > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 2em;
+  color:#5a1323;
+  float:right;
+  background-color: white;
+  text-align:center;
+  margin-top:3em;
+  padding:0.1em 0.3em;
+}
+
+#bottega > div.Titliness > div > a:visited > div > h2{
+  color:#2e5d5a;
+}
+
+#bottega > div.Titliness:last-child{
+  margin-bottom: 2em;
+}
+
+/*****  FINE BOTTEGA  *****/
+
+/*****  INIZIO BEVANDE  *****/
+
+#bevande{
+  width: 100%;
+  height:auto;
+}
+
+#bevande > div.Titliness{
+  width:100%; /*larghezza della colonna row*/
+}
+
+#bevande > div.Titliness >  div{
+  width:100%;
+  margin-top:3%;
+}
+
+#bevande > div.Titliness > div > a > div > p{
+  display:none;
+}
+
+#alcolici{
+  background-image: url("../img/Chianti.jpg");
+}
+
+#analcolici{
+  background-image: url("../img/smoothierett.jpg");
+}
+
+#bevande > div.Titliness > div > a > div{
+  display:block;
+  width:70%;
+  height:9.5em;
+  margin: 0 15%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+#bevande > div.Titliness > a > h2{
+  display: none;
+}
+
+#bevande > div.Titliness > div > a > div > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 2em;
+  color:#5a1323;
+  float:right;
+  background-color: white;
+  text-align:center;
+  margin-top:3em;
+  padding:0.1em 0.3em;
+}
+
+#bevande > div.Titliness > div > a:visited > div > h2{
+  color:#2e5d5a;
+}
+
+#bevande > div.Titliness:last-child{
+  margin-bottom: 2em;
+}

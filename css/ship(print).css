@@ -1,0 +1,117 @@
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+body > h1{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #343331;
+  margin-top:1.5%;
+  margin-bottom:1.5%;
+}
+
+body > div:first-of-type{
+  display: none;
+}
+
+/*-------------------------------*/
+
+.SemiDivix{
+  display: none;
+}
+
+.SemiDivixx{
+  display: none;
+}
+
+.Division{
+  display: none;
+}
+
+.ShipInfo > p:first-of-type{
+  margin-top: 0.4em;  
+}
+/*-------------------------------*/
+
+.ShipInfo{
+  width:90%;
+  text-align: left;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.ShipInfo div:first-of-type{  
+  margin-top: 1em;
+} 
+
+.ShipInfo > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #343331;
+  margin-bottom:0.2em;
+  text-align: center;
+}
+
+.ShipInfo > h3{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #343331;
+}
+
+.ShipInfo > p{
+  margin-bottom: 0.5em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  color: #343331;
+}
+
+.ShipInfo > p > a{
+  color:#5a1323;
+  text-decoration: none;
+}
+
+.ShipInfo > p > a:visited{
+  color:#2e5d5a;
+}
+
+.ShipInfo > ul{
+  list-style-position: inside;
+  list-style-type: circle;
+  margin-left: 2%;
+  margin-bottom: 0.3em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  color: #343331;
+}

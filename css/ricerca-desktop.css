@@ -1,0 +1,265 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(75,71,52) => #7dc1bd;
+C : rgb() => #2e5d5a;
+D : rgb() => #e3e2cc;
+E : rgb() => #dcd3b7;
+F : rgb() => #dcd3b7;
+G : rgb() => #343331;
+H : rgb() => #4B4734;
+I : rgb() => #c8c5bc;
+J : rgb() => #eee9d9;
+K : rgb() => #FFFFFF;
+
+*/
+/*---------------------------------------------*/
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+/* ------------ INIZIO GRIGLIA PRODOTTI ------------ */
+
+.Row{
+  width:90%;
+  height: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+  overflow-y: hidden;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  background-color: #c8c5bc;
+  border-radius: 10px;
+}
+
+body > div:nth-of-type(3){
+  padding-top: 0;
+  background-color: #FFFFFF;
+}
+
+/*.H*/
+.Row > div{
+  float:left;
+  width:21%;
+  height:auto;
+  margin-left:3.2%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/*.Prduct*/
+.Row > div > a > div{
+  position: relative;
+  width:100%;
+  height: 9.7em;
+  overflow-y: hidden;
+}
+
+.Row > div > a:visited{
+  color:#2e5d5a;
+}
+
+.Divx{
+  width:60%;
+  margin-left:20%;
+  margin-right:20%;
+  background-color: #343331;
+  height: 1px;
+}
+
+p.Price{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  color: #343331;
+  font-size: 1.5em;
+}
+
+.Price{
+  position: absolute;
+  right:0;
+  top:0;
+  padding:0 6px;
+  text-align: center;
+  background-color:white;
+}
+
+.Row > div > a > div > img{
+  width:100%;
+  height:9.7em;
+}
+
+.Row > div > a > div:hover > p.Price, .Row > div > a > div:hover > img{
+  display:none;
+}
+
+.Row > div > a > div:hover > p.Sdp{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  color: #c8c5bc;
+  font-size: 1.2em;
+}
+
+p.Sdp{
+  display: none;
+}
+
+.Row > div > a > div:hover > .Sdp{
+  display:block;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #343331;
+  padding-top: 3.65em;
+}
+
+.Row > div.H > a:nth-of-type(2){
+  text-decoration: none;
+}
+
+.Row > div.H > a:nth-of-type(2):hover{
+  text-decoration: underline;
+}
+
+.Row > form {
+  text-align: center;
+}
+
+.Row > form input:first-of-type {
+  background: none;
+  border: none;
+  text-decoration: none;
+  padding: 0 5%;
+  margin-bottom: 1em;
+  color:#5a1323;
+}
+
+.Row> form input:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.RicercaVia{
+  position: absolute;
+  left: -200%;
+  height: 1px;
+}
+
+h1.Hric{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #343331;
+}
+
+.Hric{
+  text-align:center;
+  margin: 1em 0; 
+}
+
+h1#notFind{
+  text-align: center;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #343331;
+  margin: 1em 0;
+}
+
+/*.H{
+  width:20%;
+  height: auto;
+  float:left;
+  margin-left:2.5%;
+}*/
+
+/*.Row{
+	margin-left:7.5%;
+  margin-top:1em;
+	width: 90%;
+  height: 13em;
+  overflow-y:hidden;
+}*/
+
+/*.Prduct{
+	height: 9.7em;
+	width: 100%;
+	overflow: hidden;
+  position: relative;
+}*/
+
+.Row > div > a:last-child, .Row > div > a:nth-of-type(2){
+  text-decoration: none;
+}
+
+.Row > div > a:nth-of-type(2) > h2{ /* --- TITOLO PRODOTTI --- */
+	font-size: 1.4em;
+	font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+	color: #5a1323;
+	margin-top:0.4em;
+  width:90%;
+  margin-left:5%;
+  text-decoration: none;
+}
+
+.Row > div > a:nth-of-type(2):visited > h2{
+  color: #2e5d5a;
+}
+
+.Row > div > a:last-child:hover > h2, .Row > div > a:nth-of-type(2):hover > h2{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Row > div > a:last-child:visited > h2{
+  color:#2e5d5a;
+}
+
+.Row > div > a:last-child{
+  width:90%;
+  margin: 0 5%;
+}
+
+body > div:nth-last-of-type(2){
+  margin-bottom: 1em;
+  /* abbiamo scelto questa notazione perche' non troviamo un selettore
+  // che tenga conto anche della classe.. dunque parte dal div clearer (1)
+  // e non parte da .Row..
+  */
+}
+
+.Row:last-of-type{
+  margin-bottom: 4em;
+}

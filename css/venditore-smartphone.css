@@ -1,0 +1,371 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(75,71,52) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #dcd3b7;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+
+*/
+/*---------------------------------------------*/
+
+/* ------------ INIZIO BREADCRUMB ------------ */
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+/* ------------ FINE BREADCRUMB ------------ */
+
+body > h1{
+  font-size: 2em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color: #343331;
+  text-align: center;
+  margin-bottom:0.5em;
+}
+
+body > div:first-of-type{
+  width:90%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+body > div:first-of-type > p{
+  background-color:rgb(240,233,217);
+  font-size: 1.2em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  padding: 2em 5% 2em 5%;
+  text-align:justify;
+  word-wrap: break-word;
+  margin-bottom:1em;
+  border-radius: 10px;
+}
+
+body > div:first-of-type > p > img{
+  float:left;
+  width:25%;
+  height:auto;
+  margin-right:3%;
+  margin-bottom:0.6em;
+}
+
+body > div:first-of-type > p > span{
+  display: block;
+  margin-top:1em;
+}
+
+body > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color: #343331;
+  font-size:1.5em;
+  margin-top:0.5em;
+  margin-left: 7%;
+  margin-bottom:0.2em;
+}
+
+#line{
+  margin-top:0.8em;
+  margin-bottom:0.8em;
+  width:90%;
+  margin-left:5%;
+  background-color: rgb(52,51,49);
+  height: 1px;
+}
+
+/* ----------------------------------------- */
+.Row > div{
+  width:40%;
+  float: left;
+  /*margin-left:5%;*/
+  margin-left:6%;
+  margin-bottom: 1em;
+}
+
+.Row > div:nth-of-type(2){
+  margin-right: 4%;
+}
+
+.Row > div > a > div{
+  position: relative;
+  width:100%;
+  overflow:hidden;
+  height: 11.7em;
+}
+
+.Row > div > a:first-of-type > div > p:first-of-type{
+  position: absolute;
+  background-color:white;
+  padding: 0 0.5em;
+  color: #343331;
+  font-size: 1.5em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  top: 0;
+  right: 0;
+}
+
+.Row > div > a > h3{
+  float:left;
+  line-height: 1.6em;
+  text-align: center;
+  width:100%;
+  margin-top:2%;
+  font-size:1.1em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  text-decoration: none;
+  color:#5a1323;
+}
+
+.Row > div > a:hover > h3{
+  text-decoration: underline;
+}
+
+.Row > div > a:visited > h3{
+  color:#2e5d5a;
+}
+
+
+.Row > div > a > div > p:nth-of-type(2){
+  display:none;
+}
+
+.Row > div > a > div > img{
+  width:100%;
+  height:11.7em;
+}
+
+body > div:last-of-type{
+  margin-bottom: 1.5em;
+}
+
+a.ProdSlider > p:last-of-type{ /*Titoli prodotti slider*/
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#5a1323;
+}
+
+a.ProdSlider:hover > p:last-of-type{
+  text-decoration: underline;
+}
+
+a.ProdSlider:visited > p:last-of-type{ /*Titoli prodotti visitati slider*/
+  color:#2e5d5a;
+}
+
+#slider_cont > .Row > div > a:nth-of-type(2) > h1{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#5a1323;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0 2%;
+}
+
+#slider_cont > .Row > div > a:nth-of-type(2):hover > h1{
+  text-decoration: underline;
+}
+
+#slider_cont > .Row > div > a:nth-of-type(2):visited > h1{
+  color: #2e5d5a;
+}
+
+/* Aggiunti da Giusp. Chiedi prima di modificare, grazie*/
+
+div#slider_cont {
+  width:88%;
+  margin:0 auto 1em auto;
+}
+
+/* ------------Fine Aggiunti da Giusp --------------   */
+
+.Row > div > a:first-of-type > div:hover > p:first-of-type, .Row > div > a:first-of-type > div:hover > img{
+  display:none;
+}
+
+.Row > div > a:first-of-type > div:hover > p:last-of-type{
+  display:block;
+  width:100%;
+  height: 100%;
+  color: #5a1323;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #c8c5bc;
+  padding-top: 3.65em;
+}
+
+/* -------------------------320px----------------------------------*/
+
+@media only screen and (max-width: 500px){
+
+  body > div:first-of-type > p {
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  body > div:first-of-type > p > img {
+    float: none;
+    width: 60%;
+    margin: 0 auto 1em auto;
+    display: block;
+  }
+
+  .Row > div{
+    width: 40%;
+    height:15em;
+    overflow: hidden;
+  }
+
+  .Row > div > a:first-of-type > div > p:first-of-type{
+    width:49%;
+    margin-top:0%;
+    padding-right:15%;
+    padding-left:2%;
+  }
+}
+
+/* -------------------------501px----------------------------------*/
+
+@media only screen and (min-width: 501px) and (max-width: 537px){
+
+  body > div:first-of-type > p {
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  body > div:first-of-type > p > img {
+    float: none;
+    width: 40%;
+    margin: 0 auto 1em auto;
+    display: block;
+  }
+
+
+  .Row > div > a:first-of-type > div > p:first-of-type{
+    /*padding: 0.1% 4% 0.1% 2%;
+    margin-left:29%;*/
+    width: 42%;
+    margin-top: 0%;
+    padding-right:10%;
+    padding-left:2%;
+  }
+
+  .Row > div > a > div{
+    margin-left:1%;
+  }
+
+}
+
+/* -------------------------538px----------------------------------*/
+
+@media only screen and (min-width: 538px) and (max-width: 700px){
+
+  body > div:first-of-type > p {
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  body > div:first-of-type > p > img {
+    float: none;
+    width: 40%;
+    margin: 0 auto 1em auto;
+    display: block;
+  }
+
+
+.Row > div > a:first-of-type > div > p:first-of-type{
+  /*padding: 0.1% 3% 0.1% 2%;
+  margin-left:30%;*/
+  width: 40%;
+  margin-top:0%;
+  padding-right:10%;
+  padding-left:2%;
+}
+
+.Row > div > a > div{
+  margin-left:1%;
+}
+}
+
+/* -------------------------701px----------------------------------*/
+
+@media only screen and (min-width: 701px) and (max-width: 1023px){
+
+  .Row > div > a:first-of-type > div > p:first-of-type{
+    margin-top:0%;
+    padding-right:6%;
+    padding-left:2%;
+  }
+
+  .Row > div {
+    width: 20%;
+    margin-left: 3%;
+  }
+
+  .Row > div > a > div {
+    height: 8em;
+  }
+
+  .Row > div > a > div > img {
+    height: 8em;
+  }
+
+  .Row > div > a:first-of-type > div:hover > p:last-of-type {
+    padding-top: 2.8em;
+  }
+
+  .Row > div:nth-of-type(2) {
+    margin-right: 0;
+  }
+
+  .Row > div:first-of-type {
+    margin-left: 6%;
+  }
+
+}
+
+#slider_cont+.Row {
+	display: none;
+}

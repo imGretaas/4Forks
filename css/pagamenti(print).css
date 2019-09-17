@@ -1,0 +1,78 @@
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+body > div > p, h1, h2{
+  color: #343331;
+}
+
+body > div > p{
+  font-family:  Roboto, -apple-system, arial;
+  font-weight: 300;
+  margin-bottom: 0.8em;
+}
+
+body > div > h1, body > div > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+body > div > h1{
+  font-size:2em;
+  margin-left: 7%;
+  margin-top:1.5%;
+  margin-bottom:0.8em;
+}
+
+body > div > h2{
+  font-size: 1.4em;
+  /*margin-top:0.1em;*/
+  margin-bottom:0.5em; 
+}
+
+body > div > p{
+  margin-left:1%;
+  margin-right:1%;
+}
+
+body > div > p > span > a{
+  color:#5a1323;
+  text-decoration: none;
+}
+
+body > div > p > span > a:visited{
+  color:#2e5d5a;
+}
+
+body > div > p > span > a::after{
+  content:" <" attr(href) ">";
+  text-decoration: underline;
+}
+

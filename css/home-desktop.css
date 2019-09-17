@@ -1,0 +1,440 @@
+
+/*-------------------------------------------------------CORPO--------------------------------------------------*/
+
+.Prova1 {
+  position:relative;
+  margin:0 auto;
+  top:0px;
+  left:0px;
+  width:1300px;
+  height:300px;
+  overflow-y:hidden;
+  visibility:hidden;
+}
+
+.Prova2 {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+
+.Prova2-5 {
+  text-align:center;
+  background-color:rgba(0,0,0,0.7);
+  overflow:hidden;
+}
+
+.Prova3 {
+  margin-top:-19px;
+  position:relative;
+  top:50%;
+  width:38px;
+  height:38px;
+}
+
+.Prova4 {
+  cursor:default;
+  position:relative;
+  top:0px;
+  left:0px;
+  width:1300px;
+  height:300px;
+  overflow:hidden;
+}
+
+.Prova5 {
+  position:absolute;
+  top:120px;
+  left:75px;
+  width:470px;
+  height:220px;
+}
+
+.Prova6 {
+  position:absolute;
+  top:4px;
+  left:45px;
+  width:379px;
+  height:213px;
+  max-width:379px;
+}
+
+.Prova7 {
+  position:absolute;
+  top:476px;
+  left:454px;
+  width:63px;
+  height:77px;
+  max-width:63px;
+}
+
+.Prova8 {
+  position:absolute;
+  bottom:12px;
+  right:12px;
+}
+
+.Prova9 {
+  width:16px;
+  height:16px;
+}
+
+.Prova11 {
+  width:65px;
+  height:65px;
+  top:0px;
+  left:25px;
+}
+
+.Prova13 {
+  width:65px;
+  height:65px;
+  top:0px;
+  right:25px;
+}
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 032 css*/
+.jssorb032 {position:absolute;}
+.jssorb032 .i {position:absolute;cursor:pointer;}
+.jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
+.jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
+.jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
+.jssorb032 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none; }
+
+/*-------------------------------------------------------SLIDER--------------------------------------------------*/
+
+.Sottotitolo{
+  position: absolute;
+  bottom: 0;
+  margin:5em 70% 2em 10%;
+  width: 40%;
+  text-align:center;
+  padding:0.5em;
+  background-color:white;
+  color: #343331;
+  font-size: 1.3em;
+  font-family: "Source serif pro", arial, serif;
+  font-weight: 500;
+  border-radius:4px;
+}
+
+#err2{
+  display: none;
+}
+
+#err1{
+  float:left;
+  margin-top: 2.8em;
+  width: 32.5%;
+  margin-left: 2%;
+}
+
+#err1 fieldset {
+  border:none;
+}
+
+#err1 legend, #err1 input{
+  position: absolute;
+  left:-200em;
+}
+
+#err1 label {
+  font-size: 1.4em;
+  position: absolute;
+  left:31%;
+  top:3.2em;
+  cursor: pointer;
+}
+
+#xcheck1:checked~*{
+  display: none;
+}
+
+#err1 div {
+  margin:3px;
+  text-align: center;
+}
+
+.Rosso {
+  box-shadow: -1px -1px 3px red, -1px 1px 3px red, 1px -1px 3px red, 1px 1px 3px red;
+}
+
+.Verde {
+  box-shadow: -1px -1px 3px green, -1px 1px 3px green, 1px -1px 3px green, 1px 1px 3px green;
+}
+
+#err1 h1 {
+  margin-top: 1.2em;
+}
+
+#err1 p {
+  margin-bottom: 1.1em;
+}
+
+#err1 button {
+  display: none;
+}
+
+#logoError {
+  display: block;
+  float: left;
+  width: 27%;
+  height: auto;
+  margin: 0.8em 0 0 2%;
+}
+
+#rettBlu {
+  margin: 2% 5% 2% 5%;
+  width: 90%;
+  min-height: 90px;
+  background-color: rgb(140,168,164);
+  border-bottom-left-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+}
+
+#rettBlu p {
+  width: 55%;
+  font-size: 1.8em;
+  font-family: 'Source Serif Pro', serif;
+}
+
+#rettBlu p:first-of-type{
+  text-align: right;
+  margin-top: 0.5em;
+}
+
+#rettBlu p:last-of-type{
+  float: right;
+  margin-bottom: 0.5em;
+}
+
+.ImgDid {
+  position: relative;
+  margin-bottom: 2%;
+  width: 45%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4em;
+}
+
+#imgDid1 {
+  background-image: url("../img/Focaccia(480x255).jpg");
+  float: left;
+  margin-left: 5%;
+}
+
+#imgDid1 > ul{
+  border-top-right-radius: 1em;
+}
+
+#imgDid2 > ul{
+  border-bottom-left-radius: 1em;
+}
+
+#imgDid2 {
+  background-image: url("../img/Hamburger(480x321).jpg");
+  float: left;
+  margin-right: 5%;
+}
+
+.Did {
+  width: 40%;
+  margin-top: 3em;
+  background-color: rgb(255,255,255);
+  text-align: center;
+  padding: 5% 0;
+  margin-bottom: 1em;
+}
+
+.Did li:last-of-type{
+  margin-bottom: 0;
+}
+
+.Did li {
+  font-size: 1em;
+  display: block;
+  margin-bottom: 0.3em;
+} 
+
+#imgDid2>ul {
+  margin-left: 60%;
+  color: #5a1323;
+}
+
+.Did a {
+  display: block;
+  width: 100%;
+}
+
+.Did a:visited {
+  color: #2e5d5a;
+}
+
+.Did a:hover {
+  text-decoration: underline;
+}
+
+#strisciaOp {
+  margin: 2% 5%;
+  width: 90%;
+  height: auto;
+  background-color: rgb(238,233,217);
+  border-radius: 10px;
+}
+
+/*#strisciaOp a {
+  text-decoration: none;
+}*/
+
+#strisciaOp a:visited {
+  color: #2e5d5a;
+}
+
+#strisciaOp a:hover {
+  text-decoration: underline;
+}
+
+#strisciaOp>div {
+  float: left;
+  width: 22.5%;
+  height: auto;
+  margin: 4% 0;
+}
+
+#strisciaOp>div:first-of-type {
+  margin-left: 5%;
+}
+
+#strisciaOp>div:last-of-type {
+  margin-right: 5%;
+}
+
+#strisciaOp>div>a>div>h1 {
+  display: none;
+}
+
+#strisciaOp>div>a>div {
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 62.9%;
+}
+
+#strisciaOp>div a:visited h1 {
+  color: #2e5d5a;
+}
+
+#Img1 {
+  background-image: url("../img/product/72.jpg");
+}
+
+#Img2 {
+  background-image: url("../img/product/80.jpg");
+}
+
+#Img3 {
+  background-image: url("../img/product/58.jpg");
+}
+
+#Img4 {
+  background-image: url("../img/product/51.jpg");
+}
+
+.Prezzo {
+  background-color: rgb(255,255,255);
+  float: right;
+  font-size: 0.9em;
+  padding: 0.1em;
+}
+
+.Spazio {
+  margin-top: 75%;
+}
+
+.Titoletto {
+  width: 100%;
+  font-size: 1.7em;
+  text-align: center;
+  color: #5a1323;
+}
+
+#strisciaOp > div > a:visited > h1{
+  color: #2e5d5a;
+}
+
+.Paragrafetto {
+  width: 90%;
+  color: rgb(52, 51, 49);
+  font-size: 1.2em;
+  margin: 1% 5% 0;
+  text-align: center;
+}
+
+.SovraFooter {
+  width: 45%;
+  height: 8em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin-bottom: 2%;
+}
+
+.SovraFooter h1 {
+  color: #5a1323;
+  background-color: rgb(255,255,255);
+  float: right;
+  margin-top: 2.8em;
+  font-size: 1.8em;
+  min-width: 30%;
+  padding: 0% 4%;
+  text-align: center;
+  border-bottom-left-radius: 0.3em;
+}
+
+a:visited > .SovraFooter > h1{
+  color: #2e5d5a;
+}
+
+#sovraFooter1 {
+  background-image: url("../img/4Forchette.jpg");
+  background-position: center center;
+  margin-left: 5%;
+}
+
+#sovraFooter2 {
+  background-image: url("../img/oliobari.jpg");
+  background-position: 100% center;
+  margin-right: 5%;
+}
+
+.Margin {
+  margin: 2% 5% 2% 5%;
+}
+
+
+
+/*-------------------------------------------------------SPAZIO PROVE--------------------------------------------------*/

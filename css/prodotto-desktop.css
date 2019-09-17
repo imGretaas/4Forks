@@ -1,0 +1,457 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(75,71,52) => #7dc1bd;
+C : rgb() => #2e5d5a;
+D : rgb() => #e3e2cc;
+E : rgb() => #dcd3b7;
+F : rgb() => #dcd3b7;
+G : rgb() => #343331;
+H : rgb() => #4B4734;
+I : rgb() => #c8c5bc;
+J : rgb() => #eee9d9;
+K : rgb() => #FFFFFF;
+
+*/
+/*---------------------------------------------*/
+/* ------------ INIZIO BREADCRUMB ------------ */
+
+body > div:first-of-type{
+	margin-top:0.5%;
+}
+
+body > div > div:first-of-type > p > span{
+	float:right;
+	font-size:2.4em;
+	width:52%;
+	text-align:right;
+	margin-bottom:0.5em;
+	font-family:  Roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #343331;
+}
+
+body > div > h1{
+	margin-left:6%;
+	/*margin-bottom:0.5em;*/
+	font-family: "Source Serif Pro", Arial, serif;
+	font-weight: 400;
+	font-size:2em;
+	color:#343331;
+}
+
+body > div > p:first-of-type > a, div > p:nth-of-type(2) > a{
+	font-family: "Source Serif Pro", Arial, serif;
+	font-weight:400;
+	colo: #5a1323;
+}
+
+body > div > p:first-of-type > a:visited, div > p:nth-of-type(2) > a:visited{
+  color: #2e5d5a;
+}
+
+body > div > p:first-of-type, div > p:nth-of-type(2){
+	font-family:  Roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #343331;
+	margin-left: 6%;
+	font-size:1em;
+	display:inline;
+}
+
+body > div > div:first-of-type{
+	width:86%;
+	height:auto;
+	margin:2% 5% 2% 5%;
+	background-color:#eee9d9;
+	padding:2%;
+	border-radius:10px;
+}
+
+body > div > div:first-of-type > p > img{
+	float:left;
+	width:46%;
+	margin-right:2%;
+}
+
+body > div > div:first-of-type > p:first-of-type{
+	text-align:justify;
+	word-wrap: break-word;
+	font-size:1em;
+	padding: 0.5em 1% 0.5em 1%;
+	font-family:  Roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #343331;
+	margin-left:1.5em;
+}
+
+body > div > div:nth-of-type(3){
+	text-align:center;
+	margin-bottom:1em;
+	margin:0.2em 5% 1em 5%;
+}
+
+body > div > div:nth-of-type(3) > p{
+	text-align:right;
+	margin-right: 6%;
+	font-size:0.8em;
+	font-family:  Roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #343331;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset{
+	border:none;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > legend{
+	margin-bottom:1em;
+	font-size:1.3em;
+	text-align:center;
+	font-family: "Source Serif Pro", Arial, serif;
+	font-weight: 400;
+	color:#343331;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p > label{
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:nth-of-type(2) > select[id=province3] option:not(:first-of-type){
+	display:none;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset> p > select{
+	border-radius: 2px;
+	width:45%;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:first-of-type{
+	float:left;
+	width:40%;
+	margin-left:10%;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:first-of-type span.Errors{
+	margin-left:16%;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:nth-of-type(2) span.Errors{
+	margin-left:17.9%;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:nth-of-type(3) span.Errors{
+	margin-left:27%;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:nth-of-type(2){
+	width:40%;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+/*body > div > div:nth-of-type(3) > form  > fieldset > select[id=regione3]{
+	margin-right:2%;
+}*/
+
+body > div > div:nth-of-type(3) > form > fieldset > p > span:first-of-type{
+	margin-bottom:3.2em;
+	float:right;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+.Errors{
+	font-size:1em;
+	color:red;
+	display:block;
+	width:70%;
+	font-family:  Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+/*body > div > div:nth-of-type(3) > form  > fieldset > label[for=quantity]{
+	display:block;
+}*/
+
+/*body > div > div:nth-of-type(3) > form > p:nth-of-type(2){
+	margin-left:16%;
+}*/
+
+/*body > div > div:nth-of-type(3) > form > p:last-of-type{
+	display:none;
+	font-size:1.2em;
+	font-family:  Roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #343331;
+}*/
+
+body > div > div:nth-of-type(3) > form > fieldset > p > input[id=quantity]{
+	width:20%;
+	height:1.9em;
+	text-align:center;
+	border-radius: 2px;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:nth-of-type(3){
+	display:block;
+	width:50%;
+	float:left;
+	text-align:right;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+#aggiorna{
+	color:#343331;
+	background-color:#7dc1bd;
+	border:none;
+	border-radius: 2px;
+	padding:0.5em 1em 0.5em 1em;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+	text-decoration:underline;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset #buy{
+	color:#343331;
+	background-color:#7dc1bd;
+	border:none;
+	border-radius: 2px;
+	padding:0.5em 1em 0.5em 1em;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+	text-decoration:underline;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:last-of-type > input[disabled=disabled]{
+	cursor:not-allowed;
+	background-color:#8CA8A4;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:last-of-type > input[type=button]{
+	cursor:not-allowed;
+	background-color:#8CA8A4;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset  input[type=submit]:hover{
+	cursor:pointer;
+	text-decoration:underline;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:last-of-type > input[disabled="disabled"]:hover{
+	cursor:not-allowed;
+	text-decoration:underline;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:last-of-type{
+	display:block;
+	width:50%;
+	text-align:left;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:last-of-type > label[for="buy"]{
+	display: none;
+}
+
+#sliderVend{
+	margin: 0.2em 5% 1em 5%;
+}
+
+#sliderVend > a:nth-of-type(2){
+	max-width:85%;
+	width: 30%;
+	display: block;
+}
+
+#sliderVend > a:nth-of-type(2):hover{
+	text-decoration: underline;
+}
+
+#sliderVend > a > h2{
+	font-size:1.3em;
+	font-family: "Source Serif Pro", Arial, serif;
+	font-weight: 400;
+}
+
+#sliderVend > a > img{
+	float:right;
+	width:6%;
+	height:auto;
+	margin-bottom: 1em;
+}
+
+#sliderVend > p{
+	margin-top:0.6em;
+	font-family:  Roboto, -apple-system, arial;
+	font-weight: 300;
+	color: #343331;
+	font-size: 1em;
+}
+
+a.ProdSlider > p:last-of-type{ /*Titoli prodotti slider*/
+	font-family: "Source Serif Pro", Arial, serif;
+	font-weight: 400;
+	color:#5a1323;
+}
+
+a.ProdSlider:hover > p:last-of-type{
+	text-decoration: underline;
+}
+
+a.ProdSlider:visited > p:last-of-type{ /*Titoli prodotti visitati slider*/
+	color:#2e5d5a;
+}
+
+
+/* ---------------------------- INSERITO DA GIUSP----------------------------------
+   ---------------------- chiedi prima di modificare ------------------------------ */
+
+.Row > div > a:first-of-type > div > img{
+  width:100%;
+  height:11em;
+}
+
+.Row > div > a:first-of-type > div:hover > p:first-of-type, .Row > div > a:first-of-type > div:hover > img{
+  display:none;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:nth-of-type(4) input{
+	position: absolute;
+	left: 150%;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:nth-of-type(4)+.Clearer{
+	display: none;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > p:nth-of-type(4) label{
+	font-size: 1px;
+	width:1px;
+	position: absolute;
+	left:200%;
+}
+
+/*Sdp*/
+.Row > div > a:first-of-type > div:hover > p:last-of-type{
+  display:block;
+  width:100%;
+  height: 100%;
+  color: #5a1323;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #c8c5bc;
+  padding-top: 4em;
+}
+
+.Row > div > a:first-of-type:visited > div:hover > p:last-of-type{
+  color:#2e5d5a;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+.Row{
+  margin-left:0;
+  margin-top:1em;
+  width: 100%;
+  height: auto;
+  overflow-y:hidden;
+}
+
+.Row > div:last-of-type{
+  margin-right: 0;
+}
+
+.Row > div{
+  width:24.2%;
+  /*height: 13em; */
+  float:left;
+  margin-right:1%;
+}
+
+.Row > div > a:first-of-type > div{
+	height: 11.1em;
+	width: 100%;
+	overflow: hidden;
+  position: relative;
+}
+
+.Row p{
+	margin: 0 !important;
+	font-family: Roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+.Row > div > a:last-child{
+  text-decoration: none;
+}
+
+.Row > div > a:last-of-type > h1{ /* --- TITOLO PRODOTTI --- */
+  font-size: 1.2em;	
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#5a1323;
+  text-decoration: none;
+  text-align: center;
+  margin-top:0.5em;
+  width:90%;
+  margin-left:6%;
+}
+
+.Row > div > a:last-of-type:hover > h1{
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+.Row > div > a:last-of-type:visited > h1{
+  color:#2e5d5a;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+.Row > div > a:first-of-type > div > p:first-of-type{
+  position: absolute;
+  right:0;
+  top:0;
+  padding:0 6px;
+  text-align: center;
+  background-color:white;
+  color: #343331;
+  font-size: 1.5em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+#jssor_1+.Row {
+	display: none;
+}

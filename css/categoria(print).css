@@ -1,0 +1,111 @@
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+.Row > p > a, .Row > p:last-child{
+  display: none;
+}
+
+p.Sdp{
+  display: none;
+}
+
+body > div:nth-last-of-type(2){
+  display: none;
+}
+
+h1.Hric{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+
+.Row{
+  clear:both;
+}
+
+.Row > div {
+  clear: both;
+}
+
+.Row img {
+  display: block;
+  width: 30%;
+  height: 8em;
+  float: left;
+  padding-bottom: 2.6em;
+  padding-left: 2%;
+}
+
+.Row p {
+  float: right;
+}
+
+.Row img+p {
+  display: none;
+}
+
+#succconteiner {
+	min-height: 2em;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+#actualpage{
+	display:none;
+}
+
+.Successive{
+	display:none;
+}
+
+div#linkcont{
+  margin: 2em 0;
+  text-align: center;
+}
+
+#linkcont~p {
+  color:red;
+  font-size:1.2em;
+}
+
+#linkcont~p{
+  margin:0 0 1em 10%;
+  font-size:1.2em;
+  font-weight: 500;
+}
+
+.Row:last-of-type~p span,  #linkcont~p span{
+  font-size:1.6em;
+}

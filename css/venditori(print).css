@@ -1,0 +1,132 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(75,71,52) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #dcd3b7;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+
+*/
+/*---------------------------------------------*/
+
+/* ------------ INIZIO Breadcrumb ------------ */
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+/* ------------ FINE Breadcrumb ------------ */
+
+
+h1#venditori{
+  font-size:2em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#343331;
+}
+
+.Row > div{
+  float: left;
+  display: inline-block;
+  width:20%;
+  height:22em;
+  margin-left:2.2%;
+  margin-right:2.2%;
+  margin-top:2%;
+  vertical-align:top;
+  background-color: #eee9d9;
+  border-radius: 10px;
+}
+
+.Row > div > a > div{
+  display: none;
+}
+
+.Row > div > a:nth-of-type(2) > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 8% auto 8% auto;
+  cursor: pointer;
+  /*color:#5a1323;*/
+}
+
+.Row > div > p{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1em;
+  margin: 2% auto 0% auto;
+  color: #343331;
+}
+
+.Row > div > a{
+  text-decoration: none;
+}
+
+.Row > div > a > h2{
+  color:#5a1323;
+}
+.Row > div > a:visited > h2{
+  color:#2e5d5a !important;
+}
+
+.Row img {
+  display: block;
+  width: 100%;
+  height: 9.5em;
+}
+
+#linkcont {
+ width: 100%;
+  margin-top: 5.5em;
+  text-align: center;
+}
+
+.succconteiner {
+  text-align: center;
+  width: 2.5em;
+  height: 2.5em;
+  display: inline-block;
+}
+
+.succconteiner a, .succconteiner p{
+
+  border: 1px solid #000;
+  line-height: 2.5em;
+}

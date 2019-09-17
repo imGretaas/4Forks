@@ -1,0 +1,74 @@
+@media print {
+ 
+/* Inhaltsbreite setzen, Floats und Margins aufheben */
+/* Achtung: Die Klassen und IDs variieren von Theme zu Theme. Hier also eigene Klassen setzen */
+    
+/** Seitenränder einstellen */       
+@page {
+  margin: 2cm;
+}
+ 
+/* Alle Seitenumbrüche definieren */
+a {
+  page-break-inside:avoid;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  page-break-after:avoid; 
+  page-break-inside:avoid;
+}
+
+img {
+  page-break-inside:avoid; 
+  page-break-after:avoid;
+}
+
+ul {
+  page-break-before:avoid;
+}
+    
+/* Linkfarbe und Linkverhalten darstellen */
+a:link, a:visited, a {
+  background: transparent;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: left;
+}
+
+a[href^=http]:after {
+  content:" <" attr(href) "> ";
+}
+
+$a:after > img {
+  content: "";
+}
+
+a[href^="#"]:after {
+  content: "";
+}
+
+a:not(:local-link):after {
+  content:" <" attr(href) "> ";
+}
+
+p, h1, h2, h3, h4, h5, h6 { 
+  color: rgb(0, 0, 0);
+}
+
+/*----------------------------- IGNORATI ------------------------------*/
+
+#skip, header :not(a), img, footer {
+  display: none;
+}
+
+/*----------------------------- CORPO ---------------------------------*/
+    
+#logo {
+  width: 30%;
+  margin: 1% 35%;
+  text-align: center;
+  display: block;
+}
+
+}

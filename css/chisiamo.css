@@ -1,0 +1,134 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(75,71,52) => #7dc1bd;
+C : rgb() => #2e5d5a;
+D : rgb() => #e3e2cc;
+E : rgb() => #dcd3b7;
+F : rgb() => #dcd3b7;
+G : rgb() => #343331;
+H : rgb() => #4B4734;
+I : rgb() => #c8c5bc;
+J : rgb() => #eee9d9;
+K : rgb() => #FFFFFF;
+
+*/
+/*---------------------------------------------*/
+/* ------------ INIZIO Breadcrumb ------------ */
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+/* ------------ FINE Breadcrumb ------------ */
+
+body > h1{
+  font-size:2em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  margin-left: 7%;
+  margin-top:0.7em;
+  margin-bottom:0.5em;
+  color:#343331;
+}
+
+.SemiLine{
+  width: 10%;
+  height: 1px;
+  background-color: #343331;
+  margin: 0% 45%;
+}
+
+
+body > h2{
+  font-size:1.2em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#343331;
+  width:100%;
+  text-align: center;
+  font-weight: 400;
+  margin: 0.4em 0;
+  line-height: 1.4em;
+}
+
+body > h2:first-of-type{
+  font-size: 1.5em;
+}
+
+.LaStoriaPar{
+  color:#343331;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  text-align:left;
+  margin-left:12%;
+  margin-right:12%;
+  margin-top:0.5em;
+  line-height: 1.6em;
+  margin-bottom:0.5em;
+}
+
+div > .LaStoriaPar:last-of-type{
+  margin-bottom: 1em;
+}
+
+div:nth-of-type(4){
+  margin: 0.5em 0;
+}
+
+div > p > a{
+  color: #5a1323;
+}
+
+div > p > a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div > p > a:visited{
+  color: #2e5d5a;
+}
+
+body > div:last-of-type{
+  margin-bottom: 1em;
+}
+
+p#primero > br:nth-of-type(2), div:nth-of-type(4) > p > br:nth-of-type(3), div:nth-of-type(4) > p > br:nth-of-type(5){
+  margin-bottom: 0.6em;
+}
+
+p#primero{
+  margin-bottom: 1.5em;
+}
+
+div:last-of-type > p > br{
+  margin-bottom: none;
+}

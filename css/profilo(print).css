@@ -1,0 +1,86 @@
+@media print {
+
+/*----------------------------- IGNORATI ------------------------------*/
+#togglePwd, #labTogPwd, button {
+  display: none;
+}
+
+/*----------------------------- CORPO ----------------------------------*/
+
+/*li {
+  display: block;
+}*/
+
+/*body>form>ul>li>input {
+  width: 60%;
+  border: none;
+  text-transform: capitalize;
+}*/
+
+}
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  font-family: 'Source Serif Pro', serif;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  content: "/\00a0"; /*divisore Breadcrumb, carattere speciale */
+}
+
+ul.Breadcrumb li a {
+  text-decoration: none;
+  font-family: 'Source Serif Pro', Arial, serif;
+}
+
+fieldset{
+	border:none;
+}
+
+
+body > form > p > label{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}
+
+body > form label{
+	float:left;
+	width:30%
+}
+
+body > form > p > input{
+	
+  height:1.5em;
+  border-radius:2px;
+  display:block;
+}
+
+#annulla {
+  width: 60%;
+  
+}
+
+#salva {
+  width: 60%;
+}
+
+#paga{
+  width: 30%;
+}
+
+body > form > p{
+	width:50%;
+	float:left;
+}
+
+body > form > p:first-of-type{
+	width:100%;
+}

@@ -1,0 +1,342 @@
+sul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+/* ---------------------------------------------------------------- */
+
+body > h1{
+  font-size: 2em;
+  text-align: left;
+  margin: 2em 0 1.5em 14%;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+/* ---------------------------------------------------------------- */
+
+.Row > div{
+  width:40%;
+  float: left;
+  /*margin-left:5%;*/
+  margin-left:6%;
+}
+
+.Row > div:nth-of-type(2){
+  margin-right: 4%;
+}
+
+/*.Prduct*/
+.Row > div > a:first-of-type > div{
+  position: relative;
+  /*margin:2% 2% 4% 2%;*/
+  width:100%;
+  overflow:hidden;
+}
+
+
+/* ------------------- F I N E  P R O D O T T I ------------------- */
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  position: absolute;
+  background-color:white;
+  color: #343331;
+  font-size: 1.5em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  top: 0;
+  right: 0;
+  margin-top
+}
+
+.Row:first-of-type{
+	margin-top:2em;
+}
+
+.Row > div > a:nth-of-type(2) > h2{
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 0.4em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+.Row > div > a:last-of-type, .Row > div > a:nth-of-type(2){
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin: 0.2em 3% 0;
+}
+
+.Row > div > a:last-of-type:visited, .Row > div > a:nth-of-type(2):visited{
+  color: #2e5d5a;
+}
+
+.Row > div > a:last-of-type > h2{ /* --- TITOLO PRODOTTI --- */
+  font-size: 1em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  color:#5a1323;
+  text-align: center;
+  margin-top:0.5em;
+  width:90%;
+  margin-left:6%;
+}
+
+/*.Sdp*/
+.Row > div > a:first-of-type > div > p:last-of-type{
+  display:none;
+}
+
+/*.Prduct > img*/
+.Row > div > a:first-of-type > div > img{
+  width:100%;
+  height:11.7em;
+}
+
+footer{
+  margin-top: 2em;
+}
+
+/* Inserito da Giusp */
+
+#succconteiner {
+	min-height: 2em;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+div#linkcont{
+  margin: 2em 0 1em 0;
+  text-align: center;
+}
+
+#actualpage, a.Successive  {
+	width: 2em;
+	height:2em;
+	border-top: 1px solid #343331;
+  border-bottom: 1px solid #343331;
+	float: left;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 2em;
+}
+
+.Row:last-of-type~p, #linkcont~p ,.Row span{
+  color:red;
+  font-size:1.2em;
+}
+
+.Row:last-of-type~p,  #linkcont~p{
+  margin:0 0 1em 2%;
+  font-size:1em;
+  font-weight: 500;
+}
+
+.Row:last-of-type~p span,  #linkcont~p span{
+  font-size:1.6em;
+}
+
+.Row:last-of-type{
+  margin-bottom: 2em;
+}
+
+/* -------------------------320px----------------------------------*/
+
+/*.H*/
+.Row > div{
+  height:18em;
+  overflow-y: hidden;
+}
+
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  padding-right:2%;
+  padding-left:2%;
+  font-size: 1.3em;
+}
+
+/*.Prduct*/
+.Row > div > a > div{
+  height: auto;
+}
+
+/*.Prduct > img*/
+.Row > div > a:first-of-type > div > img{
+  height:6.7em;
+}
+
+/* Bottoni pagine successive*/
+form[action="ricercamdp.php"] {
+  text-align: center;
+  min-height: 2em;
+}
+
+form[action="ricercamdp.php"] fieldset{
+  display: inline-block;
+}
+
+form[action="ricercamdp.php"] label {
+  position: absolute;
+  left: 150%;
+}
+
+form[action="ricercamdp.php"] input[type="submit"], form[action="ricercamdp.php"] p {
+  border-top: 1px solid #343331;
+  border-bottom: 1px solid #343331;
+  float: left;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 2.05em;
+}
+
+form[action="ricercamdp.php"] p {
+  width: 2em;
+}
+
+form[action="ricercamdp.php"] input[type="submit"] {
+  width: 2.15em;
+  height: 2.15em;
+  background: none;
+  color:#5a1323;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  border-left: none;
+  border-right: none;
+}
+
+
+
+/* -------------------------501px----------------------------------*/
+
+@media only screen and (min-width: 501px){
+
+/*.H*/
+.Row > div{
+  overflow-y: hidden;
+}
+
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  padding-right:10%;
+  padding-left:2%;
+}
+
+/*.Prduct > img*/
+.Row > div > a:first-of-type > div > img{
+  height:9.7em;
+}
+
+
+ul.Breadcrumb+a {
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+.Row:last-of-type~p,  #linkcont~p{
+  margin:0 0 1em 8%;
+  font-size:1em;
+}
+
+}
+
+/* -------------------------538px----------------------------------*/
+
+@media only screen and (min-width: 538px){
+
+/*.H*/
+.Row > div{
+  overflow-y: hidden;
+}
+
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  padding-right:4%;
+  padding-left:2%;
+}
+
+ul.Breadcrumb+a {
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+.Row:last-of-type~p,  #linkcont~p{
+  margin:0 0 1em 8%;
+  font-size:1em;
+}
+
+}
+
+
+/* -------------------------701px----------------------------------*/
+
+@media only screen and (min-width: 701px){
+
+/*.H*/
+.Row > div{
+  height:17em;
+  overflow-y: hidden;
+}
+
+/*.Price*/
+.Row > div > a:first-of-type > div > p:first-of-type{
+  padding: 0 2%;
+}
+
+ul.Breadcrumb {
+  float:left;
+}
+
+
+ul.Breadcrumb+a {
+  float: right;
+  margin: 0.7em 1em 2em 0 ;
+  color: #5a1323;
+  display: inline;
+  width: auto;
+  font-size: 0.95em;
+  line-height: 1.8em;
+
+}
+
+ul.Breadcrumb li a:visited, ul.Breadcrumb~a:visited{
+  color: #2e5d5a;
+}
+
+.Row:last-of-type~p,  #linkcont~p{
+  margin:0 0 1em 8%;
+  font-size:1.2em;
+
+}
+
+}

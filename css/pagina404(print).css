@@ -1,0 +1,16 @@
+#first{
+	width: 100%;
+}
+
+body > #content > #second > img{
+	display: none;
+}
+
+#first > ul > li > a{
+	font-family: roboto, -apple-system, arial;
+	font-weight: 300;
+}
+
+#first > ul > li > a::after{
+  content:" <" attr(href) ">";
+}

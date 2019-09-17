@@ -1,0 +1,898 @@
+*{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+/*colori:
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+fieldset {
+  border:none;
+}
+
+.Clearer {
+  clear: both;
+}
+
+.Hidden {
+  overflow: hidden;
+}
+
+.MostraR {
+  display: inline !important;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  background-color: rgb(255,255,255);
+}
+
+header {
+  background-color: rgb(238,233,217);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family:'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  color: #343331;
+}
+
+a {
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  color: #5a1323;
+}
+
+a:visited {
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family:'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: rgb(52,51,49);
+  content: "/\00a0"; /*divisore Breadcrumb, carattere speciale */
+}
+
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited {
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  height: 1.7em;
+}
+
+select {
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/*-------------------------------------------------------HEADER--------------------------------------------------*/
+
+#barraAlta {
+  display: none;
+}
+
+#navSub {
+  display: none; 
+}
+
+#profilo2 {
+  display: none;
+}
+
+#menuDesk {
+  display: none;
+}
+
+/*--------------DISPLAY:NONE-----------------------*/
+#skip>li {
+  position: absolute;
+  width: 100%;
+  height: 1.4em;
+  margin-top: 0.3em;
+  left: -200em;
+}
+
+#skip>li>a {
+  position: absolute;
+  z-index: 2;
+}
+
+#skip>li>a:focus {
+  left:19.7em;
+  position: absolute;
+}
+
+#skip>li:nth-of-type(3) {
+  display: none;
+}
+
+#hamburger {
+  display: block;
+  width: 2em;
+  cursor: pointer;
+  float: left;
+  padding: 0.8em 0;
+  margin-top: 2.8%;
+  margin-left: 5%;
+}
+
+.Line {
+  width:2em;
+  height: 0.3em;
+  background-color: black;
+  margin: 0.4em 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+#hamburger:hover + #mySidenav{
+  visibility: visible;
+  left:0;
+}
+
+/* The side navigation menu */
+.Sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 20%; /* 0 width - change this with JavaScript */
+    min-width: 200px;
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: -125%;
+    background-color: rgb(52,51,49); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s; 
+    -o-transition: 0.5s; 
+    -ms-transition: 0.5s;
+    visibility: hidden;
+}
+
+.Sidenav a:visited {
+  color: rgb(125,193,189);
+}
+
+.Sidenav a:visited p {
+  color: rgb(125,193,189);
+}
+
+.Sidenav a p {
+  color: rgb(255,255,255);
+}
+
+#upperMenu {
+  background-color: rgb(52,51,49);
+  width: 100%;
+  text-align: center;
+}
+
+#upperMenu li {
+  display: inline;
+  float: left;
+  width: 47%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+#mySidenav:hover {
+  visibility: visible;
+  left: 0;
+}
+
+#mySidenav:hover + #blackanddeker{
+  left:0% !important;
+  transition: background-color 0.5s !important;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s; 
+  -o-transition: background-color 0.5s; 
+  -ms-transition: background-color 0.5s;
+  background-color: rgba(0,0,0,0.5) !important;
+  visibility: visible !important;
+}
+
+.Sidenav>ul>li>a + ul{
+  display:block !important;
+  padding-left: 6.5%;
+}
+
+/* The navigation menu links */
+.Sidenav a {
+    padding: 0.5em 0.5em 0.5em 2em;
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(255,255,255);
+    display: block;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s; 
+    -o-transition: 0.3s; 
+    -ms-transition: 0.3s;
+}
+
+.Sidenav a:hover{
+  text-decoration: underline;
+}
+
+.Sidenav .StackLine {
+  margin: 1% 5%;
+  width:90%;
+  height: 1px;
+  background-color: white;
+}
+
+.Sidenav>form{
+  width: 100%;
+}
+
+.Sidenav>form>fieldset {
+  width: 100%;
+}
+
+.Sidenav>form>fieldset>legend {
+  position: absolute;
+  left:-200px;
+}
+
+.Sidenav label {
+  font-size: 0.8em;
+  margin-left: 5%;
+  color: rgb(255,255,255);
+}
+
+.Sidenav label:first-of-type {
+  margin-top: 0.8em;
+}
+
+.Sidenav label, .Sidenav select {
+  margin-bottom: 0.8em;
+}
+
+.Sidenav > form > fieldset > select {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Sidenav>form>fieldset>label:last-of-type {
+  position: absolute;
+  left:200%;
+}
+
+.Sidenav>form>fieldset>input[type="submit"] {
+  padding: 0.1em 0.3em;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 0.8em;
+}
+
+/* Fa apparire la barra sinistra del menu */
+.ToggleSide{
+  visibility: visible;
+  left:0;
+}
+
+.Show {
+  display:block !important;
+  padding-left: 6.5%;
+}
+    
+#blackanddeker {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: -105%;
+  background-color: rgba(0,0,0,0.0);
+  z-index: 1;
+  transition: background-color 0.1s;
+  -webkit-transition: background-color 0.1s;
+  -moz-transition: background-color 0.1s; 
+  -o-transition: background-color 0.1s; 
+  -ms-transition: background-color 0.1s;
+  transition: transform 0.4s;
+  -webkit-transition: transform 0.4s;
+  -moz-transition: transform 0.4s; 
+  -o-transition: transform 0.4s; 
+  -ms-transition: transform 0.4s;
+  transition-delay:0.21s;
+  -webkit-transition-delay: 0.21s;
+  -moz-transition-delay: 0.21s; 
+  -o-transition-delay: 0.21s; 
+  visibility: hidden;
+}
+
+#profilo1{
+  padding: 0.5em 1.5%;
+}
+
+#profilo1 img {
+  background-color: white;
+}
+
+#profilo1:visited img {
+  background-color: rgb(125,193,189);
+}
+
+.Larghezza {
+  height: 100%;
+  width: auto;
+}
+
+.Altezza {
+  width: 100%;
+  height: auto;
+}
+
+#regione{
+  padding: 0.5em 1.5%;
+}
+
+#regione img {
+  background-color: white;
+}
+
+#regione:visited img {
+  background-color: rgb(125,193,189);
+}
+
+#province2 > option:not(:first-of-type) {
+  display: none;
+}
+
+/*--------------FINE NAVBAR-----------------------*/
+
+#logo {
+  display: block;
+  float: left;
+  width: 27%;
+  height: auto;
+  margin: 0.8em 0 0 4%;
+}
+
+#LinkBarraAlta{
+  text-align: right;
+}
+
+#LinkBarraAlta > a{
+  color: #5a1323;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300; 
+}
+
+#LinkBarraAlta > a:visited{
+  color: #2e5d5a;
+}
+
+
+@media only screen and (max-width:450px){
+  #LinkBarraAlta{
+    width:50%;
+  }
+  
+  div#LinkBarraAlta > a{
+    margin-right:0.4em;
+  }
+}
+
+div#LinkBarraAlta > a{
+  font-weight:400;
+}
+
+@media only screen and (min-width:451px){
+  div#LinkBarraAlta > a{
+    margin-right:0.7em;
+  }
+}
+
+#sopra-icone {
+  display: block;
+  float: right;
+  padding: 0.8em 2% 0.8em 2%;
+  width: 35%;
+  text-align: center;
+  margin-top: 1.8%;
+}
+
+#icone li {
+  display: block;
+  float: left;
+  width: 32.5%;
+}
+
+#icone > li:not(:last-of-type) {
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+#icone > li:last-of-type {
+  float: right;
+}
+
+#icone a {
+  text-decoration: none;
+}
+
+.Piccolo {
+  width: 1.2em;
+  height: auto;
+}
+
+#defImg1{
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+/*#profiloImg1{
+  width: 2em;
+}*/
+
+.Caption {
+  font-size: 0.7em;
+  margin-top: 4px;
+}
+
+#upperMenu div p{
+  color: rgb(255, 255, 255);
+}
+
+#ricercaImg {
+  margin-left: auto;
+}
+
+#barraMenu {
+  width: 100%;
+}
+
+#myDropRicerca {
+  visibility: hidden;
+  margin-top: 0px;
+  opacity: 0;
+  width: 0%;
+  height: 0px;
+}
+
+.Apri {
+  visibility: visible !important;
+  width: 80% !important;
+  height: auto !important;
+  margin: 0 8% 1em !important;
+  opacity: 1 !important;
+  transition: opacity 0.4s !important;
+  margin: 0 10% 1em !important;
+}
+
+#myDropRicerca form fieldset legend{
+  position: absolute;
+  left:-200%;
+}
+
+#myDropRicerca form input{
+  font-size: 0.8em;
+  width: 80%;
+  float: left;
+  height: 2.6em;
+  border: solid 1px rgb(87,87,87);
+  border-radius: 4px;
+  padding-left: 0.5em;
+}
+
+#myDropRicerca form button{
+  padding: 5px 10px;
+  width: 15%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  float: left;
+  height: 2.3em;
+  color: rgb(87,87,87);
+}
+
+#myDropRicerca form button:hover{
+  background: #ccc;
+}
+
+#icone li a p {
+  color: rgb(52,51,49);
+}
+
+#icone li:first-of-type a p {
+  margin-top: 5px;
+}
+
+#myBtn{
+  width:1.5em;
+  padding: 0.6em;
+  border-radius: 10px;
+  text-align:center;
+  position:fixed;
+  bottom:10px; 
+  right:10px;
+  cursor:pointer;
+  display:none;
+  z-index:2;
+}
+
+#myBtn img {
+  width: 100%;
+}
+
+#myDropPiatti > li > p, #myDropBottega > li > p, #myDropBevande > li >p, #myDropAzienda > li > p{
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  background-color: #7dc1bd;
+  color: #343331;
+  width:100%;
+  padding: 0.5em 0 0.5em 2em;
+  margin-left: 0;
+}
+
+.Sidenav > ul > li > p+ul{
+  padding:0.5em 0.5em 0.5em 1em
+}
+
+#mySidenav > ul:nth-of-type(2) > li > p{
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  background-color: #7dc1bd;
+  color: #343331;
+  padding: 0.5em 0 0.5em 2em;
+  margin-left: 0;
+}
+
+/*-------------------------------------------------------CORPO--------------------------------------------------*/
+
+
+/*-------------------------------------------------------FOOTER--------------------------------------------------*/
+
+footer {
+  background-color: rgb(238,233,217);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a{
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #5a1323;
+  line-height: 1.5em;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+footer a:visited{
+  color: #2e5d5a;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: rgb(52,51,49);
+  line-height: 1.5em;
+}
+
+footer div.StackLine:first-of-type {
+  width: 90%;
+  height: 1px;
+  background-color: black;
+  margin: 1em 5%;
+}
+
+#stack1 ul:not(:first-of-type){
+  margin-top: 1em;
+}
+
+#stack1 ul li:first-of-type{
+  margin-bottom: 0.2em;
+}
+
+#pagamenti img{
+  float: left;
+  width: 18%;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+#pagamenti img:first-of-type{
+  margin-left:15%;
+  margin-right: 5%;
+}
+
+
+/**************************/
+
+
+
+#pagamenti img:first-of-type{
+  width: 16%;
+  margin-top: 1.7em;
+}
+
+
+/**************************/
+
+
+
+#pagamenti img:nth-of-type(2){
+  margin-right: 3%;
+  margin-left: 3%;
+  padding-top: 0.4em;
+}
+
+#pagamenti img:nth-of-type(3){
+  margin-right: 15%;
+  margin-left: 5%;
+  padding-top: 1em;
+}
+
+
+
+#pagamenti img:nth-of-type(4){
+  clear:both;
+  margin-left: 23%;
+  margin-right: 2%;
+  margin-top: 1.2em;
+  width: 25%;
+}
+
+
+
+
+
+/********************************/
+
+/*
+#pagamenti img:nth-of-type(4){
+  margin-left:20%;
+  margin-top:0.9em;
+  width:28%;
+}
+*/
+
+
+
+
+
+
+#pagamenti img:nth-of-type(4){
+  margin-left:23%;
+  margin-top:0.9em;
+  width:28%;
+  margin-right: 2%;
+}
+
+/*************************/
+
+
+
+
+
+
+#pagamenti img:last-of-type{
+  margin-right:29%;
+  margin-left: 3%;
+  margin-top: 1em;
+}
+
+
+
+
+
+/****************/
+
+#pagamenti img:last-of-type{
+  margin-right: 26%;
+}
+/******************/
+
+
+
+
+
+/*
+#pagamenti div:first-of-type {
+  display: none;
+}
+
+#pagamenti img:first-of-type {
+  margin-left: 10%;
+}
+
+#pagamenti img:last-of-type {
+  margin-right: 5%;
+}
+
+#paypal {
+  margin-top: 6%;
+}
+
+#mastercard {
+  margin-top: 1.5%;
+}
+
+#visa {
+  margin-top: 5%;
+}
+*/
+
+.Center {
+  text-align: center;
+  color: #343331;
+}
+
+#firma{
+  font-size:1em;
+  color:#343331;
+  display: block;
+  margin: 0.5em 5%;
+}
+
+#firma > span{
+  color:red;
+}
+
+/*-------------------------------------------------------PUNTI ROTTURA--------------------------------------------------*/
+
+/*
+@media only screen and (min-width: 320px){
+  #pagamenti img:first-of-type{
+    width: 16%;
+    margin-top: 1.7em;
+  }
+
+  #pagamenti img:nth-of-type(4){
+    margin-left:20%;
+    margin-top:0.9em;
+    width:28%;
+  }
+}
+*/
+
+@media only screen and (min-width: 501px) {
+  #logo {
+    margin-left: 13%;
+  }
+
+  #logoError {
+    margin-left: 5%;
+  }
+
+  #sopra-icone{
+    width: 30%;
+  }
+
+  #myDropRicerca form input {
+    height: 3em;
+  }
+
+  #myDropRicerca form button {
+    height: 2.5em;
+  }
+
+  .Piccolo {
+    width: 1.5em;
+    height: auto;
+  }
+
+  .Caption {
+    font-size: 0.8em;
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (min-width: 536px){
+  #hamburger {
+    margin-top: 3.5%;
+  }
+
+  /*#sopra-icone {
+    margin-top: 3.5%;
+  }*/
+}
+
+@media only screen and (min-width: 700px){
+  #hamburger {
+    margin-top: 5.7%;
+  }
+
+  #err{
+    position: absolute;
+    width: 30%;
+    left: 46%;
+    top: 10%;
+  }
+
+  #err label {
+    font-size: 1.4em;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  #err h1 {
+    margin-top: 1.2em;
+  }
+
+  #err p {
+    margin-bottom: 1.1em;
+  }
+
+
+  #sopra-icone{
+    width: 17%;
+    margin-left: 7%;
+  }
+
+  #icone li {
+    width: 36.5%;
+  }
+}
+
+
+/*-------------------------------------------------------SPAZIO PROVE--------------------------------------------------*/

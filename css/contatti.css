@@ -1,0 +1,190 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+/*---------------------------------------------*/
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+/*---------------------------------*/
+
+header{
+	background-color: white;
+}
+
+body{
+	background-color: #c8c5bc;
+}
+
+body > div:first-of-type{
+	width:80%;
+	padding:2%;
+	margin: 3em 8% 3em 8%;
+	background-color:white;
+	border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+body > div:first-of-type > h1{
+  font-size:2em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color: #343331;
+	margin-left: 7%;
+	margin-top:1.5%;
+ 	margin-bottom:0.4em;
+}
+
+body > div:first-of-type > p{
+	width:86%;
+	margin-left: 7%;
+	margin-right: 7%;
+	color: #343331;
+  font-family:  Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+/*---------------------------------*/
+
+body > div > div > form > fieldset{
+  border: none;
+}
+
+body > div > div > form > fieldset > p > label[for=name], body > div > div > form > fieldset > p > label[for=surname], body > div > div > form > fieldset > p > label[for=oggetto], body > div > div > fieldset > form >label[for=rettNote], label{
+  color: #343331;
+  font-family:  Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+select[id='oggetto']{
+	margin-bottom:1.5em;
+  font-family:  Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+span.Asterix{
+	color: red;
+}
+
+body > div > div > form > fieldset > p > label[for=invio]{
+  display: none;
+}
+
+body > div > div > form > fieldset > p > input[type=text], body > div > div > form > fieldset > p > select, body > div > div > form > fieldset > p > textarea {
+  width: 99%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+body > div > div > form > fieldset > p > textarea{
+	height: 100px;
+  color: #343331;
+  font-family:  Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+div > form > fieldset > legend{
+  font-size: 0;
+}
+
+body > div > div > form > fieldset > p > #invio{
+  color: #343331;
+  font-size: 1em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  padding: 0.6em 0.3em;
+  border: none;
+  border-radius: 0.6em;
+  width:6em;
+  margin:auto;
+  display: block;
+  height: 3em;
+}
+
+body > div > div > form > fieldset > p > input[type=submit]{
+	background-color: #7dc1bd;
+	cursor: pointer;
+}
+
+body > div > div > form > fieldset > p > input[type=button]{
+	background-color:rgb(140,168,164);
+	cursor:not-allowed;
+}
+
+body > div > div > form > fieldset > p > input#invio:hover{
+  text-decoration: underline;
+}
+
+body > div > div{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 1em;
+}
+
+body > div > div > form > fieldset > p:last-of-type{
+	text-align:center;
+}
+
+.Errors{
+	font-size:13px;
+	color:red;
+	display:block;
+	font-family:Roboto, -apple-system, arial;
+	font-weight:300;
+}
+
+.OnlyDistance{
+	float:right;
+	margin-bottom:3.2em;
+}
+
+.OnlyDistance1{
+	float:right;
+	margin-bottom:9em;
+}

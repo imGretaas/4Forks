@@ -1,0 +1,257 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+/*---------------------------------------------*/
+
+/* ------------ INIZIO Breadcrumb ------------ */
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+/* ------------ FINE Breadcrumb ------------ */
+
+body > h1{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#343331;
+  font-size:2em;
+  margin-left: 7%;
+  margin-top:1.5%;
+  margin-bottom:1.5%;
+}
+
+body > div:first-of-type{
+  margin-bottom: 1em;
+}
+
+body > div:first-of-type > p{
+  text-align:center;
+  margin-left:12%;
+  margin-right:12%;
+  line-height: 1.7em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  color:#343331;
+  line-height: 1.6em;
+}
+
+body > div:nth-of-type(2){
+  margin-top: 1.5em;
+}
+
+.SemiLine{
+  width: 10%;
+  height: 1px;
+  background-color: #343331;
+  margin: 0 45%;
+}
+
+body > h2{
+  font-size:1.2em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color:#343331;
+  width:100%;
+  text-align: center;
+  margin: 0.6em 0;
+}
+
+body > div > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size:1.5em;
+  margin:1em 0% 0.5em 10%;
+  color: #343331;
+}
+
+/* ------------ LOGHI MARCHI ------------ */
+
+body > div:nth-of-type(4){
+  width:80%;
+  margin-left:10%;
+  margin-bottom:4%;
+}
+
+.ContainerM > div:first-of-type{
+  margin-right:2%;
+  float:left;
+  width:10%;
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .3s ease-in-out;  
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  -webkit-background-size:contain;
+  -moz-background-size:contain;
+  -ms-background-size:contain;
+  -o-background-size:contain;
+}
+
+.ContainerM:hover > div:first-of-type{
+  filter:none;
+}
+
+#bioLogo{
+  height:4.5em;
+  background-image: url("../img/loghiCertif/bio.png");
+}
+
+#docLogo{
+  height:4.3em;
+  background-image: url("../img/loghiCertif/doc.png");
+}
+
+#docgLogo{
+  height:4.5em;
+  background-image: url("../img/loghiCertif/docg.png");
+}
+
+#dopLogo{
+  height:4.2em;
+  background-image: url("../img/loghiCertif/dop.png");
+}
+
+#igpLogo{
+  height: 4em;
+  background-image: url("../img/loghiCertif/igp.png");
+}
+
+.IgtLogo{
+  height:4.3em;
+  background-image: url("../img/loghiCertif/igt.jpg");
+}
+
+#slowLogo{
+  height:5em;
+  background-image: url("../img/loghiCertif/slowFood.png");
+}
+
+#stgLogo{
+  height: 4.5em;
+  background-image: url("../img/loghiCertif/stg.jpg");
+}
+
+.ContainerM > div:nth-of-type(2) > h3{
+  font-size:1.3em;
+  margin-top: 0%;
+  margin-bottom:0.1%;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  text-align:left;
+  color: #343331;
+}
+
+.ContainerM > div:nth-of-type(2) > div > p, .ContainerM > div:nth-of-type(2) > p{
+  text-align: left;
+  margin-bottom:1%;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  color: #343331;
+  line-height: 1.6em;
+}
+
+.ContainerM > div:nth-of-type(2) > h4{
+  font-size:1em;
+  margin-top: 0%;
+  margin-bottom:1%;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  text-align:left;
+  color: #343331;
+  margin-bottom:1%;
+}
+
+.ContainerM > div:nth-of-type(2) > p > a{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  margin-top:0.1em;
+  color:#5a1323;
+  cursor:pointer;
+}
+
+.ContainerM > div:nth-of-type(2) > p > a:hover{
+  cursor:pointer;
+  text-decoration: underline;
+}
+
+.ContainerM > div:nth-of-type(2) > p > a:visited{
+  color:#2e5d5a;
+}
+
+#divisionLine{
+  background-color:#343331;
+  width:50%;
+  height:1px;
+  margin-left:22.5%;
+  margin-top:3%;
+}
+
+.ContainerM{
+  margin-right:5%;
+  margin-top:3%;
+  margin-bottom:1em;
+}
+
+.ContainerM > div:nth-of-type(2){
+  margin-left:12%;
+  text-align: left;
+}
+
+.ContainerM > div > div:first-of-type > ul{
+  list-style-position: inside;
+  list-style-type: circle;
+  margin-left: 2%;
+  margin-bottom: 0.5em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+div:first-of-type > p > br:nth-of-type(2), div:first-of-type > p > br:nth-of-type(3), #igpLogo > div > div > p:first-of-type > br, #stgLogo > div > div > p:first-of-type > br, #docLogo > div > div > p:first-of-type > br{
+  margin-bottom: 0.6em;
+} 
+
+#docgLogo > div > div > p:first-of-type > br{
+  margin-bottom: 0.6em;
+}

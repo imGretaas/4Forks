@@ -1,0 +1,96 @@
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  font-family: 'Source Serif Pro', serif;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  content: "/\00a0"; /*divisore Breadcrumb, carattere speciale */
+}
+
+ul.Breadcrumb li a {
+  text-decoration: none;
+  font-family: 'Source Serif Pro', Arial, serif;
+}
+
+section {
+	display:block !important;
+}
+
+.actions{
+	display:none;
+}
+
+.steps{
+	display:none;
+}
+
+.SectionTitle{
+	display:none;
+}
+
+.Errors{
+	display:none;
+}
+
+fieldset{
+	margin-bottom:1.5em;
+	border:none;
+}
+
+body > div > form > div > p{
+	text-align:right;
+	font-size:0.8em;
+	margin:1%;
+	font-weight:500;
+}
+
+body > div > form > div > section > fieldset > p{
+	display:block;
+}
+
+label{
+	float:left;
+	width:30%;
+}
+
+body > div > form > div > section > fieldset > p > input{
+	width:55%;
+	border-radius: 0.1em !important;
+	height:1.4em !important;
+}
+
+body > div > form > div > section:last-of-type > fieldset > p:last-of-type > input{
+	margin:5em 30% 0 30%;
+	text-align:center;
+	padding: 1%;
+	border-radius: 0.2em;
+	text-decoration: none;
+	font-size:1em;
+	font-family: Roboto, -apple-system, arial;
+	height:3em !important;
+}
+
+legend{
+	font-size:2em;
+	font-family:'Roboto', arial, sans-serif;
+}
+
+body > div > form > div > section:last-of-type > fieldset > p:last-of-type > label{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}
+
+.Err {
+	color:red;
+	font-size:1.5em;
+	margin-left:5%;
+	padding-left:0.5em;
+}

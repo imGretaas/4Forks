@@ -1,0 +1,52 @@
+#middleregione+div {
+	display:none;
+}
+body > div > div:nth-of-type(5){
+	display:none;
+}
+
+body > div:first-of-type > div:first-of-type > p > span{
+	display:block;
+	text-align:right;
+    width: 100%;
+    font-family: Roboto, -apple-system, arial;
+    font-weight: 300;
+    font-size: 2em;
+    margin-right: 6%;
+    margin-bottom: 0.5em;
+}
+
+body > div > div:nth-of-type(3){
+	text-align:center;
+}
+
+body > div > div:nth-of-type(3) > form > fieldset > legend{
+	margin-bottom:1em;
+	font-size:1.3em;
+	text-align:center;
+	font-family: "Source Serif Pro", Arial, serif;
+	font-weight: 400;
+	color:#343331;
+}
+
+.Errors{
+	display:none;
+}
+
+body > div > div:nth-of-type(3) > p:first-of-type{
+	text-align:right;
+	font-family: Roboto, -apple-system, arial;
+    font-weight: 300;
+}
+
+div p img {
+	display: block;
+	width: 18em;
+	height: auto;
+}
+
+div p img+span {
+	position: relative;
+	top: -6.7em;
+	right: 0;
+}

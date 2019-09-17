@@ -1,0 +1,75 @@
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight:400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+label{
+	float:left;
+	width:50%;
+}
+
+label[for="accedi"], legend{
+  position: absolute;
+  font-size: 1px;
+  left: 150%;
+  display: none;
+}
+
+form + div a{
+	margin-left: 30%;
+}
+
+fieldset{
+	border:none;
+}
+
+.Float label{
+	width:30%;
+}
+
+.Float label[for="password"], .Float label[for="email"]{
+	margin-left: 20%;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+input#accedi{
+	width:20%;
+	text-align: center;
+	margin-left: 40%;
+}
+
+.Float input[id="password"], .Float input[id="email"]{
+	margin-left:10%;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}

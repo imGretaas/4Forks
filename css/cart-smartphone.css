@@ -1,0 +1,677 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+/*---------------------------------------------*/
+
+/*-------------------------------------------------------CORPO--------------------------------------------------*/
+/*{
+  margin:0%;
+  padding:0%;
+  font-size: 100%;
+  width:100%;
+}
+
+
+
+/* ------------ INIZIO BREADCRUMB ------------ */
+
+.Err {
+  text-align: center;
+  font-size: 1em;
+  color: red;
+
+}
+
+.Dispnone {
+  display: block;
+}
+
+.Onlybold {
+  font-weight: 400;
+}
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+
+/* ------------ INIZIO ROW ------------ */
+
+form > fieldset{
+  border: none;
+}
+
+form > fieldset > legend{
+  font-size: 0;
+}
+
+.Row{
+  width:100%;
+}
+
+.StackLine{
+  height:1px;
+  width:88%;
+  background-color: #343331;
+  margin-right:6%;
+  margin-left:6%;
+}
+
+.Det > h1.TitleCart{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+.TitleCart{
+  display:inline-block;
+  width:100%;
+  margin-left:13%;
+  margin-top:0.2%;
+}
+
+/* --- Nome Prodotto --- */
+#np{
+  float:left;
+  width:15%;
+}
+
+/* --- Quantita' --- */
+
+#qq{
+  float:left;
+  width:25%;
+  margin-left:15%;
+}
+
+/* --- Prezzo Finale --- */
+
+#pf{
+  float:left;
+  width:25%;
+  margin-left:8%;
+}
+
+/* ------------ FINE ROW ------------ */
+
+/* ------------ INIZIO CART ------------ */
+
+.Cart{
+  width:88%;
+  margin-left:8%;
+}
+
+div.Det div.Column:first-of-type {
+  width: 100%;
+}
+
+.Column{
+  float:left;
+  margin-top:3%;
+}
+
+#ColumMobile1{
+	width:55%;
+}
+
+#ColumMobile2{
+	width:40%;
+}
+
+div.Det div.Column:last-of-type+a {
+  display: none;
+}
+
+.Element{
+  width:100%;
+}
+
+.Image{
+  float: left;
+  display:block;
+  width:20%;
+  margin:1em 2% 0 5%;
+}
+
+.Desc > p{
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  font-size:1em;
+}
+
+.Desc{
+  float: right;
+  display: block;
+  width:50%;
+  margin-right:5%;
+  margin-top: 1em;
+  text-decoration: none;
+}
+
+.Desc:link{
+  color: rgb(90,19,35);
+}
+
+.Desc:visited{
+  color: #2e5d5a;
+}
+
+.Desc:hover{
+  text-decoration: underline;
+}
+
+.Seconda{
+  width:100%;
+}
+
+.Quantity{
+  float:left;
+  width:30%;
+  height: 1.7em;
+  border:1px solid #343331;
+  margin-left:10%;
+  margin-top:2%;
+  text-align:center;
+  color:#343331;
+}
+
+
+/* ---------------------------------------------- */
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------- */
+
+.Pz{
+  float:left;
+  margin: 0.6em 0 0 3%;
+  font-family: roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+.PricePiece{
+  margin-top:30%;
+  margin-left:45%;
+  font-family: roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+.Terza{
+  width:100%;
+}
+
+body > form > fieldset > div:first-of-type > div:nth-of-type(3) > p{
+	width:36%;
+	float:left;
+	margin-top:0.6em;
+}
+
+.Price{
+  font-family: roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+.Column .Dispnone {
+  font-weight: 400;
+  margin-bottom:0.3em;
+}
+
+.Change {
+  float: left;
+  margin: 0.6em 0 0 0;
+  text-align: center;
+}
+
+.Bin > img{
+  float:right;
+  /*width:12%;*/
+  height: 1.5em;
+  /*background-image: url("../img/512px/trash.png");
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: contain;*/
+  cursor: pointer;
+  margin:0.5em 10% 2.5em 0;
+  display: block;
+}
+
+div.Det .Clearer~p {
+  padding: 0.7em 5% 0.3em 5%;
+  font-size: 0.8em;
+}
+
+div.Det .Clearer~p:first-of-type {
+  padding-top: 1.7em;
+}
+
+div.Det .Clearer~p:last-of-type {
+  margin-bottom: 1.3em;
+}
+
+div.Det .Clearer+.Desc {
+  font-weight: 500;
+  display: none;
+}
+
+/* ------------ FINE CART ------------ */
+
+/* ------------ INIZIO NOTE ------------ */
+.Note{
+  width:88%;
+  margin-left:8%;
+  margin-top:2%;
+}
+
+.Note > p{
+  font-family: roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+body > form > fieldset:first-of-type{
+	margin-bottom:0.5em;
+}
+
+
+
+.Update{
+	background-color:#7dc1bd;
+	cursor:pointer;
+	margin:1em 20% 1em 20%;
+}
+
+#pay, .Update{
+	width:80%;
+  text-align:center;
+  color:rgb(52,51,49);
+  padding: 1%;
+  border-radius: 3px;
+  border:none;
+}
+
+input[type=submit]:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+input[disabled="disabled"]:hover{
+	cursor:not-allowed;
+	text-decoration:underline;
+}
+
+body > form > fieldset:last-of-type > p > input[type="button"] {
+	background-color:rgb(140,168,164);
+	cursor:not-allowed;
+}
+
+body > form > fieldset:last-of-type > p > input[type="submit"] {
+	background-color:#7dc1bd;
+	cursor:pointer;
+}
+
+body > form > fieldset:last-of-type > p > span:first-of-type{
+	float:right;
+	margin-bottom:3.4em;
+}
+
+#pay[disabled="disabled"] {
+  cursor: not-allowed;
+}
+
+.Update {
+  display: none;
+  height: 1.7em;
+}
+
+ul.Det {
+  float: left;
+  width: 30%;
+  display: none;
+}
+
+/*inserito da fif*/
+
+body > form:last-of-type > fieldset > div > p:first-of-type > span:first-of-type{
+	margin-bottom:8em;
+}
+
+body > form:first-of-type > fieldset > div > div:nth-of-type(2) > div > p:last-of-type > label{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}
+
+body > form:last-of-type > fieldset > div > p:last-of-type > label{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}
+
+.Errors{
+	font-size:13px;
+	color:red;
+	display:block;
+	font-family:"Roboto";
+	font-weight:400;
+	width:70%;
+	margin-left:8%;
+}
+
+body > form > fieldset > div > fieldset:last-of-type > p > input[type="button"] {
+	background-color:rgb(140,168,164);
+	cursor:not-allowed;
+	display:block;
+}
+
+body > form > fieldset > div > fieldset:last-of-type > p > input[type="submit"] {
+	background-color:rgb(125, 193, 189);
+	cursor:pointer;
+	display:block;
+}
+
+body > form > fieldset > div > fieldset:last-of-type > p > input[type="submit"]:hover {
+	background-color: rgb(125,193,189);
+}
+
+label[for="pay"] {
+  position: absolute;
+  font-size: 1px;
+  left: 150%;
+}
+
+fieldset:last-of-type {
+  text-align: center;
+  margin: 1em 0;
+}
+
+/* ----------------------------------------------------------- B R E A K P O I N T ------------------------------------------------------------------ */
+
+/* -------------------------501px----------------------------------*/
+
+@media only screen and (min-width: 320px){
+
+.Desc > p{
+  font-size:0.8em;
+}
+
+.TitleCart{
+  font-size:0.75em;
+}
+
+}
+
+@media only screen and (min-width: 501px){
+
+.Column .Dispnone {
+  margin-bottom: 0;
+}
+
+.Desc > p{
+  font-size:0.9em;
+}
+
+.TitleCart{
+  font-size:0.75em;
+}
+
+.Pz{
+  margin-top:3.2%;
+  text-align: left;
+}
+
+.Price{
+  margin-top:0.7em;
+}
+
+.PricePiece{
+  margin-top:39%;
+  margin-left:44%;
+}
+
+.Update {
+  margin-top: 0.8em;
+}
+
+}
+
+@media only screen and (max-width: 340px){
+  body > form > fieldset > div:first-of-type > div:nth-of-type(3) > p{
+    width: 38%;
+  }
+
+  .Bin{
+    display: block;
+    width: 100%;
+  }
+
+  .Bin > img{
+    margin: 0 50%;
+  }
+}
+
+/* -------------------------536px----------------------------------*/
+@media only screen and (min-width: 536px){
+
+
+.Det > h1.TitleCart{
+  font-size:0.75em;
+}
+
+.PricePiece{
+  margin-top:32%;
+  margin-left:47%;
+}
+
+
+
+.Update {
+  margin-top: 0.7em;
+  height: 2.1em;
+}
+
+}
+
+/* -------------------------701px----------------------------------*/
+
+@media only screen and (min-width: 701px){
+
+.Quantity {
+  width: 30%;
+}
+
+.Pz {
+  width: auto;
+}
+
+div.Det div.Column:nth-of-type(2) {
+  padding-top: 1em;
+}
+
+.Update {
+  margin-top: 3.2em;
+}
+
+.Change {
+  width: auto;
+  margin-top: 0.6em;
+  margin-left: 0.3em;
+}
+
+div.Det div.Column:first-of-type {
+  width: 33%;
+}
+
+ul.Det {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+ul.Det li {
+  width: 33%;
+  float: left;
+  margin: 0;
+}
+
+div.Det .Column .Desc {
+  display: none;
+}
+
+div.Det .Clearer+.Desc {
+  display: block;
+  width: unset;
+  margin: 1.5em 0 0 4.2em;
+}
+
+.TitleCart {
+  margin: 0;
+  font-size: 1em;
+}
+
+.Column {
+  width: 33%;
+}
+
+.Column .Dispnone {
+    display: none;
+}
+
+.Desc, .Image{
+  float:none;
+}
+
+a.Desc {
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
+
+.Image{
+  margin: 0 auto;
+}
+
+.Dispnone+.Price {
+    margin-top: 1.6em;
+}
+
+.Bin{
+  margin-top:2.9em;
+  position: static;
+  margin-left: 45%;
+  left: 0;
+}
+
+.PricePiece{
+  margin-top:34%;
+  margin-left:47%;
+}
+
+div.Det .Clearer ~ p {
+  padding-left: 6.2em;
+}
+
+div.Det .Clearer ~ p:first-of-type {
+  margin-top: 1.5em;
+}
+
+}
+
+p#totale {
+  text-align: center;
+  margin-top: 1em;
+}
+
+p#totale span:first-of-type {
+  font-weight: 500;
+}
+
+body > form > fieldset > div > fieldset:last-of-type > legend{
+	position: relative;
+	font-size:1px;
+	left: 150%;
+}
+
+/*-------------------------------------------------------SPAZIO PROVE--------------------------------------------------*/

@@ -1,0 +1,54 @@
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+  color:black;
+}
+ul.Breadcrumb li a {
+  text-decoration: none;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+ul.Det{
+	display:none;
+}
+
+div#ColumMobile1 > div > p:last-of-type{
+	display:none;
+}
+
+body > form > fieldset > a.Desc{
+	display:none;
+}
+
+div.Det .Clearer+.Desc {
+  display: none;
+}
+
+.Dispnone {
+  display: none;
+}
+
+legend{
+	display:none;
+}
+
+body > form > fieldset:last-of-type{
+	border:none;
+}
+
+body > form > fieldset:last-of-type > p > label{
+	display:none;
+}

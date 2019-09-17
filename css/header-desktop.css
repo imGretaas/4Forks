@@ -1,0 +1,732 @@
+*{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+/*colori:
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+fieldset {
+  border:none;
+}
+
+.Clearer {
+  clear: both;
+}
+
+.Hidden {
+  overflow: hidden;
+}
+
+.MostraR {
+  display: inline !important;
+}
+
+body {
+  background-color: rgb(255,255,255);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  color: #343331;
+}
+
+a {
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 300;
+  color: #5a1323;
+}
+
+a:visited {
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: rgb(52,51,49);
+  content: "/\00a0"; /*divisore Breadcrumb, carattere speciale */
+}
+
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited {
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  height: 1.7em;
+}
+
+select {
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#dropAzienda {
+  display: none;
+}
+
+#dropPiatti {
+  display: none;
+}
+
+#dropBottega {
+  display: none;
+}
+
+#dropBevande {
+  display: none;
+}
+
+/*-------------------------------------------------------HEADER--------------------------------------------------*/
+
+#regSub {
+  display: none;
+}
+
+#skip>li:nth-of-type(2) {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+#blackanddeker {
+  display: none;
+}
+
+/* The side navigation menu */
+.Sidenav {
+  display: none;
+}
+
+.Blackanddeker_alfa{
+  display: none;
+}
+
+#ricerca {
+  visibility: hidden;
+  float: left;
+  width:15%;
+}
+
+/*--------------DISPLAY:NONE-----------------------*/
+
+#skip>li {
+  position: absolute;
+  width: 50%;
+  height: 1.4em;
+  margin-top: 0.3em;
+  left:50em;
+}
+
+#skip>li>a {
+  position: absolute;
+  left: -200em;
+  z-index: 2;
+}
+
+#skip>li>a:focus {
+  left:0em;
+}
+
+#barraAlta {
+  display: block;
+  width: 100%;
+  background-color: rgb(200,197,188);
+}
+
+#LinkBarraAlta{
+  text-align: right;
+}
+
+div#LinkBarraAlta > a{
+  margin-right:0.7em;
+  font-weight:400;
+}
+
+
+#barraAlta > form > fieldset > legend {
+  position: absolute;
+  left: -200px;
+}
+
+#barraAlta > form > fieldset > select {
+  width: 14em;
+}
+
+#barraAlta>form>fieldset>label:first-of-type {
+  margin-left: 0.7em;
+}
+
+#barraAlta > form > fieldset > label:last-of-type {
+  font-size: 0;
+}
+
+#barraAlta>form>fieldset>input[type="submit"] {
+  cursor: pointer; 
+}
+
+#province1 > option:not(:first-of-type) {
+  display: none;
+}
+
+#logo {
+  display: block;
+  float: left;
+  width: 27%;
+  height: auto;
+  margin: 0.8em 0 0 36.5%;
+}
+
+#sopra-icone {
+  display: block;
+  float: right;
+  padding: 0.8em 1% 0.4em 2%;
+  width: 18%;
+  text-align: center;
+  margin-top: 6.5%;
+}
+
+#icone {
+  display: block;
+  float: right;
+  width: 100%;
+  padding: 0.8em 2% 0.4em 2%;
+  text-align: center;
+  }
+
+#icone >li:not(#ricerca) {
+  display: block;
+  float: left;
+  width: 32.5%;
+}
+
+#icone > li:not(:last-of-type) {
+  margin-left: 1em;
+}
+
+#icone > li:last-of-type {
+  float: right;
+}
+
+#icone >li >a {
+  text-decoration: none;
+}
+
+.Piccolo {
+  width: 1.5em;
+  height: auto;
+}
+
+#defImg2{
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  margin: auto;
+  margin-bottom: 8px;
+  overflow-y: hidden;
+}
+
+.Larghezza {
+  height: 100%;
+  width: auto;
+}
+
+.Altezza {
+  width: 100%;
+  height: auto;
+}
+
+.Caption {
+  font-size: 0.8em;
+  margin-top: 4px;
+}
+
+#icone li a p {
+  color: rgb(52,51,49);
+}
+
+#carrello {
+  width: 1.6em;
+  margin: 0 auto;
+}
+
+#barraMenu {
+  width: 100%;
+  background-color: rgb(238,233,217);
+}
+
+#menuDesk {
+  width: 70%;
+  float: left;
+}
+
+#menuDesk > li{
+  float: left;
+  padding: 0.7% 1%;
+  cursor: pointer;
+}
+
+#menuDesk li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+}
+
+#menuDesk li a:hover{
+  text-decoration: underline;
+}
+
+#menuDesk>li:hover>ul {
+  display: block !important;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(238,233,217);
+  margin-top: 0.4%;
+  padding: 1% 0;
+  border-top: solid 2px rgb(125,193,189);
+  min-width: 7em;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+
+#menuDesk li a:visited{
+  color: #2e5d5a;
+}
+
+#menuDesk > li > ul > li > a {
+  font-size: 0.85em;
+  display: block;
+  width: 80%;
+  padding: 0 10%;
+  margin: 0.07em 0%;
+}
+
+#menuDesk > li > ul > li:first-of-type > a{
+  margin-top: 0;
+}
+
+#menuDesk > li > ul > li:last-of-type > a{
+  margin-bottom: 0;
+}
+
+#menuDesk > li > ul > li > p{
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+  font-size:0.85em;
+  color: white;
+  padding: 5% 10%;
+  background-color: #2e5d5a;
+}
+
+#menuDesk > li > p{
+  font-family: 'Source Serif Pro', Arial, serif;
+  font-weight: 400;
+  font-size:1em;
+  width: 100%;
+  color:#343331;
+  cursor: default;
+}
+ 
+#myDropRicerca {
+  display: block;
+  float: right;
+  width: 30%;
+  height: auto;
+}
+
+#myDropRicerca form fieldset{
+  border: none;
+  padding: 1.4% 1%;
+}
+
+#myDropRicerca form fieldset legend{
+  position: absolute;
+  left:-200%;
+}
+
+#myDropRicerca form input{
+  margin-left: 4%;
+  padding-left: 0.8em;
+  font-size: 0.8em;
+  width: 90%;
+  border: none;
+  background-color: rgb(255,255,255);
+}
+
+#myDropRicerca form button{
+  margin-left: -2.3em;
+  width: 2.1em;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(255,255,255,0);
+  padding: 0 0.7em;
+  padding-bottom: 0.1em;
+}
+
+#myDropRicerca form button img {
+  width: 0.7em;
+}
+
+#myDropRicerca form button:hover{
+  background: #ccc;
+}
+
+#myBtn{
+  width:1.5em;
+  padding: 0.6em;
+  border-radius: 10px;
+  text-align:center;
+  position:fixed;
+  bottom:10px; 
+  right:10px;
+  cursor:pointer;
+  display:none;
+}
+
+#myBtn img {
+  width: 100%;
+}
+
+/*-------------------------------------------------------CORPO--------------------------------------------------*/
+
+
+/*-------------------------------------------------------FOOTER--------------------------------------------------*/
+
+
+footer {
+  background-color: rgb(238,233,217);
+}
+
+footer a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #5a1323;
+  line-height: 1.5em;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+footer a:visited{
+  color:#2e5d5a;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: rgb(52,51,49);
+  line-height: 1.5em;
+  margin-top: 0.5em;
+}
+
+#stack1 {
+  width: 67.5%;
+  float: left;
+  margin-left: 5%;
+}
+
+#stack1 ul {
+  width: 33.3%;
+  float: left;
+  list-style: none;
+}
+
+#stack2 {
+  width: 22.5%;
+  margin-right: 5%;
+}
+
+#bodyLine {
+  width:90%;
+  height: 1px;
+  background-color: black;
+  margin: 0 5%;
+}
+
+.StackLine {
+  margin: 1% 5%;
+  width:90%;
+  height: 1px;
+  background-color: black;
+}
+
+footer div .StackLine {
+  display: none;
+}
+
+.Center {
+  text-align: center;
+  color: #343331;
+  margin-bottom: 0.5em;
+}
+
+#loginVend {
+  float: left;
+  width: 50%;
+}
+
+#loginVend div:last-of-type{
+  width: 45%;
+  margin-left: 10%;
+}
+
+#loginVend a {
+  line-height: 2.3em;
+  font-size: 1em;
+}
+
+#pagamenti {
+  width: 50%;
+  float: right;
+  margin-bottom: 0.5em;
+}
+
+#pagamenti h1 {
+  width: 28%;
+  float: left;
+  font-size: 0.9em;
+  margin-top: 1.3%;
+  color: #343331;
+  margin-left: 9%;
+}
+
+#pagamenti .StackLine, #loginVend .StackLine {
+  display: block;
+  width: 85%;
+  margin-right: 10%;
+  margin-left: 10%;
+  float: left;
+}
+
+#loginVend .StackLine {
+  margin-right: 5%;
+}
+
+#pagamenti .StackLine {
+  margin-left: 5%;
+}
+
+#pagamenti img{
+  float: left;
+  width: 6.4%;
+  height: auto;
+  margin: 0.3em 0.5%;
+  margin-bottom: 1%;
+}
+
+#pagamenti #paypal {
+  margin-top: 0.5em;
+  width: 17%;
+}
+
+#pagamenti #mastercard {
+  margin-top: 0.5em;
+}
+
+#pagamenti #visa {
+  width: 9%;
+  margin-top: 0.85em;
+}
+
+#firma{
+  font-size:1em;
+  color:#343331;
+  display: block;
+  margin-left: 5%;
+}
+
+#firma > span{
+  color:red;
+}
+
+/*
+footer {
+  background-color: rgb(238,233,217);
+}
+
+footer a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: rgb(52,51,49);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a:visited {
+  color: rgb(90,19,35);
+}
+
+footer p {
+  font-size: 0.8em;
+  color: rgb(52,51,49);
+}
+
+#stack1 {
+  width: 67.5%;
+  float: left;
+  margin-left: 5%;
+}
+
+#stack1 ul {
+  width: 33.3%;
+  float: left;
+  list-style: none;
+}
+
+#stack2 {
+  width: 22.5%;
+  margin-right: 5%;
+}
+
+#bodyLine {
+  width:90%;
+  height: 1px;
+  background-color: black;
+  margin: 0 5%;
+}
+
+.StackLine {
+  margin: 1% 5%;
+  width:90%;
+  height: 1px;
+  background-color: black;
+}
+
+footer div .StackLine {
+  display: none;
+}
+
+.Center {
+  text-align: center;
+}
+
+#loginVend {
+  float: left;
+  width: 50%;
+}
+
+#loginVend div:last-of-type{
+  width: 45%;
+  margin-left: 10%;
+}
+
+#loginVend a {
+  line-height: 2.3em;
+}
+
+#pagamenti {
+  width: 50%;
+  float: right;
+}
+
+#pagamenti h1 {
+  width: 40%;
+  float: left;
+  font-size: 0.75em;
+  margin-top: 1.3%;
+  color: rgb(52,51,49);
+}
+
+#pagamenti .StackLine, #loginVend .StackLine {
+  display: block;
+  width: 85%;
+  margin-right: 10%;
+  margin-left: 10%;
+  float: left;
+}
+
+#loginVend .StackLine {
+  margin-right: 5%;
+}
+
+#pagamenti .StackLine {
+  margin-left: 5%;
+}
+
+#pagamenti img {
+  float: left;
+  width: 6.4%;
+  height: auto;
+  margin: 0 0.5%;
+  margin-bottom: 1%;
+}
+
+#pagamenti #paypal {
+  margin-top: 0.7%;
+  width: 17%;
+}
+
+#pagamenti #mastercard {
+  margin-top: 0.2%;
+}
+
+#pagamenti #visa {
+  width: 9%;
+  margin-top: 1%;
+}
+*/
+/*-------------------------------------------------------SPAZIO PROVE--------------------------------------------------*/

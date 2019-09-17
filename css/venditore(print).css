@@ -1,0 +1,178 @@
+/*--------------TABELLA COLORI-----------------*/
+/*
+A : rgb(140,168,164) => #8ca8a4;
+B : rgb(125,193,189) => #7dc1bd;
+C : rgb(46,93,90) => #2e5d5a;
+D : rgb(227,226,204) => #e3e2cc;
+E : rgb(220,221,183) => #dcd3b7;
+F : rgb(90,19,35) => #5a1323;
+G : rgb(52,51,49) => #343331;
+H : rgb(75,71,52) => #4B4734;
+I : rgb(200,197,188) => #c8c5bc;
+J : rgb(238,233,217) => #eee9d9;
+K : rgb(255,255,255) => #FFFFFF;
+*/
+/*---------------------------------------------*/
+
+
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323;
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+/* ------------ VENDITORE ------------ */
+
+body > h1{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size:2.5em;
+  color:#343331;
+  margin-top:1.5%;
+  text-align: center;
+}
+
+body > div{
+  display: block;
+}
+
+body > div > p > img{
+  display: none;
+}
+
+body > div > p{
+  width:90%;
+  margin-left:3%;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+}
+
+body > div > p > span{
+  margin-top:1em;
+}
+
+body > h2{
+  text-align: left;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color: #343331;
+  font-size:1.6em;
+  margin-top:0.4em;
+  margin-bottom:0.4em;
+}
+
+/* ------------ INIZIO GRIGLIA PRODOTTI ------------ */
+
+.Row > div > a:first-of-type > div > img{
+  display: none;
+}
+
+.Row{
+  width: 100%;
+  height: auto;
+  overflow-y:hidden;
+}
+
+.Row > div > a:first-of-type{
+  width:15%;
+  float:right;
+}
+
+.Row > div > a:last-of-type{
+  width:80%;
+  float:right;
+}
+
+.Row > div > a:nth-of-type(2) > h3{ /* --- TITOLO PRODOTTI --- */
+  font-size: 1em;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  color: #5a1323;
+  text-align: left;
+  text-decoration: none;
+  height: auto;
+  float:left;
+  width:auto;
+}
+
+.Row > div > a:visited > h3{
+  color:#2e5d5a;
+}
+
+.Row > div > a[href]:last-of-type::after{
+  content:" <" attr(href) ">";
+  /*margin-right:20%;*/
+  float:right;
+  margin-top:1.1em;
+  /*soluzione temporanea, perche' abbiamo un disallineamento
+  tra prezzo, titolo e link del prodotto*/
+}
+
+
+.Row > div > a:first-of-type{
+  text-decoration: none;
+  cursor: default;
+}
+
+.Row > div > a:first-of-type > div > p:first-of-type{
+  width: 40%;
+  color: #343331;
+  font-size: 1em;
+  font-family: Roboto, -apple-system, arial;
+  font-weight: 300;
+  margin-left: 30%;
+}
+
+.Row > div > a > div > p:last-of-type{
+  display: none;
+}
+
+#slider_cont {
+  display: none;
+}
+
+#fasciax img {
+  display: block;
+  float: left;
+  width: 25%;
+  height: auto;
+  margin-right: 1em;
+}
+
+#fasciax p {
+  float: left;
+}
+
+/* ------------ FINE GRIGLIA PRODOTTI ------------ */
+
+body > div:last-of-type{
+  margin-bottom: 1.5em;
+}

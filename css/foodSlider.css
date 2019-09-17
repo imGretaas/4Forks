@@ -1,0 +1,163 @@
+#jssor_1 {
+	padding:0px;
+	margin:0px;
+	background-color:#fff;
+	font-family:arial,helvetica,sans-serif,verdana,'Open Sans';
+}
+
+.Prezzo {
+	margin: 0px;
+	padding: 4px;
+	float: right;
+	background-color: white;
+	/*line-height:1;*/
+	text-align:center;
+	color:rgb(52,51,49);
+}
+
+.Sottotitolo {
+	position: absolute;
+	bottom: 0px;
+	margin:0px;
+	width: 100%;
+	font-family: "Source Serif Pro", Arial, serif;
+  	font-weight:400;
+	text-align:center;
+	color: rgb(52,51,49);
+	font-size:1.2em;
+	background-color:white;
+	/*line-height:1.35;*/
+}
+
+.Smartphone p {
+	font-size: 2.4em;
+}
+
+/*---------------------ROBA DI DEFAULT -----------------*/
+.Prova1 {
+	position:relative;
+	margin:0 auto;
+	visibility:hidden;
+}
+
+.Prova1-5{
+	top:0px;
+	left:0px;
+	width:1023px;
+	height:180px;
+	overflow:hidden;
+}
+
+.Smartphone {
+	height: 350px;
+}
+
+.Prova2{
+	text-align:center;
+	background-color:rgba(0,0,0,0.7);
+}
+
+.Prova2-5 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+
+.Prova3 {
+	margin-top:-19px;
+	position:relative;
+	top:50%;
+	width:38px;
+	height:38px;
+}
+
+.Prova4 {
+	cursor:default;
+	position:relative;
+}
+
+.Prova5 {
+	position:absolute;
+	bottom:12px;
+	right:10px;
+}
+
+.Prova6 {
+	width:16px;
+	height:16px;
+}
+
+.Prova8 {
+	width:70px;
+	height:auto;
+	top:0px;
+	left:-15px;
+	background-color:white;
+}
+
+.Prova9 {
+	width:70px;
+	height:auto;
+	top:0px;
+	right:-15px;
+	background-color:white;
+}
+
+.Smartphone .Prova8 {
+	width:90px;
+	height:auto;
+	top:0px;
+	left:-15px;
+}
+
+.Smartphone .Prova9 {
+	width:90px;
+	height:auto;
+	top:0px;
+	right:-15px;
+}
+
+.Smartphone .Prova4{
+	height: 351px;
+}
+
+@media only screen and (min-width: 1640px){
+	#jssor_1{
+		margin: 0.2em 5% 1em 5%;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1023px){
+	p.Prezzo {
+		font-family: Roboto, -apple-system, arial;
+  		font-weight:300;
+		font-size: 1.4em;
+	}
+
+	p.Sottotitolo {
+		font-family: "Source Serif Pro", Arial, serif;
+  		font-weight:400;
+	}
+}
+
+/*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider arrow skin 056 css*/
+        .jssora056 {display:block;position:absolute;cursor:pointer;}
+        .jssora056 .a {fill:none;stroke:#000;stroke-width:960;stroke-miterlimit:10;}
+        .jssora056:hover {opacity:.8;}
+        .jssora056.jssora056dn {opacity:.5;}
+        .jssora056.jssora056ds {opacity:.3;pointer-events:none;}

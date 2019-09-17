@@ -1,0 +1,71 @@
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+h1.Hric{
+  clear:both;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  width: 100%;
+}
+
+p.Sdp{
+  display: none;
+}
+
+p.Price{
+  float:right;
+}
+
+.Row > p > a{
+  display: none;
+}
+
+.Row > div {
+  clear: both;
+}
+
+.Row img {
+  display: block;
+  width: 30%;
+  height: 8em;
+  float: left;
+  padding-bottom: 2.6em;
+  padding-right: 2%;
+}
+
+.Row div{
+  clear:both;
+}
+
+
+

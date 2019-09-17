@@ -1,0 +1,25 @@
+.Update {
+  display: block;
+}
+
+.Bin {
+  margin:0.7em 40% 0 20%;
+  position: static;
+  left: 0;
+}
+
+div.Det .Clearer~p:first-of-type {
+  padding-top: 0.7em;
+}
+
+div#ColumMobile2 > p{
+	display:none;
+}
+
+ul.Det > li:last-of-type{
+	display:none;
+}
+
+#totale{
+	display:none;
+}

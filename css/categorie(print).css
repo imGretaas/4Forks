@@ -1,0 +1,118 @@
+/*---------------------------------------------*/
+
+ul.Breadcrumb {
+  padding: 0.7em 1em;
+  list-style: none;
+  background-color: none;
+}
+
+ul.Breadcrumb li {
+  display: inline;
+  font-size: 1em;
+  color: #343331;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+ul.Breadcrumb li+li:before {
+  padding: 0.5em;
+  color: #343331;
+  content: "/\00a0"; /* divisore breadcrumb, carattere speciale */
+}
+ul.Breadcrumb li a {
+  color: #5a1323; 
+  text-decoration: none;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+}
+
+ul.Breadcrumb li a:visited{
+  color: #2e5d5a;
+}
+
+ul.Breadcrumb li a:hover{
+  text-decoration:underline;
+}
+
+.Clear{
+  clear:both;
+}
+
+/******************/
+
+.DispNone{
+  display: none;
+}
+
+.DispBlock{
+  display: block;
+}
+
+/******************/
+
+body > h1.CatTitle{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  text-align: center;
+  color: #343331;
+  font-size: 1.3em;
+}
+
+body > div.SemiLine{
+  width: 10%;
+  height: 1px;
+  background-color: #343331;
+  margin: 0.5em 45%;
+}
+
+#piatti0caldi, #bottega, #bevande{
+  margin-top: 0.7em;
+}
+
+body > div:first-of-type > h1{ /* --- testo fascia bianca con padding bianco --- */
+  width:100%;
+  background-color: white;
+  text-align: center;
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #343331;
+}
+
+#piatti0caldi > div > div > a > h2, #bottega > div > a > h2, #bevande > div > a > h2{
+  font-family: "Source Serif Pro", Arial, serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color:#5a1323;
+  margin-top:0.5em;
+  text-align: left;
+  text-decoration: none;
+}
+
+#piatti0caldi > div > div > a::after, #bottega > div > div > a::after, #bevande > div > a::after{
+  content:" <" attr(href) ">";
+}
+
+#piatti0caldi > div > div > a:visited > h2{
+  color:#2e5d5a;
+}
+
+#piatti0caldi > div > div > div > a > div > p, #piatti0caldi > div > div > div > a > div > h2{
+  display: none;
+}
+
+#bottega > div > a, #bevande > div > a, #piatti0caldi > div > a{
+  text-decoration: none;
+}
+
+#bottega > div > a:visited > h2, #bevande > div > a:visited > h2{
+  color:#2e5d5a;
+}
+
+#bottega > div > div > a > div > p, #bottega > div > div > a > div > h2{
+  display: none;
+}
+
+body > #bevande > div > div > a > div > p, body > #bevande > div > div > a > div > h2{
+  display: none;
+}
+
