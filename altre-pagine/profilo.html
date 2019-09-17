@@ -1,0 +1,173 @@
+<?php
+  echo $err[3];
+?>
+<form id="content" action="intermezzo.php" method="post" enctype="multipart/form-data">
+  <fieldset>
+    <legend><h1>Profilo</h1></legend>
+    <div id="profImg">
+      <div id="quadImg">
+        <img src="<?php echo userIm($defIm, "Pro"); echo '" class="'.$quadImg.'"'; ?> alt="Immagine Profilo"/>
+      </div>
+      <p class="Caption">Immagine di Profilo</p>
+      <p>
+        <input type="hidden" name="MAX_FILE_SIZE" value="5242880"/>
+        <label for="foto" id="lfoto">Invio foto</label>
+        <input id="foto" type="file" name="foto" onchange="checkFile1();" accept=".jpeg,.jpg,.png,.bmp,.BMP,.PNG,.JPG,.JPEG"/>
+        <span></span>
+      </p>
+    </div>
+    <div id="datiPers" class="Alto">
+      <fieldset>
+        <legend><h2>Dati Personali</h2></legend>
+        <p>
+          <label for="name" class="Spazio">Nome</label>
+          <input type="text"  id="name" name="nome" placeholder="Mario" onblur="checkName();" <?php stampavalue("Nome", $richiestaDB[0]);?>/>
+          <span></span>
+        </p>
+        <p>
+          <label for="surname" class="Spazio Destra">Cognome</label>
+          <input type="text"  id="surname" name="cognome" placeholder="Rossi" onblur="checkSurname();" <?php stampavalue("Cognome", $richiestaDB[0]);?>/>
+          <span></span>
+      	</p>
+        <fieldset>
+          <legend><h3>Data di Nascita</h3></legend>
+          <p>
+            <label for="day" class="Spazio">Giorno</label>
+            <select id="day" name="giorno" onblur="checkDay();">
+              <option value="-">-</option>
+              <?php echo $data['giorno']; ?>
+            </select>
+            <span></span>
+          </p>
+          <p>
+            <label for="month" class="Spazio">Mese</label>
+            <select id="month" name="mese" onblur="checkMonth();">
+              <option value="-">-</option>
+              <?php echo $data['mese']; ?>
+            </select>
+            <span></span>
+          </p>
+          <p>
+            <label for="year" class="Spazio">Anno</label>
+            <select id="year" name="anno" onblur="checkYear();">
+              <option value="-">-</option>
+              <?php echo $data['anno']; ?>
+            </select>
+            <span></span>
+          </p>
+        </fieldset>
+        <p>
+          <label for="telephone" class="Spazio Destra">Telefono</label>
+          <input type="text"  id="telephone" name ="tel" placeholder="3492469715"  onblur="checkTel();" <?php stampavalue("numTel", $richiestaDB[0]);?>/>
+          <span></span>
+        </p>
+        <p>
+          <label for="email" class="Spazio Destra">E-mail</label>
+          <input type="text"  id="email" name="email" class="NoCap" placeholder="mario.rossi@example.it" onblur="checkEmail();" <?php stampavalue("Email", $richiestaDB[0]);?> readonly="readonly" />
+          <span></span>
+        </p>
+        <p>
+          <label for="password" class="Spazio">Cambia Password</label>
+          <!--[if lt IE 9]>
+            <input type="password"  id="password" name="password" class="NoCap" placeholder="Password Account" onblur="checkPw();" autocomplete="new-password" onload="clear();"/>
+          <![endif]-->
+          <input type="password"  id="password" name="password" class="NoCap" placeholder="Password Account" onblur="checkPw();" autocomplete="new-password" onload="clear();"/>
+          <span></span>
+        </p>
+        <p>
+          <input type="checkbox"  id="togglePwd" onclick="funPwd()"/>
+          <label id="labTogPwd" for="togglePwd">Mostra password</label>
+          <span></span>
+        </p>
+      </fieldset>
+    </div>
+
+    <div class="StackLine Clearer"></div>
+
+  	<div id="indirizzo" class="Alto">
+      <fieldset>
+        <legend><h2>Indirizzo di Spedizione</h2></legend>
+        <p>
+          <label for="country" class="Spazio">Città</label>
+          <input type="text"  id="country" name="citta" placeholder="Legnaro" onblur="checkCountry();" <?php stampavalue("Citta", $richiestaDB[0]);?>/>
+          <span></span>
+        </p>
+        <p>
+          <label for="cap" class="Spazio Destra">CAP</label>
+          <input type="text"  id="cap" name="cap" maxlength="5" placeholder="35020" onchange="checkCAP();" <?php stampavalue("CAP", $richiestaDB[0]);?>/>
+          <span></span>
+        </p>
+        <p>
+          <label for="province" class="Spazio">Provincia</label>
+          <input type="text"  id="province" name="prov" maxlength="2" placeholder="PD" onblur="checkProvince();" <?php stampavalue("Provincia", $richiestaDB[0]);?>/>
+          <span></span>
+        </p>
+        <p>
+          <label for="address" class="Spazio Destra">Via</label>
+          <input type="text"  id="address" name="via" placeholder="Via della Pace, 41" onblur="checkProvince();" <?php stampavalue("Via", $richiestaDB[0]);?>/>
+          <span></span>
+        </p>
+      </fieldset>
+    </div>
+
+    <div id="vertical" class="StackLine"></div>
+    <div>
+      <fieldset id="sceltaPag" class="Pagamenti">
+        <legend><h2>Metodi di Pagamento</h2></legend>
+        <p>
+          <input type="radio" name="pagamento" id="credito" value="credito" onchange="dropCredito()" <?php echo $checked[0];?>/>
+          <label for="credito" >Carta di credito</label>
+        </p>
+        <p>
+          <input type="radio" name="pagamento" id="pagPaypal" value="paypal" onchange="dropCredito()" <?php echo $checked[1];?>/>
+          <label for="pagPaypal">PayPal</label>
+        </p>
+    	  <div id="formCredito" <?php echo 'class="Pagamenti'.$checked[2].'"'; ?>>
+          <p>
+            <label for="numCred" >Numero della carta</label>
+            <input type="text" id="numCred" name="numCred" placeholder="52XX-XXXX-XXXX-XX25" onblur="checkCardNumber();" <?php stampavalue("NCarta", $richiestaDB[0]);?>/>
+            <span></span>
+          </p>
+          <fieldset class="Breve">
+            <legend><h3>Data di Scadenza</h3></legend>
+            <p>
+              <label for="meseScad">Mese</label>
+              <select id="meseScad" name="cmese" onblur="checkExpirationMonth();">
+                <option value="-">-</option>
+                <?php echo $cdata['cmese']; ?>
+              </select>
+              <span></span>
+            </p>
+            <p>
+              <label for="annoScad">Anno</label>
+              <select id="annoScad" name="canno" onblur="checkExpirationYear();">
+                <option value="-">-</option>
+                <?php echo $cdata['canno']; ?>
+              </select>
+              <span></span>
+            </p>
+          </fieldset>
+          <p class="Breve" >
+            <label for="cvv" class="Spazio Destra">CVV</label>
+            <input type="text"  id="cvv" name="cvv" placeholder="998" maxlength="4" onblur="checkCVV();"/>
+            <span></span>
+          </p>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="StackLine"></div>
+
+  </fieldset>
+  <?php echo $paga;?>
+  <p>
+    <label for="annulla">Reset Campi</label>
+    <input type="submit" name="ANNULLA" value="RESET FORM" id="annulla"/>
+    <span></span>
+  </p>
+  <p>
+    <label for="salva">Salva</label>
+    <input type="submit" name="salva" value="SALVA" id="salva" onmouseover="checkFormProIn(2);" onmouseout="checkFormProOut(2);"/>
+    <span></span>
+  </p>
+</form>

@@ -1,0 +1,39 @@
+<!--- INIZIO BREADCRUMB --->
+<ul id="content" class="Breadcrumb"> <!---breadcrumb--->
+	<li><a href="../index.php" lang="en">Home</a></li>
+	<li>Carrello</li>
+</ul>
+
+<!--- FINE BREADCRUMB --->
+
+<!--- INIZIO CORPO CARRELLO --->
+
+<div class="StackLine"></div>
+
+<ul class="Det">
+	<li><h1 class="TitleCart">Nome Prodotto</h1></li>
+	<li><h1 class="TitleCart">Quantit&#224;</h1></li>
+	<li><h1 class="TitleCart">Prezzo Finale</h1></li>
+</ul>
+
+<div class="Clearer"></div>
+
+<form action="profilo.php" method="post">
+	<?php
+	foreach ($prodotti as $key => $value6) {
+		echo $value6;
+	}
+	?>
+  <!--- FINE CORPO CARRELLO ---->
+	<?php echo $messaggio; ?>
+	<p id="totale"><span>Totale: </span> &euro; <span id="tot">0.00</span></p>
+	<fieldset>
+		<legend>Pagamento</legend>
+		<p>
+			<input type="submit" id="pay" onmouseover="checkFormCartIn();" onmouseout="checkFormCartOut();" onfocusin="checkFormCartIn();" onfocusout="checkFormCartOut();"
+			name="pagamento" value="PAGAMENTO" <?php echo $disabled; ?> />
+			<label for="pay">Pagamento</label>
+			<span></span>
+		</p>
+	</fieldset>
+</form>

@@ -1,0 +1,61 @@
+<div id="content">
+	<ul class="Breadcrumb"> <!---breadcrumb--->
+		<li><a href="../index.php" lang="en">Home</a></li>
+		<li>Contatti</li>
+	</ul> 	
+
+	<h1>Contatti</h1>
+	<p>Qui di seguito troverete il modulo contatti. <br />
+	Affinch&#233; la vostra richiesta vada a buon fine, vi invitiamo a compilare adeguatamente tutti i campi.<br />
+	Grazie.
+	</p>
+
+  <div>
+    <form action="inviomes.php">
+      <fieldset>  
+        <legend>Modulo Contatti</legend>
+        <p>
+      		<label for="name">Nome<span class="Asterix">&#42;</span></label>
+        	<input type="text" id="name" onblur="checkName();" name="fname" placeholder="Inserisci il tuo nome"/>
+			<span class="OnlyDistance"></span>
+        </p>
+        <p>
+        	<label for="surname">Cognome<span class="Asterix">&#42;</span></label>
+        	<input type="text" onblur="checkSurname();" id="surname" name="lname" placeholder="Inserisci il tuo Cognome"/>
+			<span class="OnlyDistance"></span>
+        </p>
+        <p>
+      	<label for="oggetto">Oggetto<span class="Asterix">&#42;</span></label>
+      	<select id="oggetto" name="oggetto">
+        	<option value="Problemi" selected="selected">Problemi con l'ordine</option>
+      		<option value="Bug">Problemi riscontrati nel sito</option>
+      		<option value="Affiliazioni">Affiliazioni</option>
+      		<option value="Consigli">Consigli</option>
+      		<option value="Venditori">Sezione Venditori</option>
+      		<option value="Altro">Altro</option>
+      	</select>
+      	<span class="OnlyDistance"></span>
+        </p>
+        <p>
+          <label for="rettNote">Messaggio<span class="Asterix">&#42;</span></label>
+          <textarea id="rettNote" onblur="checkMess();" name="subject" placeholder="Scrivi qui il tuo messaggio..." maxlength="600"></textarea>
+		<span class="OnlyDistance1"></span>
+        </p>
+        <p>
+          <label for="invio">Invio</label>
+          <input type="submit" onmouseover="checkFormINCont();" onmouseout="checkFormOUTCont();" id="invio" value="Invia"/>
+		<span class="OnlyDistance"></span>
+        </p>
+      </fieldset>
+    </form>
+	</div>
+
+</div>
+
+
+<!---------------------------------------->
+<script>
+function msg(){
+	alert("Messaggio inviato con successo!");
+}
+</script>	

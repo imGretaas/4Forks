@@ -1,0 +1,80 @@
+<div id="faqs">
+  <ul class="Breadcrumb">
+    <li><a href="../index.php" lang="en">Home</a></li>
+    <li><span lang="en">FAQs</span></li>
+  </ul> 
+
+  <h1 id="content"><span lang="en">FAQs</span></h1>
+
+  <h2 class="Accordion">Creare un <span lang="en">Account Online</span><span class="RightArr">&#8595;</span></h2>
+  <div>
+    <p>Creare il proprio account sul sito &#8220;4 Forchette&#8221; &#232; molto semplice.
+    La prima cosa da fare &#232; andare nella <a href="registrazione.php">pagina di registrazione</a> utenti. <br/>Una volta l&#236;, dovremo inserire le nostre credenziali ed i nostri dati.
+    La registrazione &#232; semplice e gratuita.
+    </p>
+  </div>  
+
+  <h2 class="Accordion">Registrarsi Come Venditori <span class="RightArr">&#8595;</span></h2>
+  <div>
+    <p>Per registrarvi come venditori, dovrete andare nella <a href="registrazione.php">pagina di registrazione dedicata ai venditori</a>.
+    Per i venditori, alla registrazione, sono richieste le credenziali, il nome del Negozio ed i prodotti di vendita.<br />
+    &#200; molto importante selezionare correttamente le aree di vendita, una volta scelti i prodotti di vendita.<br />
+    Eventuali comunicazioni relative a pagamenti, ordini, spedizioni e molto altro, saranno inviati dai nostri operatori, disponibili 24h su 24, tramite e-mail (selezionare come oggetto del messaggio: &#8220;Sezione Venditori&#8221;).
+    </p>
+  </div>  
+
+  <h2 class="Accordion">Modificare il Proprio <span lang="en">Account Online</span><span class="RightArr">&#8595;</span></h2>
+  <div>
+    <p>Modificare ed aggiungere informazioni nel proprio account &#232; molto semplice.<br />
+    Vi baster&#224; andare nella <a href="Profilo.php">pagina dedicata</a> e navigare nelle sezioni: profilo, dove modificare dati personali, indirizzo di spedizione e modalit&#224; di pagamento (carta di credito o <span lang="en">PayPal</span>).
+    </p>
+  </div>  
+
+  <h2 class="Accordion">Disponibilit&#224; Prodotti <span class="RightArr">&#8595;</span>
+  </h2>
+  <div>
+    <p>Il sito &#8220;4 Forchette&#8221; lavora solamente con materie prime di alta qualit&#224;, soggette a continui controlli mirati, e si rifornisce solo dai migliori produttori.<br />
+    Per garantire sempre la freschezza e la bont&#224; delle pietanze, alcuni ingredienti potrebbero variare in base alla disponibilit&#224; e alla produzione di stagione. <br />
+    Possibili variazioni verranno segnalate nelle pagine relative ai prodotti soggetti a modifiche.
+    </p>
+  </div>  
+
+  <h2 class="Accordion">Spedizioni e Resi <span class="RightArr">&#8595;</span></h2>
+  <div>
+    <p>Per spedizioni e resi, vi invitiamo a visitare la <a href="ship.php">pagina dedicata</a> con tutte le informazioni in merito.
+    </p>
+  </div>  
+
+  <h2 class="Accordion">Pagamenti <span class="RightArr">&#8595;</span></h2>
+  <div>
+    <p>Per i pagamenti, vi invitiamo a visitare la <a href="pagamenti.php">pagina dedicata</a> con tutte le informazioni in merito.
+    </p>
+  </div>  
+
+  <h2 class="Accordion">Contattare il Servizio Clienti <span class="RightArr">&#8595;</span></h2>
+  <div>
+    <p>Chiunque pu&#242; contattare il servizio clienti, per qualsiasi motivo.<br />
+    Per mettervi in contatto con noi, vi invitiamo a compilare l'apposito form nella <a href="contatti.php">pagina apposita</a>.
+    </p>
+  </div>  
+
+</div>
+<!---------------------------------------------------------------->
+
+    <!--- Script dedicato all'Accordion della pagina FAQs ---->
+<script>
+var acc = document.getElementsByClassName("Accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var Panel = this.nextElementSibling;
+    if (Panel.style.display === "block") {
+      Panel.style.display = "none";
+    } else {
+      Panel.style.display = "block";
+    }
+  });
+}
+</script>

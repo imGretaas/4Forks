@@ -1,0 +1,23 @@
+<ul id="content" class="Breadcrumb">
+  <li><a href="../index.php">Home</a></li>
+  <li>Ricerca</li>
+</ul>
+<?php
+  $queryarray=array();
+  $output=ricercaesatta($search, $queryarray);
+  $output=outputricerca($output, $queryarray, $search);
+
+  foreach($output as $key=>$value){
+  	if(is_array($value)){
+	  	foreach($value as $key2=>$value2){
+	  		if(/*!empty($value2) && */ substr($key2, 0, 4) !='flag') {
+	  			echo $value2;
+	  		}
+	  	}
+	  }
+	  else {
+		  echo $value;
+	  }
+  }
+
+?>

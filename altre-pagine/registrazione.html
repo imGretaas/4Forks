@@ -1,0 +1,141 @@
+	<!-- INIZIO CONTENUTO -->
+	<ul class="Breadcrumb"> <!---breadcrumb-->
+	  <li><a href="../index.php"><span lang="en">Home</span></a></li>
+	  <li>Registrazione</li>
+	</ul>
+	<!--<div id="regUtente">-->
+	<h1 id="content">Registrazione</h1>
+	<?php echo $message; ?>
+	<div id="wizardContainer">
+		<form id="wizard" method="post" action="regge.php" enctype="multipart/form-data">
+			<h2 class="SectionTitle">Dettagli Anagrafici</h2>
+			<p class="Asterix">Campo Obbligatorio&#42;</p>
+			<section>
+				<fieldset>
+					<legend>Dettagli Anagrafici</legend>
+					<p>
+						<label for="name">Nome<span class="Asterix">&#42;</span></label>
+						<input type="text" name="nome" id="name" onblur="checkName();" placeholder="nome" <?php stampavalue("nome", $dati); ?> required="required"/>
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+					<p>
+						<label for="surname">Cognome<span class="Asterix">&#42;</span></label>
+						<input onblur="checkSurname();" type="text" name="cognome" id="surname" placeholder="cognome" <?php stampavalue("cognome", $dati); ?> required="required" />
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+					<p>
+						<label for="email">Email<span class="Asterix">&#42;</span></label>
+						<input type="email" name="email" id="email" placeholder="esempio@dominio.com" onblur="checkEmail();" <?php stampavalue("email", $dati); ?> required="required" />
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+					<p>Data di nascita<span class="Asterix">&#42;</span></p>
+					<div class="Inline">
+						<label for="day">Giorno<span class="Asterix">&#42;</span></label>
+						<select name="giorno" id="day" onchange="checkDay();">
+							<option value="-">-</option>
+							<?php
+							echo $option;
+							echo '<option value="29" id="v9" class="LongDate" '.selected(29, $dati['giorno']).'>29</option>
+							<option value="30" id="t0" class="LongDate" '.selected(30, $dati['giorno']).'>30</option>
+							<option value="31" id="t1" class="LongDate" '.selected(31, $dati['giorno']).'>31</option>';
+							?>
+						</select>
+						<p></p>
+					</div>
+					<div class="Inline">
+						<label for="month">Mese<span class="Asterix">&#42;</span></label>
+						<select name="mese" id="month" onchange="checkMonth();" required="required">
+							<option value="-">-</option>
+							<?php
+									echo $meseoption;
+								?>
+						</select>
+						<p></p>
+					</div>
+					<div class="Inline">
+						<label for="year">Anno<span class="Asterix">&#42;</span></label>
+						<select name="anno" id="year" onchange="checkYear();" required="required">
+							<option value="-">-</option>
+							<?php
+								for($i=(date("Y") -100); $i<date("Y")+1; $i++) {
+									echo '<option value="'.$i.'" '.selected($i, $dati['anno']).'>'.$i.'</option>';
+								}
+								?>
+						</select>
+						<p></p>
+					</div>
+					<div class="Clearer"></div>
+					<p>
+						<label for="password">Password<span class="Asterix">&#42;</span></label>
+						<input type="password" name="pass" id="password" onblur="checkPw();" placeholder="password" required="required" />
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+					<p>
+						<label for="confirm-password">Conferma Password<span class="Asterix">&#42;</span></label>
+						<input type="password" name="confirm-password" id="confirm-password" onblur="checkCPw();" onkeyup="checkCPw();" placeholder="password" required="required" />
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+				</fieldset>
+			</section>
+			<h2 class="SectionTitle">Localizzazione</h2>
+			<section>
+				<fieldset>
+					<legend>Localizzazione</legend>
+					<p>
+						<label for="province">Provincia (sigla)<span class="Asterix">&#42;</span></label>
+						<input type="text" name="provincia" id="province" onblur="checkProvince();" placeholder="PD" <?php stampavalue("provincia", $dati); ?> required="required" />
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+					<p>
+						<label for="country">Paese<span class="Asterix">&#42;</span></label>
+						<input onkeyup="firsToUpper('country');" onblur="checkCountry();" type="text" name="citta" id="country" <?php stampavalue("citta", $dati); ?>  placeholder="Ponte di Brenta" required="required" />
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+					<p>
+						<label for="address">Via e numero civico<span class="Asterix">&#42;</span></label>
+						<input type="text" name="via" id="address" onblur="checkAddress();" placeholder="Via Roma, 43" <?php stampavalue("via", $dati); ?> required="required" />
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+					<p>
+						<label for="cap">CAP<span class="Asterix">&#42;</span></label>
+						<input type="number" name="cap" id="cap" onkeyup="checkCAP();" onchange="checkCAP();" placeholder="35124" <?php stampavalue("cap", $dati); ?> required="required" />
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+				</fieldset>
+			</section>
+			<h2 class="SectionTitle">Termini e Condizioni</h2>
+			<section>
+				<fieldset>
+					<legend>Termini e Condizioni</legend>
+					<p>
+						<label for="telephone">Telefono</label>
+						<input type="tel" name="tel" id="telephone" onblur="checkTel();" <?php stampavalue("tel", $dati); ?> placeholder="3938382523" />
+						<span></span>
+					</p>
+					<div class="Clearer bottom2"></div>
+					<p>
+						<input type="checkbox" id="terms" onclick="checkTerms();" data-error="Perfavore accetta i termini e le condizioni" required="required" />
+						<label for="terms">Accetto termini e condizioni imposti dal sito<span class="Asterix">&#42;</span></label>
+						<span></span>
+					</p>
+					<div class="Clearer"></div>
+					<p id="regSubmit">
+						<label for="send" class="Hide">Invia</label>
+						<input id="send" type="submit" name="invia" onmouseout="checkForm1();" onmouseover="checkForm2();" onfocusout="checkForm1();" onfocusin="checkForm2();" value="INVIA" />
+						<span></span>
+					</p>
+				</fieldset>
+			</section>
+		</form>
+	</div>
+	<!--</div>-->
+		<!--FINE CONTENUTO-->

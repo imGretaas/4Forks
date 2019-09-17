@@ -1,0 +1,75 @@
+<!-- CORPO  -->
+<ul class="Breadcrumb">
+  <li><a href="../index.php" lang="en">Home</a></li>
+  <li><a <?php echo 'href="'.$gruppolink.'">'.$gruppo; ?></a></li>
+  <li><a <?php echo 'href="'.$catlink.'">'.$prodotto['Categoria']; ?></a></li>
+  <li><a <?php echo 'href="'.$vendorlink.'">'.$negoziante; ?></a></li>
+  <li><?php echo $nome; ?></li>
+</ul>
+<!--<div id="breadcrumbs">*
+		<p><a href=""><span xml:lang="en">Home</span></a> / <a href="">Pizze</a> / <a href="">Pizzel</a> / Margherita</p>
+	</div>-->
+<div id="content">
+	<h1><?php echo $nome; ?></h1>
+	<p>Categoria: <a <?php echo 'href="'.$catlink.'">'.$prodotto['Categoria']; ?></a></p>
+	<p>Denominazione: <a <?php echo 'href="'.$denlink.'">'.$prodotto['Certificazione']; ?></a><p>
+	<div>
+		<p>
+			<img <?php echo 'src="'.$imglink.'"'; ?> alt=""/>
+			<span>&#8364;<?php echo $prodotto['Prezzo'].'</span>'. $prodotto['Descrizione'] ?>
+		</p>
+	</div>
+	<div id="middleregione" class="StackLine"></div>
+	<div>
+		<p>Campo obbligatorio &#42;</p>
+		<?php
+			$reg=stampaProv($_SESSION["regione"], $_SESSION["provincia"]);
+        ?>
+        <form method="post" <?php echo 'action="'.$middle.'"'; ?> >
+			<fieldset>
+				<legend>Verifica disponibilit&agrave; per regione</legend>
+				<p>
+					<label  for="regione3">Regione &#42; </label>
+					<select name="regione" id="regione3" title="Selezione regione" onfocus="toggleR('regione3');" onblur="toggleR('regione3');" onkeydown="prodottoRecharge(event,true);" onclick="prodottoClick(true);">
+						<?php
+						echo $reg[0];
+						?>
+					</select>
+					<span></span>
+				</p>
+				<p>
+					<label for="province3">Provincia &#42; </label>
+					<select name="provincia" id="province3"  onblur="setP('province3');" onkeydown="prodottoRecharge(event,false);" onclick="prodottoClick(false);">
+						<?php
+						echo $reg[1];
+						?>
+					</select>
+					<span></span>
+				</p>
+				<p>
+					<label for="quantity">Quantit&agrave; &#42; </label>
+					<input type="number" onkeyup="checkQuantity();" name="quantita" id="quantity" <?php echo 'value="'.$quantita.'"'; ?> min="1" max="20" required="required"/>
+					<span></span>
+				</p>
+        <p>
+          <label for="aggiorna">Aggiorna</label>
+          <input type="submit" id="aggiorna" name="Aggiorna" value="AGGIORNA" />
+        </p>
+        <p>
+          <?php echo '<input type="hidden" name="ID" value="'.$id.'"/>
+'; ?>
+          <input type="hidden" name="Nome" <?php echo 'value="'.$nome.'"'; ?> />
+        </p>
+		<p>
+			<label for="buy">Compra</label><!-- onmouseout="checkForm3();"-->
+			<input onmouseover="checkForm4();" onmouseout="checkForm3();" id="buy" name="Compra" type="submit" value="AGGIUNGI AL CARRELLO" <?php echo $disabled; ?>  />
+			<span></span>
+		</p>
+	</fieldset>
+  <p><?php echo $message ?></p>
+
+			<!--<p>&#8364;10</p>-->
+		</form>
+	</div>
+  <?php echo $sliderorfascia ?>
+</div>

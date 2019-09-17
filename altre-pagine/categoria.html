@@ -1,0 +1,19 @@
+<ul id="content" class="Breadcrumb">
+  <li><a href="../index.php" lang="en">Home</a></li>
+  <li><a <?php echo 'href="categorie.php?cat='.$gruppo.'">'.str_replace("0", " ", $gruppo); ?></a></li>
+  <li><?php echo $cat; ?></li>
+</ul>
+<?php
+  echo $linkall;
+?>
+<!--- FINE BREADCRUMB --->
+
+<!--- INIZIO CORPO --->
+
+<div class="Intro Clearer" <?php echo "id = ".insertapici(lcfirst($_GET['cat'])) ?> >
+  <h1 id="textintro"><?php echo slogan(lcfirst($_GET['cat'])) ?></h1>
+</div>
+<?php echo $prodotti;
+      echo $primipro;
+      echo $link;
+?>
