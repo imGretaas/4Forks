@@ -584,7 +584,7 @@ div#LinkBarraAlta > a{
   font-weight: 300;
   background-color: #7dc1bd;
   color: #343331;
-  width:100%;
+  width:auto;
   padding: 0.5em 0 0.5em 2em;
   margin-left: 0;
 }
