@@ -12,4 +12,4 @@ L'altra faccia della medaglia è rappresentata dagli utenti, i quali si possono
 ordini di qualsiasi tipo: in “4 Forchette” si possono trovare piatti caldi (primi, secondi, contorni, pizze e dessert), latticini, salumi, bevande come succhi e vini del territorio, prodotti da forno e da dispensa.
 Il progetto ha scopo puramente didattico/
 
-@Erzatta 
+
